@@ -24,7 +24,7 @@ for (const screenshot of screenshots) {
   log.info(`Taking ${screenshot.name} screenshot of ${url}`)
 
   await session.page.goto(url, {
-    waitUntil: "domcontentloaded",
+    waitUntil: "networkidle0",
   })
 
   if (screenshot.click) {
