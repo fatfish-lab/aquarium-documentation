@@ -21,11 +21,13 @@ export function parseSetCookies(headers) {
       }
     });
 
+    const url = new URL(Deno.env.get('AQ_API') || 'http://localhost:8000');
+
     // Convert the object to a CookieParam object compatible with Puppeteer
     const cookieParam = {
       name: cookieObj.name,
       value: cookieObj.value,
-      domain: cookieObj.domain || 'localhost',
+      domain: url.hostname,
       path: cookieObj.path || '/',
       expires: cookieObj.expires ? new Date(cookieObj.expires).getTime() / 1000 : undefined,
       httpOnly: !!cookieObj.httpOnly,
