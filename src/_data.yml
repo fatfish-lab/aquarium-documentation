@@ -1,0 +1,14 @@
+layout: index.vto
+title: Aquarium documentation
+
+i8n:
+  en:
+    emoji: 🇺🇸
+  fr:
+    emoji: 🇫🇷
+
+repository:
+  host: https://github.com
+  author: fatfish-lab
+  name: aquarium-documentation
+  branch: master

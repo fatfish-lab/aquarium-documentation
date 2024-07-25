@@ -1,0 +1,13 @@
+<header id="header">
+  <a href="/" class="logo"></a>
+  <div id="theme" class="aq-icon clickable">
+    light_mode
+  </div>
+  <div class="languages">
+    {{ for alt of alternates }}
+      <a href="{{ alt.url }}" {{ if alt.lang == lang }}aria-current="page" class="active"{{ /if }}>
+        {{ i8n[alt.lang].emoji }}
+      </a>
+    {{ /for }}
+  </div>
+</header>

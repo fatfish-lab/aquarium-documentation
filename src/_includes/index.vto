@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{{ set theme = "light" }}
+
+<html {{`lang=${lang}`}} {{`theme=${theme}`}}>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/_medias/favicon.png" />
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <script src="/_js/theme.js"></script>
+
+  <div class="reference"></div>
+  {{ include "header.vto" }}
+  {{# <div id="search"></div> #}}
+  {{ include "main.vto" }}
+  {{ include "footer.vto" }}
+</body>
+</html>

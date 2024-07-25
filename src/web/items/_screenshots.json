@@ -1,0 +1,9 @@
+[{
+  "name": "create-button",
+  "url": "{{me._key}}?app=Home",
+  "focus": [{
+    "selector": ".create",
+    "type": "arrow",
+    "vignetting": true
+  }]
+}]

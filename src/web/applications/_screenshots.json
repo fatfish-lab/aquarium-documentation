@@ -1,0 +1,33 @@
+[
+  {
+    "name": "addmenu",
+    "url": "apps/addmenu?itemKeys={{me._key}}",
+    "click": [".show-more"],
+    "focus": [{
+      "selector": ".addmenu-container header",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": ".search",
+      "type": "circle",
+      "content": "2"
+    },{
+      "selector": ".type",
+      "type": "circle",
+      "content": "3"
+    }]
+  }, {
+    "name": "addmenu-form",
+    "url": "apps/addmenu?itemKeys={{me._key}}",
+    "click": [".show-more", ".type"],
+    "focus": [{
+      "selector": ".create-item .btn-group",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": "#Name",
+      "type": "circle",
+      "content": "2"
+    }]
+  }
+]

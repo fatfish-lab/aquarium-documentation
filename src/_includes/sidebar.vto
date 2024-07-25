@@ -1,0 +1,30 @@
+<aside id="sidebar">
+  <nav>
+    <ol>
+      <h4>Web</h4>
+      {{ set web_root = nav.menu('/web/', `nav_order<10 lang=${lang}`, 'title nav_order') }}
+      {{ set web_sub = nav.menu('/web/', `nav_order>=10 lang=${lang}`, 'title nav_order') }}
+      {{ if web_root && web_root.children }}
+        {{ for item of web_root.children }}
+            {{ include "sidebar_item.vto" { item } }}
+        {{ /for }}
+      {{ /if }}
+      <br />
+      {{ if web_sub && web_sub.children }}
+        {{ for item of web_sub.children }}
+            {{ include "sidebar_item.vto" { item } }}
+        {{ /for }}
+      {{ /if }}
+    </ol>
+    <hr />
+    {{# <ol>
+      <h4>API</h4>
+      {{ set api = nav.menu('/api/', `lang=${lang}`, 'nav_order') }}
+      {{ if api && api.children }}
+        {{ for item of api.children }}
+            {{ include "sidebar_item.vto" { item } }}
+        {{ /for }}
+      {{ /if }}
+    </ol> #}}
+  </nav>
+</aside>

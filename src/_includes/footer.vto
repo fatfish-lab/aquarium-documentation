@@ -1,0 +1,49 @@
+<footer id="footer">
+{{ import { capitalize} from './utils.vto' }}
+{{ set breadcrumb = nav.breadcrumb(url) }}
+{{ set menu = nav.menu(url, undefined, "nav_order=asc") }}
+
+  <span>
+    /
+    {{ for index, item of breadcrumb }}
+      <span>
+        {{ if item.data }}
+          <a href="{{ item.data.url }}">
+            {{ item.data.title.toLowerCase() }}
+          </a>
+        {{ else }}
+          <span>{{ item.slug.toLowerCase() }}</span>
+        {{ /if }}
+      </span>
+      {{ if index < breadcrumb.length - 1 }}
+        <span>/</span>
+      {{ else if menu && menu.children && menu.children.length > 0 }}
+        <span>-></span>
+      {{ /if }}
+    {{ /for }}
+    {{ if menu && menu.children && menu.children.length > 0 }}
+        {{ for index, child of menu.children }}
+          {{ if child.data }}
+            <a href="{{ child.data.url }}">
+              {{ child.data.title.toLowerCase() }}
+            </a>
+            {{ if index < menu.children.length - 1 }}
+              <span>,</span>
+            {{ /if }}
+          {{ /if }}
+        {{ /for }}
+        ?
+      {{# <details>
+        <summary>...</summary>
+        {{ for child of menu.children }}
+          {{ if child.data }}
+            <a href="{{ child.data.url }}">
+              {{ child.data.title.toLowerCase() }}
+            </a>
+          {{ /if }}
+        {{ /for }}
+      </details> #}}
+    {{ /if }}
+  {{# <p>{{new Date(date).getFullYear()}} - Aquarium documentation</p> #}}
+  {{# <img src="/_medias/fatfishlab_logo.png" alt="Fatfish Lab logo" height="32px"> #}}
+</footer>

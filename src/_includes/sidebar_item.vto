@@ -1,0 +1,32 @@
+{{ import { capitalize } from "./utils.vto" }}
+
+<li {{ if item.data != null && item.data.url == url }}class="active"{{ /if }}>
+  {{ if item.children && item.children.length > 0 }}
+    <details {{if url.search(item.slug) >= 0}}open{{/if}}>
+      <summary>
+        <strong>
+          {{ if item.data }}
+            <a href="{{ item.data.url }}">
+              {{ item.data.section || item.data.title }}
+            </a>
+          {{ else }}
+            <span>{{ capitalize(item.slug) }}</span>
+          {{ /if }}
+        </strong>
+      </summary>
+      <ol>
+        {{ for child of item.children }}
+          {{ include "sidebar_item.vto" { item: child } }}
+        {{ /for }}
+      </ol>
+    </details>
+  {{ else }}
+    {{ if item.data }}
+      <a href="{{ item.data.url }}">
+        {{ item.data.section || item.data.title }}
+      </a>
+    {{ else }}
+      <span>{{ item.slug }}</span>
+    {{ /if }}
+  {{ /if }}
+</li>

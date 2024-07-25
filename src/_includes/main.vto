@@ -1,0 +1,34 @@
+{{ import { filePath } from 'utils.vto'}}
+
+<main id="main">
+  {{ include "sidebar.vto" }}
+  <div id="content">
+    {{ content }}
+    {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}
+    <a {{`href=${contribution}`}} target="_blank" rel="noreferrer" class="contribute">
+      Edit
+    </a>
+  </div>
+  {{ if toc.length }}
+    <nav class="toc">
+      <h4 class="title">On this page</h4>
+      <ol>
+        {{ for item of toc }}
+        <li>
+          <a href="#{{ item.slug }}">{{ item.text }}</a>
+
+          {{ if item.children.length }}
+          <ul>
+            {{ for child of item.children }}
+            <li>
+              <a href="#{{ child.slug }}">{{ child.text }}</a>
+            </li>
+            {{ /for }}
+          </ul>
+          {{ /if }}
+        </li>
+        {{ /for }}
+      </ol>
+    </nav>
+  {{ /if }}
+</main>
