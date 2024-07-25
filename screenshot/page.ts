@@ -7,12 +7,15 @@ import { parseSetCookies } from "./utils.ts";
 
 const url = new URL('/v1/signin', Deno.env.get("AQ_API"))
 
+const headers = new Headers()
+headers.set("Content-Type", "application/json")
+
+const domain = Deno.env.get("AQ_DOMAIN")
+if (domain) headers.set("x-aquarium-domain", domain)
+
 const signin = await fetch(url, {
   method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "x-aquarium-domain": Deno.env.get("AQ_DOMAIN")
-  },
+  headers,
   body: JSON.stringify({
     "email": Deno.env.get("AQ_EMAIL"),
     "password": Deno.env.get("AQ_PASSWORD")
@@ -36,7 +39,6 @@ export class Session {
     this.page = page
 
     cookies.forEach((cookie) => {
-      cookie.domain = 'localhost'
       // @ts-ignore, Can't find type for CookieParam
       this.page.setCookie(cookie)
     })
@@ -53,8 +55,9 @@ export class Session {
     const browser = await puppeteer.launch(options);
 
     const page = await browser.newPage();
-    await page.setViewport({ width: 1920, height: 1080 });
-    await page.goto(`http://localhost:3000/${me._key}`)
+    await page.setViewport({ width: 1920, height: 1080 })
+
+    await page.goto(Deno.env.get('AQ_WEB'))
     await page.evaluate(() => {
       localStorage.setItem('alreadyRecoChrome', 'true');
     })
