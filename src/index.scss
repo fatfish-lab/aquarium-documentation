@@ -124,6 +124,11 @@ body {
       height: 100%;
       padding: 40px;
 
+      ol > li::marker {
+        color: var(--orange-50);
+        font-weight: bold;
+      }
+
       .contribute {
         margin-top: auto;
         text-align: right;
@@ -209,7 +214,7 @@ body {
               }
             }
             ol {
-              padding: 8px 16px;
+              padding: 8px 0 0 16px;
             }
           }
 
