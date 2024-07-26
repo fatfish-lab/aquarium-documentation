@@ -16,9 +16,16 @@ const v = vento()
 const screenshots = await getAllScreenshots(args.path)
 
 const session = await Session.new()
+const ventoData: Record<string, unknown> = {
+  me: session.me
+}
+const projectKey = Deno.env.get("AQ_PROJECT")
+if (projectKey) {
+  ventoData.project = await session.aq.get(`items/${Deno.env.get("AQ_PROJECT")}`)
+}
 
 for (const screenshot of screenshots) {
-  const path = await v.runString(screenshot.url, { me: session.me })
+  const path = await v.runString(screenshot.url, ventoData)
   const url = new URL(path.content, Deno.env.get("AQ_WEB")).toString()
 
   log.info(`Taking ${screenshot.name} screenshot of ${url}`)
@@ -35,6 +42,13 @@ for (const screenshot of screenshots) {
       // await session.page.waitForNetworkIdle()
       log.info(`* Clicked`)
     }
+  }
+
+  if (screenshot.scrollTo) {
+    await session.page.waitForSelector(screenshot.scrollTo)
+    await session.page.$eval(screenshot.scrollTo, (el) => {
+      el.scrollIntoView()
+    })
   }
 
   if (screenshot.focus) {

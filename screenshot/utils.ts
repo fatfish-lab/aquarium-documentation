@@ -43,6 +43,7 @@ interface Screenshot {
   name: string;
   url: string;
   click: string[]
+  scrollTo: string
   focus: {
     selector: string
     type: 'arrow'

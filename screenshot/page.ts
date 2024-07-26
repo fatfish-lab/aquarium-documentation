@@ -1,9 +1,11 @@
 import "@std/dotenv/load";
 
+import Aquarium from "https://raw.githubusercontent.com/fatfish-lab/aquarium-ts-api/main/src/index.ts"
 import puppeteer from "https://deno.land/x/puppeteer@16.2.0/mod.ts";
 import type { Browser, Page } from "https://deno.land/x/puppeteer@16.2.0/mod.ts";
 
 import { parseSetCookies } from "./utils.ts";
+
 
 const url = new URL('/v1/signin', Deno.env.get("AQ_API"))
 
@@ -27,12 +29,14 @@ if (!signin.ok) {
 }
 
 export class Session {
+  aq: Aquarium
   me: Record<string, unknown> | null
   cookies: Record<string, unknown>[]
   browser: Browser
   page: Page
 
-  constructor(me: Record<string, unknown>, cookies: Record<string, unknown>[], browser: Browser, page: Page) {
+  constructor(aq: Aquarium, me: Record<string, unknown>, cookies: Record<string, unknown>[], browser: Browser, page: Page) {
+    this.aq = aq
     this.me = me
     this.cookies = []
     this.browser = browser
@@ -46,7 +50,11 @@ export class Session {
   }
 
   static async new() {
-    const me = (await signin.json()).user
+    const login = await signin.json()
+    const me = login.user
+    const token = login.token
+    const aq = new Aquarium(Deno.env.get("AQ_API") || 'http://localhost:3000', token, Deno.env.get("AQ_DOMAIN"))
+
     const cookies = parseSetCookies(signin.headers.getSetCookie())
 
     const options = {
@@ -62,7 +70,7 @@ export class Session {
       localStorage.setItem('alreadyRecoChrome', 'true');
     })
 
-    const session = new Session(me, cookies, browser, page)
+    const session = new Session(aq, me, cookies, browser, page)
 
     return session
   }
