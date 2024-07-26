@@ -1,0 +1,47 @@
+[
+  {
+    "name": "focus-workspaces",
+    "url": "focus/{{project._key}}/",
+    "scrollTo": ".focus-project-view .collapse-container",
+    "click": [".focus-project-view .collapse-container"],
+    "focus": [{
+      "selector": ".focus-project-view .collapse-container .modules-list",
+      "type": "arrow"
+    }]
+  },
+  {
+    "name": "studio-workspaces",
+    "url": "{{project._key}}",
+    "focus": [
+      {
+        "selector": "#homepage > div.workspaces-tabs-container.workspaces-tabs > div.tabs > div.tabs.draggable-container > div.workspace-tab.active",
+        "type": "arrow",
+        "vignetting": "true"
+      }
+    ]
+  },
+  {
+    "name": "shotsmanager",
+    "url": "focus/1057833351/shotsmanager/1057833656?itemKey=1057833459",
+    "click": [".create-container"],
+    "focus": [
+      {
+        "selector": ".create-container",
+        "type": "circle",
+        "content": "1"
+      },{
+        "selector": ".toolbar-columns",
+        "type": "circle",
+        "content": "2"
+      },{
+        "selector": "#aquarium_app > div.focus-container.router-view > div.app.focus-app > div > div > div > div > div.explorer-container.lister.with-header > div > div:nth-child(3) > div.collection-header > div > div > button",
+        "type": "circle",
+        "content": "3"
+      },{
+        "selector": "#aquarium_app > div.focus-container.router-view > div.app.focus-app > div > div > div > div > div.explorer-container.lister.with-header > div > div:nth-child(3) > div.collection-list > div:nth-child(2) > div.end",
+        "type": "circle",
+        "content": "4"
+      }
+    ]
+  }
+]
