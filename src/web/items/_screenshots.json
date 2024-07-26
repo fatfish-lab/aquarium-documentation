@@ -6,4 +6,12 @@
     "type": "arrow",
     "vignetting": true
   }]
+},{
+  "name": "item-properties",
+  "url": "/apps/quickeditor/?itemKeys={{project._key}}&tabName=advanced",
+  "focus": [{
+    "selector": "#aquarium_app > div.standalone-container.router-view > div.app.standalone > div.tabs > div > div.content > div > div:nth-child(4) > div.content > button",
+    "type": "arrow",
+    "vignetting": true
+  }]
 }]
