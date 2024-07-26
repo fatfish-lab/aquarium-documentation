@@ -1091,7 +1091,8 @@
     "https://esm.sh/v135/readable-stream@2.3.8/denonext/readable-stream.mjs": "acf060ba58890a4049fd951c869568658050bdfc13b51f26e90414b77cad4e9c",
     "https://esm.sh/v135/safe-buffer@5.1.2/denonext/safe-buffer.mjs": "bf91200afdaf8be92e5c7d4c79e4dc9b5c534f76e104f1b37e5891d6f81eaca2",
     "https://esm.sh/v135/set-immediate-shim@1.0.1/denonext/set-immediate-shim.mjs": "2ff36ce48c47dda8fb85fdfde6ad53ed3a329d140b3e19bbe9750aebdf10812a",
-    "https://esm.sh/v135/util-deprecate@1.0.2/denonext/util-deprecate.mjs": "f69f67cf655c38428b0934e0f7c865c055834a87cc3866b629d6b2beb21005e9"
+    "https://esm.sh/v135/util-deprecate@1.0.2/denonext/util-deprecate.mjs": "f69f67cf655c38428b0934e0f7c865c055834a87cc3866b629d6b2beb21005e9",
+    "https://raw.githubusercontent.com/fatfish-lab/aquarium-ts-api/main/src/index.ts": "90c7fc963f5f9d4bedd5195ece0f1f7fa5ffdd9c59fa9b724082d8dc89a1cfa6"
   },
   "workspace": {
     "dependencies": [
