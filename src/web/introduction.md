@@ -17,11 +17,12 @@ Aquarium works like your computer.
 |:--------|:-------|
 | You have folder to store your files | You have folders to store your [items](/web/items) |
 | You open your files with applications | You open your items with [applications](/web/applications) |
-| You explore your files with a file explorer | You explore your items with a [workspace](/web/workspaces) |
+| You explore your folders with a file explorer | You explore your folders with a [workspace](/web/workspaces) |
 
-Their are some differences :
+Their are some differences. On Aquarium :
 
-- On Aquarium, their is not only one explorer to navigate into your folders. We created several workspaces, to fit specific project management needs. You can[ discover them in our dedicated section](/web/workspaces).
+- Their is not only one explorer to navigate into your folders. We created several workspaces, to fit specific project management needs. You can[ discover them in our dedicated section](/web/workspaces).
+- It's a nodal solution. Meaning that you can create connections, called [edge](/web/edges), between your items. This feature bring a lots of flexibility to create the project you want. It's also a way to create relations between your items, like a parent/child relation between a [Shot](/web/items/shot) and a [Task](/web/items/task), to assign a [Task](/web/items/task) to a [User](/web/items/user), etc.
 
 # How can I use Aquarium ?
 
@@ -34,6 +35,6 @@ That's why Aquarium offer 3 different interfaces :
 | [![Focus](/_medias/focus.png)](/web/interfaces/focus) | [![Studio](/_medias/studio.png)](/web/interfaces/studio) | [![Rooms](/_medias/rooms.png)](/web/interfaces/rooms) |
 | [Focus](/web/interfaces/focus), is the easy interface. It's a unique experience, where you can focus on your work. Users also have access to their diary, with all their tasks and timelogs. | [Studio](/web/interfaces/studio) is the complete interface. It's working like on your computer, where you can create folders and choose how to display its content by creating workspaces. | [Rooms](/web/interfaces/rooms) is the interface dedicated for external reviews. No need to give them access to the full project, only share some playlists and read-only workspaces. |
 
-<$>[Note]
+<$>[info]
 As a user, you can choose the interface you want to use. You can switch between them at any time. And you can set the default one from your [profile preferences](/web/applications/profile).
 <$>
