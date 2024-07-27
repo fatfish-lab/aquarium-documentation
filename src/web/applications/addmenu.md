@@ -26,7 +26,7 @@ This application allow you to create new [items](/web/items).
    4. Create an item without a template
 2. This input allow you to set the name of the item.
 
-<$>[Note]
+<$>[info]
 If you use a `#` in the name of the item, Aquarium will automatically transform it into a incremented number. For example, if you create a shot named `s010_p##0`, Aquarium will create the shots `s010_p010`, `s010_p020`, `s010_p030`, etc.
 <$>
 
