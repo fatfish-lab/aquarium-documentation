@@ -1,3 +1,35 @@
+function initMermaid(theme = 'light') {
+  const config = {
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      darkMode: theme == 'dark',
+      contrast: '#707070',
+      primaryColor: '#eee',
+      background: '#fff',
+      mainBkg: '#707070',
+      lineColor: '#22b8cf',
+      border1: '#22b8cf',
+      critical: '#ff6b6b',
+      done: '#51cf66',
+      arrowheadColor: '#22b8cf',
+      noteBkgColor: '#fcc419',
+      fontFamily: 'var(--font-family)',
+    }
+  }
+  mermaid.initialize(config);
+  mermaid.init(config, document.querySelectorAll('.mermaid'))
+
+}
+
+function setTheme(theme) {
+  const html = document.documentElement;
+  html.setAttribute('theme', theme);
+  localStorage.setItem('preferredTheme', theme);
+
+  initMermaid(theme);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const html = document.documentElement
   const themeIcon = document.querySelector("#theme")
@@ -13,8 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       preferredTheme = userPrefersDark() ? "dark" : "light"
     }
 
-    html.setAttribute("theme", preferredTheme)
-    themeIcon.innerHTML = preferredTheme === "dark" ? "dark_mode" : "light_mode"
+    setTheme(preferredTheme)
   }
 
   loadPreferredTheme()
@@ -23,10 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentTheme = html.getAttribute("theme")
     const newTheme = currentTheme === "light" ? "dark" : "light"
 
-    html.setAttribute("theme", newTheme)
-    localStorage.setItem("preferredTheme", newTheme)
-
-    themeIcon.innerHTML = newTheme === "dark" ? "dark_mode" : "light_mode"
+    setTheme(newTheme)
   })
 
   themeIcon.addEventListener("contextmenu", (e) => {

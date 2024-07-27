@@ -11,10 +11,11 @@ import digitalOceanMd from "npm:@digitalocean/do-markdownit";
 import multilanguage from "lume/plugins/multilanguage.ts";
 import pagefind from "lume/plugins/pagefind.ts";
 import prism from "lume/plugins/prism.ts";
+import mermaid from "./src/_plugins/mermaid.js";
 
 
 const markdown = {
-  plugins: [[digitalOceanMd, { prismjs: false, user_mention: false }]],
+  plugins: [mermaid, [digitalOceanMd, { prismjs: false, user_mention: false }]],
 };
 
 const site = lume({

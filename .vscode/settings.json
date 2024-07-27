@@ -1,3 +1,8 @@
 {
-  "deno.enable": true
+  "deno.enable": true,
+  "cSpell.language": "en",
+  "cSpell.enabled": true,
+  "cSpell.words": [
+    "quickeditor"
+  ]
 }
