@@ -1,0 +1,34 @@
+table thead tr th {
+  color: var(--text-20);
+}
+
+.callout {
+  &.note {
+    background-color: var(--green-50);
+    color: var(--bg-00);
+  }
+
+  &.error {
+    background-color: var(--red-50);
+    color: var(--bg-00);
+  }
+
+  &.warning {
+    background-color: var(--orange-50);
+    color: var(--bg-00);
+  }
+
+  &.info {
+    background-color: var(--blue-50);
+    color: var(--bg-00);
+  }
+
+  &.draft {
+    background-color: var(--grape-50);
+    color: var(--bg-00);
+  }
+
+  a {
+    color: var(--text-00);
+  }
+}

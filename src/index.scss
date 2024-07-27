@@ -1,7 +1,8 @@
 @import "_styles/markdown/index.scss";
+@import "_styles/theme.scss";
 @import "_styles/vars.scss";
 @import "_styles/icons.scss";
-@import url('https://fonts.googleapis.com/css2?family=Material+Icons&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --font-family: "Open Sans", sans-serif;
@@ -116,6 +117,7 @@ body {
     display: grid;
     grid-template-columns: minmax(250px, 1fr) 4fr minmax(250px, 1fr);
     gap: inherit;
+    overflow-y: auto;
 
     #content {
       display: flex;
@@ -142,6 +144,7 @@ body {
       width: 250px;
       padding-top: 40px;
       padding-right: 12px;
+      height: fit-content;
 
       .title {
         display: inline-flex;
@@ -231,17 +234,49 @@ body {
     justify-items: start;
     // border-top: 1px solid var(--bg-30);
     width: 100%;
-    padding: 4px;
+    padding: 4px 8px;
     gap: 4px;
-    background-color: var(--bg-10);
+    // background-color: var(--bg-10);
     // background-color: green;
 
-    details {
-      summary {
-        list-style: none;
+    > * {
+      z-index: 1;
+    }
 
-        &::after {
-          content: none;
+    .logo {
+      margin: 0;
+      display: inline-flex;
+      margin-left: auto;
+      background-image: url('/_medias/fatfishlab_dark_logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 22px;
+      width: 128px;
+
+      html[theme="dark"] & {
+        background-image: url('/_medias/fatfishlab_light_logo.png');
+      }
+    }
+
+    .waves {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 45px;
+      bottom: 0px;
+      left: 0;
+      // opacity: 1;
+      pointer-events: none;
+      align-self: end;
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        path {
+          width: 100%;
+          height: 100%;
+          fill: var(--bg-10);
         }
       }
     }
