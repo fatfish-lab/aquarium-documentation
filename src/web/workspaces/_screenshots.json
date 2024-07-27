@@ -43,5 +43,51 @@
         "content": "4"
       }
     ]
+  },
+  {
+    "name": "shots-template",
+    "url": "apps/quickeditor?itemKeys=120709727",
+    "focus": [
+      {
+        "selector": ".templates",
+        "type": "arrow",
+        "vignetting": true
+      }
+    ]
+  },
+  {
+    "name": "assetsmanager",
+    "url": "focus/120709686/assetsmanager/286724835?itemKey=120709939",
+    "click": [".create-container"],
+    "focus": [
+      {
+        "selector": ".create-container",
+        "type": "circle",
+        "content": "1"
+      },{
+        "selector": ".toolbar-columns",
+        "type": "circle",
+        "content": "2"
+      },{
+        "selector": "#aquarium_app > div.focus-container.router-view > div.app.focus-app > div > div > div > div > div.explorer-container.lister.with-header > div > div:nth-child(3) > div.collection-header > div > div > button",
+        "type": "circle",
+        "content": "3"
+      },{
+        "selector": "#aquarium_app > div.focus-container.router-view > div.app.focus-app > div > div > div > div > div.explorer-container.lister.with-header > div > div:nth-child(3) > div.collection-list > div:nth-child(2) > div.end",
+        "type": "circle",
+        "content": "4"
+      }
+    ]
+  },
+  {
+    "name": "assets-template",
+    "url": "apps/quickeditor?itemKeys=120709920",
+    "focus": [
+      {
+        "selector": ".templates",
+        "type": "arrow",
+        "vignetting": true
+      }
+    ]
   }
 ]
