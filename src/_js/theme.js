@@ -1,33 +1,11 @@
-function initMermaid(theme = 'light') {
-  const config = {
-    startOnLoad: true,
-    theme: 'base',
-    themeVariables: {
-      darkMode: theme == 'dark',
-      contrast: '#707070',
-      primaryColor: '#eee',
-      background: '#fff',
-      mainBkg: '#707070',
-      lineColor: '#22b8cf',
-      border1: '#22b8cf',
-      critical: '#ff6b6b',
-      done: '#51cf66',
-      arrowheadColor: '#22b8cf',
-      noteBkgColor: '#fcc419',
-      fontFamily: 'var(--font-family)',
-    }
-  }
-  mermaid.initialize(config);
-  mermaid.init(config, document.querySelectorAll('.mermaid'))
-
-}
+import { init } from '../_plugins/mermaid.js';
 
 function setTheme(theme) {
   const html = document.documentElement;
   html.setAttribute('theme', theme);
   localStorage.setItem('preferredTheme', theme);
 
-  initMermaid(theme);
+  init(theme);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

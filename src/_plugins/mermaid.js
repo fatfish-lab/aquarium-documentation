@@ -1,5 +1,4 @@
 export default function mermaid(md) {
-  // Ajouter une règle personnalisée après que toutes les règles de base ont été enregistrées
   md.core.ruler.push('mermaid', function (state) {
     const tokens = state.tokens;
     for (let i = 0; i < tokens.length; i++) {
@@ -14,9 +13,31 @@ export default function mermaid(md) {
     }
   });
 
-  // Modifier le rendu des blocs de code mermaid
   md.renderer.rules.mermaid = (tokens, idx) => {
     return tokens[idx].content;
-
   };
+}
+
+export function init(theme = 'light') {
+  const config = {
+    startOnLoad: true,
+    theme: 'base',
+    securityLevel: 'strict',
+    themeVariables: {
+      darkMode: theme == 'dark',
+      contrast: '#707070',
+      primaryColor: '#eee',
+      background: '#fff',
+      mainBkg: '#707070',
+      lineColor: '#22b8cf',
+      border1: '#22b8cf',
+      critical: '#ff6b6b',
+      done: '#51cf66',
+      arrowheadColor: '#22b8cf',
+      noteBkgColor: '#fcc419',
+      fontFamily: 'var(--font-family)',
+    }
+  }
+  mermaid.initialize(config);
+  // mermaid.init(config, document.querySelectorAll('.mermaid'))
 }
