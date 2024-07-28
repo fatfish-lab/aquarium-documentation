@@ -89,5 +89,95 @@
         "vignetting": true
       }
     ]
+  },
+  {
+    "name": "timeline",
+    "url": "focus/1057833351/timeline/1058208346?itemKey=1057834198",
+    "localStorage": {
+      "timelineHideBeta": true
+    },
+    "focus": [
+      {
+        "selector": ".views > .view:nth-child(1)",
+        "type": "circle",
+        "content": "1"
+      },
+      {
+        "selector": ".bufferzone-container",
+        "type": "circle",
+        "content": "2"
+      },
+      {
+        "selector": ".views > .view:nth-child(2)",
+        "type": "circle",
+        "content": "3"
+      }
+    ]
+  },
+  {
+    "name": "workspaces-options",
+    "url": "focus/120709686/list/433659302?itemKey=120709686",
+    "click": [".section-option >:nth-child(8)"],
+    "focus": [
+      {
+        "selector": ".filters-container",
+        "type": "circle",
+        "content": "1"
+      },
+      {
+        "selector": ".section-option >:nth-child(3)",
+        "type": "circle",
+        "content": "2"
+      },
+      {
+        "selector": ".section-option >:nth-child(4)",
+        "type": "circle",
+        "content": "3"
+      },
+      {
+        "selector": ".section-option >:nth-child(5)",
+        "type": "circle",
+        "content": "4"
+      },
+      {
+        "selector": ".section-option >:nth-child(8)",
+        "type": "circle",
+        "content": "5"
+      },
+      {
+        "selector": ".columns",
+        "type": "circle",
+        "content": "6"
+      }
+    ]
+  },
+  {
+    "name": "medias",
+    "url": "focus/1057833351/medias/286728268?itemKey=1057833459"
+  },
+  {
+    "name": "wiki",
+    "url": "focus/1057833351/wiki/1169618311?itemKey=1057833459"
+  },
+  {
+    "name": "review",
+    "url": "focus/1057833351/review/1057865704?itemKey=1057833459",
+    "localStorage": {
+      "review.hide.beta": true
+    },
+    "focus": [{
+      "selector": ".explorer-container",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": ".main-playlist-container",
+      "type": "circle",
+      "content": "2"
+    },
+    {
+      "selector": ".toolbar >:nth-child(3)",
+      "type": "circle",
+      "content": "3"
+    }]
   }
 ]
