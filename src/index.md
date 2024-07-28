@@ -8,23 +8,20 @@ nav_order: 1
 ## What's interest you today ?
 
 [column
-Content inside a column is regular Markdown block content.
+<span class="aq-icon">monitor</span> [Aquarium web interface](/web)
 
-> Any block or inline syntax can be used, including quotes.
+- **[Introduction](web/introduction.md)**
+- **[Quick start](web/quickstart.md)**
+- **[Items](web/items/index.md)**
+- **[Applications](web/applications/index.md)**
 ]
 
 [column
-Two or more columns adjacent to each other are needed to create a column layout.
+<span class="aq-icon">code</span> [API & modules](/api)
 
-On desktop the columns will be evenly distributed in a single row, on tablets they will wrap naturally, and on mobile they will be in a single stack.
+- **[Introduction](api/introduction.md)**
+- **[API REST](api/rest.md)**
+- **[meshQL](api/meshql.md)**
+- **[Modules](api/modules/index.md)**
+  - **[Python]**(api/modules/python.md)
 ]
-
-### [Aquarium web interface](/web)
-
-- **[Introduction](/web/quick-start)**
-- **[Quick start](/web/quick-start)**
-- **[Items](/web/items)**
-- **[Applications](/web/applications)**
-
-
-### [API & modules](/api)
