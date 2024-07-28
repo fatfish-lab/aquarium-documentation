@@ -1,8 +1,8 @@
 ---
-lang: en
-title: "API"
-nav_order: 1
 id: api
+title: Introduction
+lang: en
+nav_order: 1
 ---
 
 # Introduction

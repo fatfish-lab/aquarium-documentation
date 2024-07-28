@@ -17,14 +17,21 @@
       {{ /if }}
     </ol>
     <hr />
-    {{# <ol>
-      <h4>API</h4>
-      {{ set api = nav.menu('/api/', `lang=${lang}`, 'nav_order') }}
-      {{ if api && api.children }}
-        {{ for item of api.children }}
+    <ol>
+      <h4>Api</h4>
+      {{ set api_root = nav.menu('/api/', `nav_order<10 lang=${lang}`, 'title nav_order') }}
+      {{ set api_sub = nav.menu('/api/', `nav_order>=10 lang=${lang}`, 'title nav_order') }}
+      {{ if api_root && api_root.children }}
+        {{ for item of api_root.children }}
             {{ include "sidebar_item.vto" { item } }}
         {{ /for }}
       {{ /if }}
-    </ol> #}}
+      <br />
+      {{ if api_sub && api_sub.children }}
+        {{ for item of api_sub.children }}
+            {{ include "sidebar_item.vto" { item } }}
+        {{ /for }}
+      {{ /if }}
+    </ol>
   </nav>
 </aside>
