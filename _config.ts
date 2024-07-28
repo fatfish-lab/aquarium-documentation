@@ -1,8 +1,8 @@
 import lume from "lume/mod.ts";
-import nav from "lume/plugins/nav.ts";
-import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
 
-// import lumocs from "lumocs/mod.ts";
+import nav from "lume/plugins/nav.ts";
+import resolveUrls from "lume/plugins/resolve_urls.ts";
+import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
 
 import attributes from "lume/plugins/attributes.ts";
 import sass from "lume/plugins/sass.ts";
@@ -26,7 +26,7 @@ const site = lume({
   },
 }, { markdown });
 
-// site.use(lumocs());
+site.use(resolveUrls());
 site.use(toc({
   level: 1
 }));
