@@ -44,7 +44,9 @@ interface Screenshot {
   url: string;
   click: string[]
   scrollTo: string
+  localStorage: Record<string, unknown>
   focus: {
+    hover: boolean
     selector: string
     type: 'arrow'
     color: string

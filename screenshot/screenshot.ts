@@ -9,11 +9,14 @@ if (args.debug || args.d) {
   Deno.env.set("DEBUG", "true")
 }
 
-const isDebug = Boolean(Deno.env.get("DEBUG"))
 
+const isDebug = Boolean(Deno.env.get("DEBUG"))
+const screenshotsNames = args._
 
 const v = vento()
-const screenshots = await getAllScreenshots(args.path)
+const screenshots = (await getAllScreenshots(args.path)).filter((screenshot) => {
+  return screenshotsNames.length === 0 || screenshotsNames.includes(screenshot.name)
+})
 
 const session = await Session.new()
 const ventoData: Record<string, unknown> = {
@@ -29,6 +32,14 @@ for (const screenshot of screenshots) {
   const url = new URL(path.content, Deno.env.get("AQ_WEB")).toString()
 
   log.info(`Taking ${screenshot.name} screenshot of ${url}`)
+
+  if (screenshot.localStorage) {
+    await session.page.evaluate((dataToStore: Record<string, unknown>) => {
+      for (const [key, value] of Object.entries(dataToStore)) {
+        localStorage.setItem(key, JSON.stringify(value))
+      }
+    }, screenshot.localStorage)
+  }
 
   await session.page.goto(url, {
     waitUntil: "networkidle0",
@@ -128,7 +139,7 @@ for (const screenshot of screenshots) {
         }
       }, focus, innerHTML)
 
-      if (focus.selector) {
+      if (focus.hover) {
         await session.page.hover(focus.selector)
         await new Promise(r => setTimeout(r, 2000));
       }
