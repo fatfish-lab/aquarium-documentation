@@ -1,3 +1,7 @@
+img {
+  border-radius: 6px;
+}
+
 table thead tr th {
   color: var(--text-20);
 }
@@ -31,4 +35,10 @@ table thead tr th {
   a {
     color: var(--text-00);
   }
+}
+
+.mermaid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
