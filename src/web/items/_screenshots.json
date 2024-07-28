@@ -2,6 +2,7 @@
   "name": "create-button",
   "url": "{{me._key}}?app=Home",
   "focus": [{
+    "hover": true,
     "selector": ".create",
     "type": "arrow",
     "vignetting": true

@@ -24,6 +24,14 @@ Their are some differences. On Aquarium :
 - Their is not only one explorer to navigate into your folders. We created several workspaces, to fit specific project management needs. You can[ discover them in our dedicated section](/web/workspaces).
 - It's a nodal solution. Meaning that you can create connections, called [edge](/web/edges), between your items. This feature bring a lots of flexibility to create the project you want. It's also a way to create relations between your items, like a parent/child relation between a [Shot](/web/items/shot) and a [Task](/web/items/task), to assign a [Task](/web/items/task) to a [User](/web/items/user), etc.
 
+```mermaid
+graph LR
+  S(["`Sequence: *s010*`"]) --> A
+  A(["`Shot: *s010_p100*`"]) --> B(["`Task: *layout*`"])
+  A --> C(["`Task: *animation*`"])
+  A --> D(["`Task: *compo*`"])
+```
+
 # How can I use Aquarium ?
 
 When you work with people, not everyone has the same needs. Some people need to [focus on their work](/web/interfaces/focus), others need to [manage their projects](/web/interfaces/studio), and some [need to review the work](/web/interfaces/rooms).
