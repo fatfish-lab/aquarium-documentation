@@ -9,7 +9,8 @@ nav_order: 10
 
 This workspace is dedicated to the management of your assets. It is the place where you will create, edit, and delete your assets.
 
-You can also manage libraries from here.
+You can regroup assets into [Library](../items/library) to regroup them by type.
+> Example: character, props, environment, etc.
 
 ![Assets manager](/_medias/assetsmanager.png)
 
