@@ -1,13 +1,16 @@
-import { init } from '../_plugins/mermaid.js';
+// Set theme on html element
+function setTheme(theme, dispatch = true) {
+  const html = document.documentElement
+  const themeIcon = document.querySelector("#theme")
 
-function setTheme(theme) {
-  const html = document.documentElement;
-  html.setAttribute('theme', theme);
-  localStorage.setItem('preferredTheme', theme);
+  html.setAttribute('theme', theme)
+  localStorage.setItem('preferredTheme', theme)
+  themeIcon.innerHTML = theme === "dark" ? "dark_mode" : "light_mode"
 
-  init(theme);
+  if (dispatch) document.dispatchEvent(new CustomEvent('theme', { detail: theme }))
 }
 
+// Set theme & event listeners on DOM load
 document.addEventListener("DOMContentLoaded", () => {
   const html = document.documentElement
   const themeIcon = document.querySelector("#theme")
@@ -23,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       preferredTheme = userPrefersDark() ? "dark" : "light"
     }
 
-    setTheme(preferredTheme)
+    setTheme(preferredTheme, false)
   }
 
   loadPreferredTheme()

@@ -1,0 +1,29 @@
+$items: (
+  "Shot": (fill: var(--grape-50),
+    stroke: var(--grape-70)),
+  "Asset": (fill: var(--orange-50),
+    stroke: var(--orange-70)),
+  "Task": (fill: var(--green-50),
+    stroke: var(--green-70)),
+  "Version": (fill: var(--yellow-50),
+    stroke: var(--yellow-70)),
+  "Media": (fill: var(--yellow-50),
+    stroke: var(--yellow-70)),
+);
+.mermaid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg[id^="mermaid-"] {
+    @each $name, $styles in $items {
+      .#{$name}>rect,
+      [data-id^="#{$name}"]>rect {
+        fill: map-get($styles, fill) !important;
+        stroke: map-get($styles, stroke) !important;
+        stroke-width: 4px !important;
+      }
+    }
+  }
+
+}

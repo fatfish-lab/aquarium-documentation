@@ -17,27 +17,3 @@ export default function mermaid(md) {
     return tokens[idx].content;
   };
 }
-
-export function init(theme = 'light') {
-  const config = {
-    startOnLoad: true,
-    theme: 'base',
-    securityLevel: 'strict',
-    themeVariables: {
-      darkMode: theme == 'dark',
-      contrast: '#707070',
-      primaryColor: '#eee',
-      background: '#fff',
-      mainBkg: '#707070',
-      lineColor: '#22b8cf',
-      border1: '#22b8cf',
-      critical: '#ff6b6b',
-      done: '#51cf66',
-      arrowheadColor: '#22b8cf',
-      noteBkgColor: '#fcc419',
-      fontFamily: 'var(--font-family)',
-    }
-  }
-  mermaid.initialize(config);
-  // mermaid.init(config, document.querySelectorAll('.mermaid'))
-}
