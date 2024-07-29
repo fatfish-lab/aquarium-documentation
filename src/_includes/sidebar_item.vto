@@ -2,7 +2,7 @@
 
 <li {{ if item.data != null && item.data.url == url }}class="active"{{ /if }}>
   {{ if item.children && item.children.length > 0 }}
-    <details {{if url.search(item.slug) >= 0}}open{{/if}}>
+    <details {{if url.split('/')[2] == item.slug}}open{{/if}}>
       <summary>
         <strong>
           {{ if item.data }}

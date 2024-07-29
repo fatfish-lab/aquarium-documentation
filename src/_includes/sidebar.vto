@@ -18,7 +18,7 @@
     </ol>
     <hr />
     <ol>
-      <h4>Api</h4>
+      <h4>API</h4>
       {{ set api_root = nav.menu('/api/', `nav_order<10 lang=${lang}`, 'title nav_order') }}
       {{ set api_sub = nav.menu('/api/', `nav_order>=10 lang=${lang}`, 'title nav_order') }}
       {{ if api_root && api_root.children }}
