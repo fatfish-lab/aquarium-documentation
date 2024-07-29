@@ -9,7 +9,7 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "dev": "deno task lume -s --port 3007",
-    "serve": "deno task lume -s",
+    "serve": "deno run -A server.ts",
     "screenshot": "deno run -A screenshot/screenshot.ts"
   },
   "compilerOptions": {

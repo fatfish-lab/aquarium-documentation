@@ -1224,6 +1224,7 @@
     }
   },
   "redirects": {
+    "https://deno.land/x/lume/core/server.ts": "https://deno.land/x/lume@v2.2.4/core/server.ts",
     "https://deno.land/x/lume_markdown_plugins/toc.ts": "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts"
   },
   "remote": {
