@@ -8,7 +8,7 @@ nav_order: 1
 ## What's interest you today ?
 
 [column
-<span class="aq-icon">monitor</span> [Aquarium web interface](/web)
+<span class="aq-icon outline">monitor</span> [Aquarium web interface](/web)
 
 - **[Introduction](web/introduction.md)**
 - **[Quick start](web/quickstart.md)**
@@ -23,5 +23,5 @@ nav_order: 1
 - **[API REST](api/rest.md)**
 - **[meshQL](api/meshql.md)**
 - **[Modules](api/modules/index.md)**
-  - **[Python]**(api/modules/python.md)
+  - **[Python](api/modules/python.md)**
 ]

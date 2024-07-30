@@ -8,17 +8,6 @@
 :root {
   --font-family: "Open Sans", sans-serif;
   --title-font-family: "Raleway", sans-serif;
-  --pagefind-ui-scale: 0.8;
-  --pagefind-ui-primary: var(--blue-50);
-  --pagefind-ui-text: var(--text-00);
-  --pagefind-ui-background: var(--bg-10);
-  --pagefind-ui-border: var(--bg-30);
-  --pagefind-ui-tag: var(--text-20);
-  --pagefind-ui-border-width: 2px;
-  --pagefind-ui-border-radius: 8px;
-  --pagefind-ui-image-border-radius: 8px;
-  --pagefind-ui-image-box-ratio: 3 / 2;
-  --pagefind-ui-font: var(--font-family);
 }
 
 * {
@@ -78,7 +67,7 @@ body {
     position: sticky;
     top: 0;
     display: grid;
-    grid-template-columns: 1fr max-content max-content;
+    grid-template-columns: 4fr 1fr max-content max-content;
     align-items: center;
     gap: 8px;
     padding: 0 30px;
@@ -118,8 +107,6 @@ body {
       }
     }
   }
-
-  #search {}
 
   #main {
     display: grid;
@@ -239,18 +226,28 @@ body {
     bottom: 0;
     grid-column: 1 / -1;
     font-family: monospace;
-    display: flex;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
     align-items: center;
     justify-items: start;
     // border-top: 1px solid var(--bg-30);
     width: 100%;
     padding: 4px 8px;
-    gap: 4px;
+    gap: 64px;
     // background-color: var(--bg-10);
     // background-color: green;
 
     > * {
       z-index: 1;
+      min-width: 0;
+    }
+
+    .breadcrumbs {
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 
     .logo {

@@ -30,7 +30,16 @@ site.use(resolveUrls());
 site.use(toc({
   level: 1
 }));
-site.use(pagefind());
+site.use(pagefind({
+  ui: {
+    containerId: "search",
+    showImages: true,
+    excerptLength: 0,
+    showEmptyFilters: true,
+    showSubResults: true,
+    resetStyles: true
+  }
+}));
 site.use(nav());
 site.use(attributes());
 site.use(sass({

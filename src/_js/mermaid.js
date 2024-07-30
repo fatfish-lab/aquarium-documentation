@@ -16,10 +16,11 @@ function getMermaidConfig(theme = 'light') {
       done: '#51cf66',
       arrowheadColor: '#22b8cf',
       noteBkgColor: '#fcc419',
-      fontFamily: 'var(--font-family)',
+      fontFamily: 'monospace',
     },
     flowchart: {
       curve: 'linear',
+      padding: 22,
     }
   }
 }

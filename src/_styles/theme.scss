@@ -2,6 +2,20 @@ img {
   border-radius: 6px;
 }
 
+:root {
+  --pagefind-ui-scale: 0.6;
+  --pagefind-ui-primary: var(--blue-50);
+  --pagefind-ui-text: var(--text-00);
+  --pagefind-ui-background: transparent;
+  --pagefind-ui-border: transparent;
+  --pagefind-ui-tag: var(--yellow-50);
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: var(--family-font);
+}
+
 table thead tr th {
   color: var(--text-20);
 }
