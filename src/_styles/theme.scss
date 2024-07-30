@@ -20,6 +20,36 @@ table thead tr th {
   color: var(--text-20);
 }
 
+article.card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in oklab, var(--blue-80-oc), transparent 75%);
+  background: radial-gradient(ellipse farthest-corner at -50% -50%, color-mix(in oklab, var(--blue-50-oc), transparent 66%), color-mix(in oklab, var(--blue-80-oc), transparent 88%), transparent 80%);
+  background-position: 0 -60px;
+  background-repeat: no-repeat;
+  transition: background-position 0.3s, border-color 0.3s;
+  cursor: pointer;
+
+  .card-title {
+    margin: 0;
+  }
+
+  .card-content {
+    margin: 0;
+  }
+
+  &:hover {
+    border-color: var(--cyan-50);
+    background-position: 0px 0px;
+    .card-title {
+      color: var(--blue-50);
+    }
+  }
+}
+
 .callout {
   &.note {
     background-color: var(--green-50);

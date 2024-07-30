@@ -9,7 +9,7 @@ layout: homepage/index.vto
 # Aquarium web interface
 
 ```card
-Introduction
+<span class="aq-icon">flag</span> Introduction
 
 Learn the basics about Aquarium.
 ```
