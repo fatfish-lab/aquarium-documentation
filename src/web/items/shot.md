@@ -15,6 +15,17 @@ Medias can be regrouped into versions.
 
 The application used by default is [Shot editor](../applications/shoteditor.md).
 
+
+## Data
+
+| Key | Type | Description |
+| :--- | :---- | :----------- |
+| `name` | `string` | Name of the asset |
+| `description` | `string` | Description of the asset |
+| `frameIn` | `number` | Start frame of the shot |
+| `frameOut` | `number` | End frame of the shot |
+
+
 ## Structure
 
 ```mermaid
@@ -22,9 +33,9 @@ graph LR
   Shot -->|Breakdown| Asset
   Shot -->|Child| Task
   Task -->|Child| Version
-  Version -->|Child| MediaA[Media - versioned media]
-  Task -->|Child| MediaB[Media - unversioned media]
-  Task -->|Child| Subtask[Task - subtask]:::Task
+  Version -->|Child| MediaA([Media <br/> <small>versioned media</small>])
+  Task -->|Child| MediaB([Media <br /> <small>unversioned media</small>])
+  Task -->|Child| Subtask([Task <br /> <small>subtask</small>]):::Task
   Subtask -->|Child| Version
   Subtask -->|Child| MediaB
 ```

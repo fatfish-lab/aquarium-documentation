@@ -31,4 +31,7 @@
       "content": "2"
     }
   ]
+},{
+  "name": "template-form",
+  "url": "apps/addmenu?itemKeys=120712459&availableTypes=%5B%22Asset%22%5D&edgeType=Child&mode=append&template=120712548"
 }]
