@@ -3,6 +3,7 @@ id: index
 title: Home
 lang: en
 nav_order: 1
+layout: homepage/index.vto
 ---
 
 ## What's interest you today ?

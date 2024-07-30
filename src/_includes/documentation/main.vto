@@ -1,7 +1,7 @@
 {{ import { filePath } from 'utils.vto'}}
 
 <main id="main">
-  {{ include "sidebar.vto" }}
+  {{ include "./sidebar.vto" }}
   <div id="content">
     {{ content }}
     {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}
