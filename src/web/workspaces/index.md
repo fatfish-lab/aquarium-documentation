@@ -7,7 +7,7 @@ nav_order: 10
 
 # Introduction
 
-Like we explained in the [introduction](/web/introduction), the workspaces are like the Explorer on Windows, or the Finder on macOS: **they are dedicated to display your project's data.**
+Like we explained in the [introduction](/web/introduction), the workspaces are like the Explorer on Windows, or the Finder on macOS: **they are dedicated to display your project's items.**
 
 Workspaces works the same way in the focus or studio interface. The only difference is the way you access them.
 
@@ -16,19 +16,21 @@ Workspaces works the same way in the focus or studio interface. The only differe
 | ![Focus workspaces](/_medias/focus-workspaces.png) | ![Studio workspaces](/_medias/studio-workspaces.png) |
 | Workspaces are regrouped by need (assets manager, shots manager, ...) | Workspaces are regrouped by location. You need to go the the correct folder to be able to active the workspace you want. |
 
-We created several workspaces, to fit specific project management needs.
+# Different workspaces
 
-<$>[info]
-Don't forget to save your workspace after editing it. The save button is located at the top right of the workspace, when a change is detected.
-
-You can also enable auto-save in the [<span class="aq-icon">more_vert</span> menu](#more-options).
-<$>
+We created several workspaces, to fit specific project management needs : [shots manager](./shotsmanager.md), [assets manager](./assetsmanager.md), [timeline](./timeline.md), ... You can explore the rest of this section to learn more about each of them.
 
 # Options
 
 All workspaces works quite the same way and have same options available:
 
 ![Workspaces options](/_medias/workspaces-options.png)
+
+<$>[info]
+Don't forget to save your workspace after editing it. The save button is located at the top right of the workspace, when a change is detected.
+
+You can also enable auto-save in the [<span class="aq-icon">more_vert</span> menu](#more-options).
+<$>
 
 ## Filter
 
