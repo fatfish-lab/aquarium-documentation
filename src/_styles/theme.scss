@@ -3,7 +3,7 @@ img {
 }
 
 :root {
-  --pagefind-ui-scale: 0.6;
+  --pagefind-ui-scale: 0.8;
   --pagefind-ui-primary: var(--blue-50);
   --pagefind-ui-text: var(--text-00);
   --pagefind-ui-background: transparent;
@@ -12,8 +12,14 @@ img {
   --pagefind-ui-border-width: 2px;
   --pagefind-ui-border-radius: 8px;
   --pagefind-ui-image-border-radius: 8px;
-  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-image-box-ratio: 16 / 9;
   --pagefind-ui-font: var(--family-font);
+}
+
+hr {
+  width: 100%;
+  border-color: var(--bg-10);
+  margin: 64px 0;
 }
 
 table thead tr th {
@@ -22,9 +28,7 @@ table thead tr th {
 
 article.card {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  padding: 32px;
+  flex: 1;
   border-radius: 8px;
   border: 1px solid color-mix(in oklab, var(--blue-80-oc), transparent 75%);
   background: radial-gradient(ellipse farthest-corner at -50% -50%, color-mix(in oklab, var(--blue-50-oc), transparent 66%), color-mix(in oklab, var(--blue-80-oc), transparent 88%), transparent 80%);
@@ -33,20 +37,141 @@ article.card {
   transition: background-position 0.3s, border-color 0.3s;
   cursor: pointer;
 
-  .card-title {
-    margin: 0;
-  }
+  a {
+    display: inherit;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+    width: 100%;
+    padding: 32px;
 
-  .card-content {
-    margin: 0;
+    .card-title {
+      margin: 0;
+      color: var(--text-00);
+
+      .aq-icon {
+        color: var(--blue-50);
+      }
+    }
+
+    .card-content {
+      margin: 0;
+      color: var(--text-20);
+    }
   }
 
   &:hover {
     border-color: var(--cyan-50);
     background-position: 0px 0px;
-    .card-title {
-      color: var(--blue-50);
+  }
+}
+
+.arrow-container {
+  --rotate: 12deg;
+  --default: 124px;
+  --font: 2rem;
+  display: grid;
+  grid-template-areas: "text"
+    "arrow";
+  position: absolute;
+  height: var(--default);
+  // width: var(--default);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 8px;
+  user-select: none;
+  pointer-events: none;
+  // bottom: 80%;
+  transform: rotate(var(--rotate));
+  left: calc(100% - 75px);
+  // transform: translate(104px, 53px) rotate(12deg);
+  z-index: 1;
+
+  &.top {
+    grid-template-areas: "arrow"
+      "text";
+
+    .arrow-svg {
+      transform: scaleY(-1);
     }
+  }
+
+
+  &.micro {
+    --size: calc(var(--default) / 4);
+    --font: 0.6rem;
+  }
+
+  &.mini {
+    --size: calc(var(--default) / 3);
+    --font: 0.8rem;
+  }
+
+  &.small {
+    --size: calc(var(--default) / 2);
+    --font: 1.3rem;
+  }
+
+  &.default {
+    --size: calc(var(--default));
+    --font: 2rem;
+  }
+
+  &.big {
+    --size: calc(var(--default) * 2);
+    --font: 2.5rem;
+  }
+
+  &.relative {
+    position: relative;
+    left: unset;
+  }
+
+  &.flip {
+    --rotate: -12deg;
+
+    .arrow-svg {
+      transform: scaleX(-1);
+    }
+  }
+
+
+  .arrow-svg {
+    grid-area: arrow;
+    height: 100px;
+    width: 100px;
+    fill: var(--orange-50);
+    bottom: 3rem;
+    right: 50%;
+
+    path {
+      fill: none;
+      stroke: var(--orange-50);
+      stroke-width: 23px;
+      stroke-linejoin: round;
+      stroke-miterlimit: 1.5;
+      stroke-linecap: round;
+    }
+  }
+
+  .content {
+    grid-area: text;
+    font-family: var(--aquarium-font-family);
+    color: var(--bg-00);
+    background-color: var(--orange-50);
+    border-radius: 8px;
+    padding: 4px;
+    text-transform: uppercase;
+    font-size: var(--font);
+    white-space: nowrap;
+  }
+}
+
+.column {
+  article.card {
+    height: 100%;
+    width: 100%;
   }
 }
 

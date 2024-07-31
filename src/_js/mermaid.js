@@ -10,7 +10,7 @@ function getMermaidConfig(theme = 'light') {
       primaryColor: '#eee',
       background: '#fff',
       mainBkg: '#adb5bd',
-      lineColor: '#22b8cf',
+      lineColor: '#ced4da',
       border1: '#22b8cf',
       critical: '#ff6b6b',
       done: '#51cf66',

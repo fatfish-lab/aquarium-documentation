@@ -19,17 +19,19 @@ Aquarium works like your computer.
 | You open your files with applications | You open your items with [applications](/web/applications) |
 | You explore your folders with a file explorer | You explore your folders with a [workspace](/web/workspaces) |
 
-Their are some differences. On Aquarium :
+There are some differences. On Aquarium :
 
 - Their is not only one explorer to navigate into your folders. We created several workspaces, to fit specific project management needs. You can[ discover them in our dedicated section](/web/workspaces).
 - It's a nodal solution. Meaning that you can create connections, called [edge](/web/edges), between your items. This feature bring a lots of flexibility to create the project you want. It's also a way to create relations between your items, like a parent/child relation between a [Shot](/web/items/shot) and a [Task](/web/items/task), to assign a [Task](/web/items/task) to a [User](/web/items/user), etc.
 
 ```mermaid
 graph LR
-  S(["`Sequence: *s010*`"]) --> A
-  A(["`Shot: *s010_p100*`"]) --> B(["`Task: *layout*`"])
-  A --> C(["`Task: *animation*`"])
-  A --> D(["`Task: *compo*`"])
+  Project([Project <br/> My TV show]) --> Episode
+  Episode([Episode <br/> <strong>e101</strong>]) --> Sequence
+  Sequence([Sequence <br/> <strong>s010</strong>]) --> Shot
+  Shot([Shot <br/> <strong>s010_p100</strong>]) --> TaskL([Task <br/> <strong>layout</strong>]):::Task
+  Shot --> C([Task <br/> <strong>animation</strong>]):::Task
+  Shot --> D([Task <br/> <strong>compo</strong>]):::Task
 ```
 
 # How can I use Aquarium ?

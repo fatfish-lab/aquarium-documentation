@@ -36,9 +36,10 @@ site.use(pagefind({
     containerId: "search",
     showImages: true,
     excerptLength: 0,
-    showEmptyFilters: true,
-    showSubResults: true,
-    resetStyles: true
+    showEmptyFilters: false,
+    showSubResults: false,
+    resetStyles: true,
+    openFilters: ['section']
   }
 }));
 site.use(nav());

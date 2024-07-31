@@ -1,6 +1,11 @@
-<header id="header">
-  <a href="/" class="logo"></a>
-  <div id="search"></div>
+<header id="header" {{ if parentClass != null }} class="{{parentClass}}" {{ /if }}>
+  <a href="/" class="logo">
+    <img src="/_medias/logo_blue.png" alt="Aquarium logo">
+  </a>
+  <div id="search-container">
+    <span class="aq-icon search-icon">search</span>
+    <div id="search"></div>
+  </div>
   <div id="theme" class="aq-icon clickable">
     light_mode
   </div>

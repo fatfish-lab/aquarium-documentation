@@ -7,7 +7,7 @@ nav_order: 10
 
 # File
 
-A **<span class="aq-icon outline">file</span> File** is a default item type used to store uploaded files that are not [media](./media.md).
+A **<span class="aq-icon outline">archive</span> File** is a default item type used to store uploaded files that are not [media](./media.md).
 
 A file can be opened with the [Downloader application](../applications/downloader.md).
 

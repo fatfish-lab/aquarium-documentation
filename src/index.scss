@@ -3,11 +3,12 @@
 @import "_styles/vars.scss";
 @import "_styles/icons.scss";
 @import "_styles/mermaid.scss";
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&family=Fredoka+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --font-family: "Open Sans", sans-serif;
   --title-font-family: "Raleway", sans-serif;
+  --aquarium-font-family: "Fredoka One", sans-serif;
 }
 
 * {
@@ -25,7 +26,7 @@ body {
 
 body {
   display: grid;
-  grid-template-rows: 46px 1fr auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   // padding: 18px 42px;
   // margin: 0;
@@ -73,14 +74,18 @@ body {
     position: sticky;
     top: 0;
     display: grid;
-    grid-template-columns: 4fr 1fr max-content max-content;
+    grid-template-columns: 148px 1fr max-content max-content;
     align-items: center;
-    gap: 8px;
-    padding: 0 30px;
+    padding: 4px 30px;
+    gap: 16px;
     border-bottom: 1px solid var(--bg-10);
     background-color: color-mix(in srgb, var(--bg-00) 80%, transparent);
     backdrop-filter: blur(4px);
-    z-index: 1;
+    z-index: 10;
+
+    &:not(.homepage) {
+      background: linear-gradient(2deg, color-mix(in oklab, var(--blue-20), var(--bg-00) 85%), transparent 85%);
+    }
 
     #theme {
       &:hover {
@@ -94,11 +99,21 @@ body {
 
     .logo {
       display: block;
-      background: url('/_medias/logo_blue.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 32px;
-      width: 200px;
+      min-width: 0;
+      min-height: 0;
+
+      img {
+        height: 100%;
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        margin: 0;
+      }
+      // background: url('/_medias/logo_blue.png');
+      // background-size: contain;
+      // background-repeat: no-repeat;
+      // height: 32px;
+      // width: 200px;
     }
 
     .languages {
@@ -110,6 +125,69 @@ body {
       a {
         &:not(.active):not(:hover) {
           filter: grayscale(100%);
+        }
+      }
+    }
+  }
+
+  #search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .search-icon {
+      color: var(--text-20);
+      cursor: pointer;
+    }
+
+    #search {
+      width: 100%;
+      img {
+        margin: 0;
+      }
+
+      .pagefind-ui {
+        .pagefind-ui__form {
+          position: relative;
+
+          &::before {
+            content: none;
+          }
+
+          .pagefind-ui__search-input {
+            padding: 8px;
+            height: 100%;
+            font-size: 0.8em;
+            font-weight: normal;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          .pagefind-ui__search-clear {
+            display: none;
+          }
+
+          .pagefind-ui__drawer {
+            background-color: var(--bg-00);
+            padding: 16px;
+            border-radius: 0 0 8px 8px;
+            position: absolute;
+            top: 38px;
+            width: 100%;
+            border-color: var(--bg-10);
+            border-width: 0 1px 1px 1px;
+            border-style: solid;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 8px 16px 0 color-mix(in oklab, var(--text-30), transparent 45%);
+
+            .pagefind-ui__result-thumb {
+              border-radius: 8px;
+              background-color: var(--bg-10);
+            }
+          }
         }
       }
     }
@@ -132,6 +210,7 @@ body {
       border-bottom: 1px solid color-mix(in oklab, var(--blue-80-oc), transparent 75%);
       padding: 32px 64px;
       position: relative;
+      margin-bottom: 32px;
 
       .logo {
         background-image: url('/_medias/documentation_logo.png');
@@ -165,19 +244,19 @@ body {
         }
       }
 
-      .getting-started {
+      .quick-start {
         display: flex;
         flex-direction: column;
         gap: 8px;
         position: absolute;
-        top: 50%;
+        bottom: -60px;
         left: 70%;
-        background-color: color-mix(in oklab, var(--bg-00), transparent 30%);
+        background-color: var(--bg-00);
         padding: 52px;
         border: 1px solid color-mix(in oklab, var(--blue-80-oc), transparent 75%);
         border-radius: 8px;
-        backdrop-filter: blur(3px);
-        box-shadow: 0 0 52px 0 color-mix(in oklab, var(--blue-50), transparent 75%);
+        box-shadow: -8px 8px 52px 0 color-mix(in oklab, var(--blue-50), transparent 85%), 8px -8px 52px 0 color-mix(in oklab, var(--cyan-50), transparent 85%);
+        z-index: 1;
 
         .title {
           color: var(--blue-50);
