@@ -1,11 +1,15 @@
-<header id="header" {{ if parentClass != null }} class="{{parentClass}}" {{ /if }}>
+<header id="header" class="{{ if nosearch !== true }}no-search{{ /if }} {{ if it.pageName }}{{ it.pageName }}{{ /if }}">
   <a href="/" class="logo">
     <img src="/_medias/logo_blue.png" alt="Aquarium logo">
   </a>
-  <div id="search-container">
-    <span class="aq-icon search-icon">search</span>
-    <div id="search"></div>
-  </div>
+  {{ if nosearch !== true }}
+    {{ comp.search() }}
+  {{ else }}
+    <div id="no-search"></div>
+  {{ /if }}
+  <a href="/contact">
+    <div class="aq-icon clickable">email</div>
+  </a>
   <div id="theme" class="aq-icon clickable">
     light_mode
   </div>

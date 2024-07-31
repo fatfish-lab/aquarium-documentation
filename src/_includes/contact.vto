@@ -1,0 +1,10 @@
+{{ comp index }}
+  {{ include "./header.vto" { nosearch: true } }}
+  <main id="main">
+    <div id="content">
+      <h1>How can we help ?</h1>
+      {{ comp.search() }}
+      {{ content }}
+    </div>
+  </main>
+{{ /comp }}

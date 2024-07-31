@@ -1,9 +1,11 @@
 {{ import { capitalize, filename } from 'utils.vto'}}
 
-<main id="main">
+<main id="main" class="with-sidebar">
   {{ include "./sidebar.vto" }}
   <div id="content"
-    {{ if pagefind && pagefind.section }}data-pagefind-filter="section:{{capitalize(pagefind.section)}}" data-pagefind-meta="{{pagefind.section}}:{{filename}}"{{ /if }}>
+    class="{{ if notoc != true }}with-toc{{ /if }}"
+    {{ if pagefind && pagefind.section }}data-pagefind-filter="section:{{capitalize(pagefind.section)}}"
+    data-pagefind-meta="{{pagefind.section}}:{{filename}}"{{ /if }}>
     {{ content }}
     {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}
     <a {{`href=${contribution}`}} target="_blank" rel="noreferrer" class="contribute">
@@ -11,7 +13,7 @@
       Edit this page on GitHub
     </a>
   </div>
-  {{ if toc.length }}
+  {{ if notoc != true && toc.length }}
     <nav class="toc">
       <h4 class="title">On this page</h4>
       <ol>
