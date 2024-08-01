@@ -7,7 +7,7 @@ notoc: true
 layout: contact.vto
 ---
 
-# Help & support
+## Help & support
 
 [column
 ```card [<span class="aq-icon">support</span> Contact our support team](mailto:support@fatfi.sh)
@@ -22,7 +22,7 @@ Share your feedback, ask questions, and get help from other users.
 ```
 ]
 
-# Sales & information
+## Sales & information
 
 [column
 ```card [<span class="aq-icon">support_agent</span> Contact our sales team](mailto:sales@fatfi.sh)

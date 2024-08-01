@@ -20,7 +20,7 @@ Looking for a specific item? Find it here.
 
 [column
 ```card [<span class="aq-icon">chrome_reader_mode</span> Workspaces](./web/workspaces/index.md)
-Workspaces are the items dedicated to store your display options.
+Choose how to display your items.
 ```
 ]
 
@@ -62,7 +62,7 @@ Integrate your Aquarium with Python.
 
 Aquarium is developed by [Fatfish Lab](https://fatfi.sh) and we are always here for you. [Reach out and get quick support answer](./contact.md).
 
-If you are stuck with something, you found a bug, you are looking to provide feedback, you have a new idea you want to share, etc. : don't hesitate to contact us.
+If you are stuck with something, you found a bug, you are looking to provide feedback, you have a new idea you want to share, etc. : do not hesitate to [contact us](./contact.md).
 
 <$>[info]
 Don't forget to join our [Discord community](http://fatfi.sh/community). We have private channels per clients, so you can get direct support from our team.

@@ -33,4 +33,4 @@ console.log('Hello, world!');
 
 ## None of the above ?
 
-Contact us at <a href="mailto:support@fatfi.sh" target="_blank"> support@fatfi.sh </a>. We can create new quick start guides for you.
+[Reach out to us today](../contact.md), and we'll craft personalized quick start guides just for you!

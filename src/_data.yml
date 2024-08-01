@@ -11,4 +11,4 @@ repository:
   host: https://github.com
   author: fatfish-lab
   name: aquarium-documentation
-  branch: master
+  branch: main
