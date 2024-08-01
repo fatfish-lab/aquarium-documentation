@@ -11,11 +11,21 @@ This application allow you to create new [items](/web/items).
 
 ![Add menu](/_medias/addmenu.png)
 
-1. **Breadcrumb**: the items will be created at this location : the path is displayed at the top of the application.
+1. **Breadcrumb**: The items will be created at this location.
 2. **Search**: You can search any item type by typing in the search bar. If the type is not recognized, Aquarium allow you to create a new item type.
 3. **Create**: You can select the type of item you want to create by clicking on the corresponding button. When you select a type, the application will display the form to create the item.
 
+By default, we only provide relevant items types depending on the location you are creating the item.
+
+> For example if you are in a [Sequence](../items/sequence.md), the interface will only display [Shot](../items/shot.md) and [Task](../items/task.md) types.
+
+<$>[info]
+When you search for an item, if only one type is displayed, you can press `Enter` to create the item.
+<$>
+
 ## Form creation
+
+Once you clicked on an item, the form creation will be displayed. By default we only asked for the name of the item. But using [templates](../items/template.md), you can defined more advanced form fields.
 
 ![Form creation](/_medias/addmenu-form.png)
 
@@ -36,5 +46,5 @@ The templates are loaded based on where you are creating your item. Please refer
 
 If you are in a [Project](/web/items/project), by default, templates are hidden at the root of your project.
 
-More details about template are available in the [template](/web/items/template) documentation.
+More details about [template are available in dedicated section](../items/template.md).
 ]

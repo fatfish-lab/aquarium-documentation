@@ -29,5 +29,9 @@
       "type": "circle",
       "content": "2"
     }]
+  },
+  {
+    "name": "domain",
+    "url": "apps/domain"
   }
 ]
