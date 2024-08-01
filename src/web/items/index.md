@@ -3,6 +3,7 @@ id: items
 title: Items
 lang: en
 nav_order: 10
+icon: category
 ---
 
 # What are items?

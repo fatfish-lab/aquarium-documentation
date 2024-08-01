@@ -2,7 +2,8 @@
 id: workspaces
 title: Workspaces
 lang: en
-nav_order: 10
+nav_order: 30
+icon: chrome_reader_mode
 ---
 
 # Introduction
@@ -63,15 +64,15 @@ As a reminder, Aquarium is a nodal solution. It means that every item have a con
 > Example
 > ```mermaid
 > graph TD
->     A([Project: My short movie]) --> B([Group: Sequences])
->     B --> D([Sequence: s010])
->     B --> E([Sequence: s020])
->     D --> G([Shot: s010_010])
->     G --> I([Task: layout])
->     G --> J([Task: animation])
->     D --> H([Shot: s010_020])
->     H --> K([...])
->     E --> L([...])
+>     Project([Project: My short movie]) --> Group([Group: Sequences])
+>     Group --> Sequence010([Sequence: s010]):::Sequence
+>     Group --> Sequence020([Sequence: s020]):::Sequence
+>     Sequence010 --> Shot010([Shot: s010_010]):::Shot
+>     Shot010 --> Layout([Task: layout]):::Task
+>     Shot010 --> Animation([Task: animation]):::Task
+>     Sequence010 --> Shot020([Shot: s010_020]):::Shot
+>     Shot020 --> K([...])
+>     Sequence020 --> L([...])
 > ```
 
 Let's say you are at the root of your project and you want to display all the shots of the project.
@@ -79,33 +80,33 @@ Let's say you are at the root of your project and you want to display all the sh
 > Example
 > ```mermaid
 > graph TD
->     A([Project: My short movie]) --> B([Group: Sequences])
+>     A([Project: My short movie]) --> Group([Group: Sequences])
 >     style A fill:#ff922b,stroke:##e8590c,stroke-width:4px
->     B --> D([Sequence: s010])
->     B --> E([Sequence: s020])
->     D --> G([Shot: s010_010])
->     G --> I([Task: layout])
->     G --> J([Task: animation])
->     D --> H([Shot: s010_020])
->     H --> K([...])
->     E --> L([...])
+>     Group --> Sequence010([Sequence: s010])
+>     Group --> Sequence020([Sequence: s020])
+>     Sequence010 --> Shot010([Shot: s010_010])
+>     Shot010 --> Layout([Task: layout])
+>     Shot010 --> Animation([Task: animation])
+>     Sequence010 --> Shot020([Shot: s010_020])
+>     Shot020 --> K([...])
+>     Sequence020 --> L([...])
 >     subgraph Start point
 >     A
 >     end
 >     subgraph Depth: 1
->     B
+>     Group
 >     end
 >     subgraph Depth: 2
->     D
->     E
+>     Sequence010
+>     Sequence020
 >     end
 >     subgraph Depth: 3
->     G
->     H
+>     Shot010
+>     Shot020
 >     end
 >     subgraph Depth: 4
->     I
->     J
+>     Layout
+>     Animation
 >     K
 >     L
 >     end

@@ -1,7 +1,10 @@
 ---
 id: web
 title: Web
+section: Web interface
 lang: en
+shortcut: true
+icon: web
 ---
 
 # Aquarium web interface

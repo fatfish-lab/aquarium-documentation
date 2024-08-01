@@ -3,6 +3,7 @@ id: applications
 title: Applications
 lang: en
 nav_order: 10
+icon: apps
 ---
 
 # Applications
