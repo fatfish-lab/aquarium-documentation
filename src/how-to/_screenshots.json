@@ -1,0 +1,9 @@
+[{
+  "name": "forgot-password",
+  "url": "/signin",
+  "focus": [{
+    "selector": ".forgot",
+    "type": "arrow",
+    "vignetting": true
+  }]
+}]

@@ -1,8 +1,11 @@
 ---
 id: how-to
 title: How to
+section: How to & guides
 lang: en
-nav_order: 10
+nav_order: 30
+shortcut: true
+icon: book_5
 ---
 
 We created different how-to guides and videos.
