@@ -2,6 +2,7 @@
 @import "_styles/theme.scss";
 @import "_styles/vars.scss";
 @import "_styles/icons.scss";
+@import "_styles/button.scss";
 @import "_styles/mermaid.scss";
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&family=Fredoka+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -37,11 +38,6 @@ body {
   height: fit-content;
   min-height: 100%;
 
-  ::selection {
-    color: var(--bg-00);
-    background: var(--blue-50);
-  }
-
   .clickable {
     cursor: pointer;
   }
@@ -51,10 +47,11 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: -18px;
+    left: -227px;
     background-color: var(--bg-20);
     z-index: 1;
-    opacity: 0.1;
+    opacity: 0.6;
     pointer-events: none;
     background-image: url('/_medias/reference.png');
     background-size: cover;
@@ -62,7 +59,12 @@ body {
     background-position: left;
   }
 
-  h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--title-font-family);
   }
 
@@ -85,6 +87,14 @@ body {
 
     &:not(.homepage) {
       background: linear-gradient(2deg, color-mix(in oklab, var(--blue-20), var(--bg-00) 85%), transparent 85%);
+    }
+
+    #contact-icon {
+      color: var(--text-00);
+
+      &:hover {
+        color: var(--blue-50);
+      }
     }
 
     #theme {
@@ -140,6 +150,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    position: relative;
 
     .search-icon {
       color: var(--text-20);
@@ -184,7 +195,7 @@ body {
             border-color: var(--bg-10);
             border-width: 0 1px 1px 1px;
             border-style: solid;
-            max-height: 80vh;
+            max-height: 60vh;
             overflow-y: auto;
             box-shadow: 0 8px 16px 0 color-mix(in oklab, var(--text-30), transparent 45%);
 
@@ -249,32 +260,82 @@ body {
         }
       }
 
-      .quick-start {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+      .quick-start-container {
         position: absolute;
         bottom: -60px;
         right: 220px;
-        background-color: var(--bg-00);
-        padding: 52px;
-        border: 1px solid color-mix(in oklab, var(--blue-80-oc), transparent 75%);
+        z-index: 1;
         border-radius: 8px;
         box-shadow: -8px 8px 52px 0 color-mix(in oklab, var(--blue-50), transparent 85%), 8px -8px 52px 0 color-mix(in oklab, var(--cyan-50), transparent 85%);
-        z-index: 1;
+        transition: box-shadow 0.3s ease-in-out;
 
-        .title {
-          color: var(--blue-50);
-          display: inline-flex;
-          gap: 8px;
-          margin-bottom: 16px;
+        &:hover {
+          box-shadow: -12px 12px 64px 0 color-mix(in oklab, var(--blue-50), transparent 65%), 12px -12px 64px 0 color-mix(in oklab, var(--cyan-50), transparent 55%);
+        }
+        .fancy-border-glow {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          position: relative;
+          overflow: clip;
+          padding: 2px;
+          border-radius: 8px;
+          transition: box-shadow 0.1s ease-in-out, opacity 0.3s ease-in-out;
+          box-shadow: 2px 2px 0px 0px transparent;
+          z-index: 1;
+          background-image: conic-gradient(from 15deg, rgba(255, 255, 255, 0), color-mix(in srgb, var(--orange-40-oc), transparent 75%), rgba(0, 0, 0, 0) 22%);
 
-          .aq-icon {
-            color: var(--blue-30);
+          &:hover {
+            &::before {
+              background-image: conic-gradient(rgba(255, 255, 255, 0), var(--bg-00), var(--blue-00), var(--blue-50), var(--cyan-50), var(--cyan-00), rgba(0, 0, 0, 0) 25%);
+            }
           }
 
-          h3 {
-            margin: 0;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 9000px;
+            height: 9000px;
+            overflow: hidden;
+            filter: blur(20px);
+            transform: translate(-50%, -50%) rotate(0deg);
+            background-image: conic-gradient(rgba(255, 255, 255, 0), var(--bg-00), var(--cyan-00), var(--cyan-50), var(--blue-50), var(--blue-00), rgba(0, 0, 0, 0) 25%);
+            animation: rotate 5s linear infinite;
+            transition: background-image 0.3s ease-in-out;
+
+            @keyframes rotate {
+              100% {
+                transform: translate(-50%, -50%) rotate(1turn);
+              }
+            }
+          }
+        }
+
+        .quick-start {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          background-color: var(--bg-00);
+          padding: 52px;
+          z-index: 1;
+          border-radius: inherit;
+          // border: 1px solid color-mix(in oklab, var(--blue-80-oc), transparent 75%);
+
+          .title {
+            color: var(--blue-50);
+            display: inline-flex;
+            gap: 8px;
+            margin-bottom: 16px;
+
+            .aq-icon {
+              color: var(--blue-30);
+            }
+
+            h3 {
+              margin: 0;
+            }
           }
         }
       }
@@ -287,6 +348,44 @@ body {
     position: relative;
     height: 100%;
     padding: 40px;
+
+    &.contact {
+      padding-top: 120px;
+    }
+
+    .toolbox {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: auto;
+      padding-top: 64px;
+      gap: 8px;
+    }
+
+    #search-container {
+      background-color: var(--bg-10);
+      border-radius: 8px;
+      padding: 8px;
+    }
+
+    ol>li::marker {
+      color: var(--orange-50);
+      font-weight: bold;
+    }
+  }
+
+  #main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: inherit;
+
+    &.with-sidebar {
+      grid-template-columns: minmax(250px, 1fr) 4fr;
+
+      &.with-toc {
+        grid-template-columns: minmax(250px, 1fr) 4fr minmax(250px, 1fr);
+      }
+    }
 
     &.with-toc {
       grid-template-columns: minmax(250px, 1fr) 4fr minmax(250px, 1fr);
@@ -315,89 +414,70 @@ body {
         }
       }
     }
-
-    ol>li::marker {
-      color: var(--orange-50);
-      font-weight: bold;
-    }
-
-    .contribute {
-      margin-top: auto;
-      text-align: right;
-    }
   }
 
-  #main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: inherit;
+  #sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 16px;
+    border-right: 1px solid var(--bg-10);
+    padding: 28px;
+    overflow-y: auto;
 
-    &.with-sidebar {
-      grid-template-columns: minmax(250px, 1fr) 4fr;
-    }
-
-    #sidebar {
+    nav {
       display: flex;
       flex-direction: column;
-      height: 100%;
-      width: 100%;
-      gap: 16px;
-      border-right: 1px solid var(--bg-10);
-      padding: 40px;
+      gap: 32px;
 
-      nav {
+      ol {
+        list-style-type: none;
+        padding: 0;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 4px;
+        margin: 0;
 
-        ol {
-          list-style-type: none;
-          padding: 0;
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          margin: 0;
-
-          >h5 {
-            color: var(--text-20);
-          }
-
-          li {
-            position: relative;
-
-            &.active {
-              >::before {
-                content: "";
-                position: absolute;
-                top: calc(1em / 2);
-                left: -16px;
-                width: 8px;
-                height: 8px;
-                border-radius: 50%;
-                background-color: var(--blue-50);
-              }
-            }
-          }
-
-          details {
-            background: none;
-            padding: 0;
-            margin: 0;
-
-            &[open] {
-              summary {
-                border: none;
-                padding: 0;
-                margin: 0;
-              }
-            }
-
-            ol {
-              padding: 8px 0 0 16px;
-            }
-          }
-
+        >h5 {
+          color: var(--text-20);
         }
+
+        li {
+          position: relative;
+
+          &.active {
+            >::before {
+              // content: "";
+              position: absolute;
+              top: calc(50% - 4px);
+              left: 4px;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: var(--blue-50);
+            }
+          }
+        }
+
+        details {
+          background: none;
+          padding: 0;
+          margin: 0 0 8px 0;
+
+          &[open] {
+            summary {
+              border: none;
+              // padding: 0;
+              margin: 0;
+            }
+          }
+
+          ol {
+            padding: 8px 0 0 16px;
+          }
+        }
+
       }
     }
   }

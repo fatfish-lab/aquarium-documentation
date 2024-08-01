@@ -3,17 +3,13 @@
 <li {{ if item.data != null && item.data.url == url }}class="active"{{ /if }}>
   {{ if item.children && item.children.length > 0 }}
     <details {{if url.split('/')[2] == item.slug}}open{{/if}}>
-      <summary>
-        <strong>
-          {{ if item.data }}
-            <a href="{{ item.data.url }}">
-              {{ item.data.section || item.data.title }}
-            </a>
-          {{ else }}
-            <span>{{ capitalize(item.slug) }}</span>
-          {{ /if }}
-        </strong>
-      </summary>
+      {{ if item.data }}
+        {{ comp.summary({...item.data, active: url.startsWith(item.data.url)}) }}
+      {{ else }}
+        <summary>
+          {{ capitalize(item.slug) }}
+        </summary>
+      {{ /if }}
       <ol>
         {{ for child of item.children }}
           {{ include "./sidebar_item.vto" { item: child } }}
@@ -22,9 +18,7 @@
     </details>
   {{ else }}
     {{ if item.data }}
-      <a href="{{ item.data.url }}">
-        {{ item.data.section || item.data.title }}
-      </a>
+      {{ comp.shortcut({...item.data, active: url.startsWith(item.data.url)}) }}
     {{ else }}
       <span>{{ item.slug }}</span>
     {{ /if }}

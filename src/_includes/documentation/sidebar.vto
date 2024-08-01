@@ -1,33 +1,27 @@
+{{ import { capitalize, levels } from "../utils.vto" }}
 <aside id="sidebar">
   <nav>
     <ol>
-      <h4>Web</h4>
-      {{ set web_root = nav.menu('/web/', `nav_order<10 lang=${lang}`, 'title nav_order') }}
-      {{ set web_sub = nav.menu('/web/', `nav_order>=10 lang=${lang}`, 'title nav_order') }}
-      {{ if web_root && web_root.children }}
-        {{ for item of web_root.children }}
-            {{ include "./sidebar_item.vto" { item } }}
-        {{ /for }}
-      {{ /if }}
-      <br />
-      {{ if web_sub && web_sub.children }}
-        {{ for item of web_sub.children }}
-            {{ include "./sidebar_item.vto" { item } }}
+      {{ set shortcuts = search.pages(`shortcut=true lang=${lang}`, 'nav_order') }}
+      {{ if shortcuts }}
+        {{ for shortcut of shortcuts }}
+        <li>
+          {{ comp.shortcut({...shortcut, active: url.startsWith(shortcut.url)}) }}
+        </li>
         {{ /for }}
       {{ /if }}
     </ol>
     <ol>
-      <h4>API</h4>
-      {{ set api_root = nav.menu('/api/', `nav_order<10 lang=${lang}`, 'title nav_order') }}
-      {{ set api_sub = nav.menu('/api/', `nav_order>=10 lang=${lang}`, 'title nav_order') }}
-      {{ if api_root && api_root.children }}
-        {{ for item of api_root.children }}
+      {{ set root = nav.menu(`/${levels[0]}/`, `nav_order<10 lang=${lang}`, 'title nav_order') }}
+      {{ set sub = nav.menu(`/${levels[0]}/`, `nav_order>=10 lang=${lang}`, 'title nav_order') }}
+      {{ if root && root.children }}
+        {{ for item of root.children }}
             {{ include "./sidebar_item.vto" { item } }}
         {{ /for }}
       {{ /if }}
-      <br />
-      {{ if api_sub && api_sub.children }}
-        {{ for item of api_sub.children }}
+      <li/>
+      {{ if sub && sub.children }}
+        {{ for item of sub.children }}
             {{ include "./sidebar_item.vto" { item } }}
         {{ /for }}
       {{ /if }}

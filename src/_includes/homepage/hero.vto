@@ -4,14 +4,24 @@
     <h1 class="title">Documentation</h1>
     <span class="subtitle">Explore our guides and learn how Aquarium works</span>
   </header>
-  <div class="quick-start">
+  <div class="quick-start-container">
     {{ comp.arrow({"content": "Quick start", "top": "-112px"}) }}
-    <span class="title">
-      <span class="aq-icon">flag</span>
-      <h3>Getting started</h3>
-    </span>
-    <button>I'm a manager</button>
-    <button>I'm a developer</button>
-    <button>I'm an artist</button>
+    <div class="fancy-border-glow">
+      <div class="quick-start">
+        <span class="title">
+          <span class="aq-icon">flag</span>
+          <h3>Getting started</h3>
+        </span>
+        <a href="../../web/quickstart/#manager">
+          {{ comp.button({ content: "I'm a manager", icon: "groups", fullwidth: true}) }}
+        </a>
+        <a href="../../web/quickstart/#developer">
+          {{ comp.button({ content: "I'm a developer", icon: "code", fullwidth: true}) }}
+        </a>
+        <a href="../../web/quickstart/#artist">
+          {{ comp.button({ content: "I'm an artist", icon: "palette", fullwidth: true}) }}
+        </a>
+      </div>
+    </div>
   </div>
 </section>

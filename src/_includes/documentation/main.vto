@@ -1,17 +1,22 @@
 {{ import { capitalize, filename } from 'utils.vto'}}
 
-<main id="main" class="with-sidebar">
+<main id="main" class="{{ if notoc != true }}with-toc{{ /if }}">
   {{ include "./sidebar.vto" }}
   <div id="content"
-    class="{{ if notoc != true }}with-toc{{ /if }}"
     {{ if pagefind && pagefind.section }}data-pagefind-filter="section:{{capitalize(pagefind.section)}}"
     data-pagefind-meta="{{pagefind.section}}:{{filename}}"{{ /if }}>
     {{ content }}
-    {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}
-    <a {{`href=${contribution}`}} target="_blank" rel="noreferrer" class="contribute">
-      <span class="aq-icon outline">edit_square</span>
-      Edit this page on GitHub
-    </a>
+    <div class="toolbox">
+      {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/src/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}
+      <a {{`href=${contribution}`}} target="_blank" rel="noreferrer" class="contribute">
+        {{ comp.button({ content: 'Make a contribution', icon: 'edit_square', color: 'bg-30' }) }}
+      </a>
+      {{ set repositoryURL = new URL(`${repository.author}/${repository.name}`, repository.host).toString() }}
+      {{ set issue = new URL(`${repository.author}/${repository.name}/issues/new?title=Fix ...&body=%0A%0A%0A%0A>[!NOTE]%0A>Related to file: ${page.src.path}${page.src.ext}`, repository.host).toString() }}
+      <a {{`href=${issue}`}} target="_blank" rel="noreferrer" class="contribute">
+        {{ comp.button({ content: 'Report an issue', icon: 'warning', color: 'bg-30' }) }}
+      </a>
+    </div>
   </div>
   {{ if notoc != true && toc.length }}
     <nav class="toc">
