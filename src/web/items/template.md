@@ -19,6 +19,8 @@ You can convert an item into a template using the [Quickeditor application](../a
 
 You can edit, synchronize, define template form, ... a using the [Template editor application](../applications/templateeditor.md).
 
+When an item is assigned to a template, a dedicated edge `Template` is created from the template to the item.
+
 ## Usage
 
 A templates are dependent of the context where they are used. By default templates are hidden at the root of the project.
@@ -62,5 +64,16 @@ The `templateData` object is a JSON object that contains the data of the templat
 
 ```mermaid
 graph LR
-  Template -->|Child| Item
+  Item -.->|Template| Template
+  Template -->|Child| Content[Item]:::Item
+```
+
+Here is an example of a Shot's template :
+
+```mermaid
+graph LR
+  Shot -.->|Template| Template[Template <br/> <small>templateData.type = 'Shot'</small>]
+  Template -->|Child| Layout[Task <br/> Layout]:::Task
+  Template -->|Child| Animation[Task <br/> Animation]:::Task
+  Template -->|Child| Lighting[Task <br/> Lighting]:::Task
 ```

@@ -24,6 +24,13 @@ You can write a comment using markdown.
 | `frameIn` | `number` | Frame in of the comment |
 | `frameOut` | `number` | Frame out of the comment |
 | `draws` | `array` | Array of draw object |
+| `retaked` | `boolean` | Is the comment a retake ? |
+
+## Retakes
+
+You can flag a comment as a "retake" : meaning you are waiting for the artist to do some modifications.
+
+It's a useful information for the artist itself, but also for the producer to know if the task is done or not. A column presets called `retakes` is available so you can see all the retakes in a glance.
 
 ### Draw object
 

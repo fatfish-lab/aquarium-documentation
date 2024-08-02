@@ -24,6 +24,16 @@ In most [workspace](/web/items/workspace) you can create new items by clicking o
 
 # How can I see the item's data ?
 
+You can see and edit item's data using the [Quickeditor](../applications/quickeditor.md) application.
+
+## In a graphic interface
+
+1. Right click on the item
+2. Click on `Properties...`
+3. Click on the `Item's and edges' data` tab
+
+
+## In a JSON editor
 1. Right click on the item
 2. Click on `Properties...`
 3. Click on the `Advanced` tab
@@ -35,7 +45,7 @@ In most [workspace](/web/items/workspace) you can create new items by clicking o
 When an item is displayed in the interface, you can try to right click on it. Most of the time we will open the [quickeditor](/web/applications/quickeditor). If it's not the case, [let us know](/contact) !
 <$>
 
-# How can I manage item's permissions ?
+# How can I manage item's permissions ? {#permissions}
 
 On Aquarium, permissions works like on a Google Drive or a filesystem : you can set permissions on any items to control who can read, write, trash, ...
 
@@ -75,3 +85,17 @@ Those presets are used to define lower level permissions. You can click on the `
 - `d` : Delete (delete the item)
 
 > The `Inherit these permissions` is a special flag that is enabled by default, that allow the children items to inherit the permissions of the parent item. This flag is represented by the `*` on the permission. Most of the time, you don't need to change this flag, it's only here for special cases.
+
+# What actions can I do on an item ?
+
+On Aquarium, you can do several actions on an item. Here is a list of the most common actions :
+
+- **Open** : Open the item with its default application.
+- **Move**: Move the item to another location.
+- **Copy**: Copy the item to another location.
+- **Duplicate**: Duplicate the item.
+- **Clone**: Clone the item. Meaning you can instantiate the item in multiple locations, to avoid duplication of data. On technical perspective, a clone is "just" a new Child edge from another item to the cloned item.
+- **Trash**: Move the item to the trash.
+- **Restore**: Restore the item from the trash.
+- **Delete**: Permanently delete the item. The item need to go through the trash before being deleted.
+- **Manage permissions**: Manage the permissions of the item.
