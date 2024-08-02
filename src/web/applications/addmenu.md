@@ -27,13 +27,14 @@ When you search for an item, if only one type is displayed, you can press `Enter
 
 Once you clicked on an item, the form creation will be displayed. By default we only asked for the name of the item. But using [templates](../items/template.md), you can defined more advanced form fields.
 
-![Form creation](/_medias/addmenu-form.png)
+![Form creation](../../_medias/addmenu-form.png)
 
 1. A [template](/web/items/template) is automatically selected for you. This menu allow you to:
-   1. Select another template
-   2. Create a new template
-   3. Edit an existing template
-   4. Create an item without a template
+   1. Create a new template
+   2. Edit an existing template
+   3. Create an item without a template
+   4. Select another template
+      - On some items, we provide some templates (ex: Actions, ...)
 2. This input allow you to set the name of the item.
 
 <$>[info]

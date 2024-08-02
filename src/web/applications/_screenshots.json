@@ -2,36 +2,144 @@
   {
     "name": "addmenu",
     "url": "apps/addmenu?itemKeys={{me._key}}",
-    "click": [".show-more"],
-    "focus": [{
-      "selector": ".addmenu-container header",
-      "type": "circle",
-      "content": "1"
-    },{
-      "selector": ".search",
-      "type": "circle",
-      "content": "2"
-    },{
-      "selector": ".type",
-      "type": "circle",
-      "content": "3"
-    }]
-  }, {
+    "click": [
+      ".show-more"
+    ],
+    "focus": [
+      {
+        "selector": ".addmenu-container header",
+        "type": "circle",
+        "content": "1"
+      },
+      {
+        "selector": ".search",
+        "type": "circle",
+        "content": "2"
+      },
+      {
+        "selector": ".type",
+        "type": "circle",
+        "content": "3"
+      }
+    ]
+  },
+  {
     "name": "addmenu-form",
     "url": "apps/addmenu?itemKeys={{me._key}}",
-    "click": [".show-more", ".type"],
-    "focus": [{
-      "selector": ".create-item .btn-group",
-      "type": "circle",
-      "content": "1"
-    },{
-      "selector": "#Name",
-      "type": "circle",
-      "content": "2"
-    }]
+    "click": [
+      ".show-more",
+      ".type"
+    ],
+    "focus": [
+      {
+        "selector": ".create-item .btn-group",
+        "type": "circle",
+        "content": "1"
+      },
+      {
+        "selector": "#Name",
+        "type": "circle",
+        "content": "2"
+      }
+    ]
   },
   {
     "name": "domain",
     "url": "apps/domain"
+  },
+  {
+    "name": "downloader",
+    "url": "apps/downloader?itemKeys=120712555"
+  },
+  {
+    "name": "organisation",
+    "url": "apps/organisation?itemKeys=70905130"
+  },{
+    "name": "studio-jobs",
+    "url": "{{me._key}}?app=Home&workspace=286725727",
+    "focus": [{
+      "selector": ".jobs-notifications-container",
+      "type": "arrow",
+      "vignetting": true
+    }]
+  },{
+    "name": "playlist",
+    "url": "apps/playlist?itemKeys=865875327&appName=playlist",
+    "focus": [{
+      "selector": ".show-toolbar.medias",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": ".show-toolbar.comments",
+      "type": "circle",
+      "content": "2"
+    },{
+      "selector": ".toggle-timeline",
+      "type": "circle",
+      "content": "3"
+    },{
+      "selector": ".previous-media",
+      "type": "circle",
+      "content": "4"
+    }]
+  },{
+    "name": "profile",
+    "url": "/apps/profile?itemKeys={{me._key}}"
+  },
+  {
+    "name": "projectsettings",
+    "url": "apps/projectsettings?itemKeys=939107156&tabName=information"
+  },{
+    "name": "quickeditor",
+    "url": "apps/quickeditor?itemKeys=939107156"
+  },{
+    "name": "tasks",
+    "url": "apps/tasks?itemKeys=1346077374&tabName=infos"
+  },{
+    "name": "templateeditor",
+    "url": "apps/templateeditor?itemKeys=939107246&appName=templateeditor"
+  },{
+    "name": "templateeditor-sync",
+    "url": "apps/templateeditor?itemKeys=939107246&appName=templateeditor&tabName=sync",
+    "click": [".scroller-container.children > div:nth-child(2)"],
+    "focus": [{
+      "selector": ".scroller-container.children",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": ".tools > button",
+      "type": "circle",
+      "content": "2"
+    },{
+      "selector": ".compare-options > .tool",
+      "type": "circle",
+      "content": "3"
+    },
+    {
+      "selector": ".footer > .quickview-container",
+      "type": "circle",
+      "content": "4"
+    }]
+  },{
+    "name": "timelogs",
+    "url": "apps/timelogs?itemKeys=1346245819&appName=timelogs"
+  },{
+    "name": "trash",
+    "url": "apps/trash?itemKeys=939107156&appName=trash"
+  },{
+    "name": "viewer",
+    "url": "apps/viewer?itemKeys=1346269344&mediaIndex=1&historyIndex=1"
+  },{
+    "name": "workspaces",
+    "url": "apps/workspaces?itemKeys=1330899299&appName=workspaces"
+  },{
+    "name": "actioneditor",
+    "url": "apps/actioneditor?itemKeys=286728210&appName=actioneditor&mode=editor"
+  },{
+    "name": "views",
+    "url": "apps/views?itemKeys=1330899343&appName=views&showPreview=true&columnIndex=3&showSave=false"
+  },{
+    "name": "notify",
+    "url": "apps/notify?itemKeys=120709667&appName=notify"
   }
 ]
