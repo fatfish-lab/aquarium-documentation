@@ -26,17 +26,18 @@ There are some differences. On Aquarium :
 
 ```mermaid
 graph LR
+  User([User]) -.-> TaskL
   Project([Project <br/> My TV show]) --> Episode
   Episode([Episode <br/> <strong>e101</strong>]) --> Sequence
   Sequence([Sequence <br/> <strong>s010</strong>]) --> Shot
-  Shot([Shot <br/> <strong>s010_p100</strong>]) --> TaskL([Task <br/> <strong>layout</strong>]):::Task
   Shot --> C([Task <br/> <strong>animation</strong>]):::Task
   Shot --> D([Task <br/> <strong>compo</strong>]):::Task
+  Shot([Shot <br/> <strong>s010_p100</strong>]) --> TaskL([Task <br/> <strong>layout</strong>]):::Task
 ```
 
 # How can I use Aquarium ?
 
-When you work with people, not everyone has the same needs. Some people need to [focus on their work](/web/interfaces/focus), others need to [manage their projects](/web/interfaces/studio), and some [need to review the work](/web/interfaces/rooms).
+When you work with people, not everyone has the same needs. Some people need to [focus on their work](/web/interfaces/focus), others need to [manage their projects](/web/interfaces/studio), and some [need to review medias](/web/interfaces/rooms).
 
 That's why Aquarium offer 3 different interfaces :
 
@@ -48,3 +49,17 @@ That's why Aquarium offer 3 different interfaces :
 <$>[info]
 As a user, you can choose the interface you want to use. You can switch between them at any time. And you can set the default one from your [profile preferences](/web/applications/profile).
 <$>
+
+# How Aquarium is structured ?
+
+There are 3 main concepts in Aquarium :
+
+- [Items](/web/items) : Items are the building blocks of your projects.
+- [Applications](/web/applications) : You open your items with Applications, like you open files with applications on your computer.
+- [Workspaces](/web/workspaces) : You search and browse your items with Workspaces. Some workspaces allow you to create columns to customize the interface and interact with items data (like changing a status, display a thumbnail, ...).
+
+# How can I find help from Aquarium ?
+
+Like the old school software, press `F1` to open the help panel. You can also click on the <span class="aq-icon outline">help</span> icon to open it.
+
+You will find also find dynamic quests, to guide you through the interface and learn how to use Aquarium.
