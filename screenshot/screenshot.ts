@@ -47,11 +47,15 @@ for (const screenshot of screenshots) {
 
   if (screenshot.click) {
     for (const click of screenshot.click) {
-      log.info(`Click on ${click}`)
-      await session.page.waitForSelector(click)
-      await session.page.click(click)
-      // await session.page.waitForNetworkIdle()
-      log.info(`* Clicked`)
+      if (click.length == 0) {
+        log.info(`Waiting for network idle`)
+        await session.page.waitForNetworkIdle()
+      } else {
+        log.info(`Click on ${click}`)
+        await session.page.waitForSelector(click)
+        await session.page.click(click)
+        log.info(`* Clicked`)
+      }
     }
   }
 
