@@ -3,7 +3,7 @@ id: how-to
 title: How to
 section: How to & guides
 lang: en
-nav_order: 30
+nav_order: 40
 shortcut: true
 icon: book_5
 ---
