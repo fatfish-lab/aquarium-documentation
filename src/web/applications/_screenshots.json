@@ -141,5 +141,22 @@
   },{
     "name": "notify",
     "url": "apps/notify?itemKeys=120709667&appName=notify"
+  },{
+    "name": "command",
+    "url": "120709667?app=Home&workspace=286725727",
+    "click": [".commands-container"]
+  },{
+    "name": "command-console",
+    "url": "939107156?workspace=939174968&app=Home",
+    "click": [".commands-container", ".command-container .terminal", ""],
+    "focus": [{
+      "selector": ".console-container footer .quickview-container",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": ".console-container .toolbar button",
+      "type": "circle",
+      "content": "2"
+    }]
   }
 ]

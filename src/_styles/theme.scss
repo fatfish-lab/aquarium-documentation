@@ -3,10 +3,6 @@
   background: var(--blue-40);
 }
 
-img {
-  border-radius: 6px;
-}
-
 :root {
   --pagefind-ui-scale: 0.8;
   --pagefind-ui-primary: var(--blue-50);
@@ -21,10 +17,30 @@ img {
   --pagefind-ui-font: var(--family-font);
 }
 
+img {
+  border-radius: 6px;
+}
+
 hr {
   width: 100%;
   border-color: var(--bg-10);
   margin: 64px 0;
+}
+
+kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: text-bottom;
+  padding: 0 4px;
+  border-radius: 4px;
+  min-width: 21px;
+  min-height: 21px;
+  font-size: 1vh;
+  background-color: var(--bg-10);
+  border: 1px solid var(--bg-30);
+  color: var(--text-10);
+  pointer-events: none;
 }
 
 table {
@@ -47,6 +63,7 @@ a.shortcut:not(summary a.shortcut) {
   padding: 8px 16px;
   border-radius: 8px;
   width: 100%;
+  position: relative;
 
   &::after {
     top: calc(50% - 6px);
@@ -55,11 +72,15 @@ a.shortcut:not(summary a.shortcut) {
     border-color: var(--text-30);
   }
 
+  &:hover {
+    z-index: 1;
+  }
+
   &:hover,
   &:active,
   &.active {
     color: var(--blue-50);
-    background: linear-gradient(160deg, color-mix(in oklab, var(--blue-50), transparent 85%), color-mix(in oklab, var(--blue-70), transparent 75%));
+    background: linear-gradient(160deg, color-mix(in oklab, var(--blue-50), transparent 85%), color-mix(in oklab, var(--blue-60), transparent 75%));
     box-shadow: 2px 2px 0 0 color-mix(in oklab, var(--blue-50), transparent 95%);
     // box-shadow: 2px 2px 0 0 color-mix(in oklab, var(--blue-70), transparent 75%);
 

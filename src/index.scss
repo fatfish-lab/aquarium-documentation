@@ -16,12 +16,16 @@
   box-sizing: border-box;
 }
 
+
+html {
+  background-color: var(--bg-00);
+}
+
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: var(--bg-00);
   color: var(--text-00);
 }
 
@@ -35,8 +39,40 @@ body {
   font-optical-sizing: auto;
   // gap: 38px;
   overflow-y: auto;
+  overflow-x: clip;
   height: fit-content;
   min-height: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+      position: absolute;
+      top: 0;
+      right: -30%;
+      width: 100%;
+      height: 21%;
+      // background-color: red;
+      background-image: linear-gradient(color-mix(in oklab, var(--cyan-50), transparent 95%) 2px, transparent 2px),
+        linear-gradient(90deg, color-mix(in oklab, var(--cyan-50), transparent 95%) 2px, transparent 2px);
+      background-size: 68px 68px, 68px 68px;
+      background-position: 0px 0px, 0px 0px;
+      z-index: -1;
+      mask-image: radial-gradient(79.63% 97.02% at 88.99% 2.8%, #FFF, transparent);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 65vh;
+    background-image: radial-gradient(59.63% 97.02% at 88.99% 2.8%,
+        color-mix(in srgb, var(--blue-50), transparent 90%) 4.4%, rgba(0, 0, 0, 0) 100%),
+        radial-gradient(79.63% 77.02% at 71.99% 2.8%,
+            color-mix(in srgb, var(--cyan-50), transparent 95%) 4.4%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.3;
+  }
 
   .clickable {
     cursor: pointer;
@@ -78,7 +114,7 @@ body {
     display: grid;
     grid-template-columns: 148px 1fr repeat(3, max-content);
     align-items: center;
-    padding: 4px 30px;
+    padding: 8px 30px;
     gap: 16px;
     border-bottom: 1px solid var(--bg-10);
     background-color: color-mix(in srgb, var(--bg-00) 80%, transparent);
@@ -151,6 +187,17 @@ body {
     align-items: center;
     width: 100%;
     position: relative;
+    border: 1px solid var(--bg-10);
+    border-radius: 8px;
+    padding: 0 8px;
+    transition: border-color 0.3s ease-in-out, background-color 0.1s ease-in-out;
+    background-color: color-mix(in srgb, var(--bg-00), transparent 100%);
+
+    &:hover,
+    &:focus-within {
+      border-color: var(--blue-50);
+      background-color: color-mix(in srgb, var(--bg-00), transparent 30%);
+    }
 
     .search-icon {
       color: var(--text-20);
@@ -439,7 +486,7 @@ body {
         padding: 0;
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 2px;
         margin: 0;
 
         >h5 {
