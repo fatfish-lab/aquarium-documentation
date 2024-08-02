@@ -182,5 +182,30 @@
   }, {
     "name": "episodes",
     "url": "focus/939107156/episodes/939107281?itemKey=939107193"
+  },
+  {
+    "name": "homepage",
+    "url": "939107156?app=Homepage",
+    "focus": [{
+      "selector": ".homepage-container .tools",
+      "content": "1",
+      "type": "circle"
+    },{
+      "selector": ".homepage-container .shortcuts",
+      "type": "circle",
+      "content": "2"
+    },{
+      "selector": ".homepage-container .wiki",
+      "type": "circle",
+      "content": "3"
+    },{
+      "selector": ".homepage-container .section-vertical",
+      "type": "circle",
+      "content": "4"
+    },{
+      "selector": ".workspace-tab.active",
+      "type": "circle",
+      "content": "5"
+    }]
   }
 ]

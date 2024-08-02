@@ -28,10 +28,14 @@ All workspaces works quite the same way and have same options available:
 ![Workspaces options](/_medias/workspaces-options.png)
 
 <$>[info]
-Don't forget to save your workspace after editing it. The save button is located at the top right of the workspace, when a change is detected.
+Don't forget to save your workspace after editing it. The <span class="aq-icon">save</span> save button is located at the top right of the workspace, when a change is detected.
 
 You can also enable auto-save in the [<span class="aq-icon">more_vert</span> menu](#more-options).
+
+If you don't have enough permissions to save the workspace, an error message will be displayed if you try to save it. Even if you can't save it, you can still temporary edit it and see the changes.
 <$>
+
+Those options are also accessible from the [workspace editor](../applications/workspaces.md).
 
 ## Filter
 
@@ -53,7 +57,7 @@ To filter based on the content of cells, right-click on a cell and select `Filte
 You can edit the filter to add more option, or filter other cell to narrow down your search.
 
 ### Save filters
-You can also save specific filters to re-use them later by clicking on "<span class="aq-icon">filter_alt</span> 1 filter".
+You can also save specific filters to re-use them later by clicking on "<span class="aq-icon">filter_alt</span> 1 filter". Filters can be created from the [Workspaces application](../applications/workspaces.md#filters).
 
 From the same menu you can define the search depth. It's an important concept, that can help you to unlock the full potential of the workspaces.
 
