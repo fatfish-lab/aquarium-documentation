@@ -4,5 +4,6 @@
   "cSpell.enabled": true,
   "cSpell.words": [
     "quickeditor"
-  ]
+  ],
+  "markdown.extension.completion.root": "src"
 }

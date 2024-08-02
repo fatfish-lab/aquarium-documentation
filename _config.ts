@@ -25,6 +25,13 @@ const site = lume({
   server: {
     page404: "./404.html",
   },
+  watcher: {
+    ignore: [
+      "/.git",
+      (path) => path.endsWith("/.DS_Store"),
+      (path) => path.endsWith("/_screenshots.json"),
+    ],
+  },
 }, { markdown });
 
 site.use(resolveUrls());
