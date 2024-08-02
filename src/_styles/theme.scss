@@ -59,7 +59,9 @@ a.shortcut:not(summary a.shortcut) {
   &:active,
   &.active {
     color: var(--blue-50);
-    background-color: color-mix(in oklab, var(--blue-50), transparent 85%);
+    background: linear-gradient(160deg, color-mix(in oklab, var(--blue-50), transparent 85%), color-mix(in oklab, var(--blue-70), transparent 75%));
+    box-shadow: 2px 2px 0 0 color-mix(in oklab, var(--blue-50), transparent 95%);
+    // box-shadow: 2px 2px 0 0 color-mix(in oklab, var(--blue-70), transparent 75%);
 
     .aq-icon {
       // background-image: linear-gradient(0deg, var(--blue-80), var(--blue-50));
@@ -244,6 +246,7 @@ article.card {
 
 blockquote {
   font-size: 1em;
+  color: var(--text-20);
 }
 
 details {

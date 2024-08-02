@@ -12,9 +12,9 @@
         {{ comp.button({ content: 'Make a contribution', icon: 'edit_square', color: 'bg-30' }) }}
       </a>
       {{ set repositoryURL = new URL(`${repository.author}/${repository.name}`, repository.host).toString() }}
-      {{ set issue = new URL(`${repository.author}/${repository.name}/issues/new?title=Fix ...&body=%0A%0A%0A%0A>[!NOTE]%0A>Related to file: ${page.src.path}${page.src.ext}`, repository.host).toString() }}
+      {{ set issue = new URL(`${repository.author}/${repository.name}/issues/new?title=Idea+&body=%0A%0A%0A%0A>[!NOTE]%0A>Related to file: ${page.src.path}${page.src.ext}`, repository.host).toString() }}
       <a {{`href=${issue}`}} target="_blank" rel="noreferrer" class="contribute">
-        {{ comp.button({ content: 'Report an issue', icon: 'warning', color: 'bg-30' }) }}
+        {{ comp.button({ content: 'Share an idea', icon: 'emoji_objects', color: 'bg-30' }) }}
       </a>
     </div>
   </div>

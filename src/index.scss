@@ -209,7 +209,7 @@ body {
     }
   }
 
-  #homepage {
+  >main#homepage {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 40% 1fr;
@@ -348,6 +348,7 @@ body {
     position: relative;
     height: 100%;
     padding: 40px;
+    min-width: 0;
 
     &.contact {
       padding-top: 120px;
@@ -405,6 +406,8 @@ body {
           background-color: var(--blue-50);
           color: var(--white-00);
           border-radius: 8px 8px 8px 0;
+          background: linear-gradient(160deg, color-mix(in srgb, var(--blue-70), transparent 15%), color-mix(in srgb, var(--blue-90), transparent 15%));
+          box-shadow: 2px 2px 0 0 color-mix(in oklab, var(--blue-50), transparent 95%);
           // clip-path: polygon(0.5em 0, 100% 0, calc(100% - 0.5em) 100%, 0 100%);
         }
 
