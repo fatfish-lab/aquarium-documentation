@@ -39,6 +39,8 @@ $items: (
     stroke: var(--teal-70)),
   "Text": (fill: var(--cyan-30),
     stroke: var(--cyan-50)),
+  "startpoint": (fill: var(--bg-20),
+    stroke: var(--red-50)),
 );
 
 .mermaid {
