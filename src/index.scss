@@ -227,15 +227,21 @@ body {
           }
 
           .pagefind-ui__search-clear {
-            display: none;
+            top: 0;
+            right: 0;
+            height: 100%;
+            padding: 8px;
+            color: var(--text-20);
           }
 
           .pagefind-ui__drawer {
+            --pagefind-ui-scale: 1;
             background-color: var(--bg-00);
-            padding: 16px;
-            border-radius: 0 0 8px 8px;
+            padding: 32px;
+            gap: 32px 58px;
+            border-radius: 8px;
             position: absolute;
-            top: 38px;
+            top: calc(var(--header-height) - 12px);
             width: 100%;
             border-color: var(--bg-10);
             border-width: 0 1px 1px 1px;
@@ -243,10 +249,104 @@ body {
             max-height: 60vh;
             overflow-y: auto;
             box-shadow: 0 8px 16px 0 color-mix(in oklab, var(--text-30), transparent 45%);
+            container: drawer / inline-size;
 
-            .pagefind-ui__result-thumb {
-              border-radius: 8px;
-              background-color: var(--bg-10);
+            .pagefind-ui__filter-panel {
+              margin: 0;
+              position: sticky;
+              top: 0;
+              height: fit-content;
+
+              .pagefind-ui__filter-block {
+                padding: 0;
+
+                &[open] {
+                  summary {
+                    border: unset;
+                    &::after {
+                      transform: rotate(-225deg);
+                    }
+                  }
+                }
+
+
+                summary {
+                  background-color: var(--bg-20);
+                  border-radius: 4px;
+                  padding: 8px;
+                  height: unset;
+
+                  &::after {
+                    right: 16px;
+                    border-color: var(--text-20);
+                  }
+                }
+
+
+                .pagefind-ui__filter-group {
+                  padding: 0;
+                  gap: 8px;
+
+                  .pagefind-ui__filter-value {
+                    label:hover {
+                      color: var(--blue-50);
+                    }
+                  }
+
+                  .pagefind-ui__filter-checkbox {
+                    background-color: var(--bg-20);
+                    border: solid 1px var(--bg-10);
+
+                    &:checked {
+                      background-color: var(--blue-50);
+                      border-color: var(--blue-90);
+                    }
+                  }
+                }
+              }
+            }
+
+            @container drawer (width < calc(400px + 32px + 58px + 260px)) {
+              .pagefind-ui__filter-panel {
+                position: relative;
+              }
+            }
+
+            .pagefind-ui__results-area {
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              margin: 0;
+
+              .pagefind-ui__message {
+                padding: 0;
+              }
+
+              .pagefind-ui__results {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .pagefind-ui__result {
+                  padding: 0;
+
+                  mark {
+                    background-color: var(--yellow-10);
+                    border-radius: 4px;
+                    padding: 0.1em 0;
+                  }
+
+                  .pagefind-ui__result-thumb {
+                    border-radius: 8px;
+                    background-color: var(--bg-20);
+                  }
+                }
+              }
+
+              .pagefind-ui__button {
+                background-color: color-mix(in srgb, var(--blue-50), transparent 90%);
+              }
+
             }
           }
         }

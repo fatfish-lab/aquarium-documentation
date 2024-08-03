@@ -3,8 +3,8 @@
 <main id="main" class="{{ if notoc != true }}with-toc{{ /if }}">
   {{ include "./sidebar.vto" }}
   <div id="content"
-    {{ if pagefind && pagefind.section }}data-pagefind-filter="section:{{capitalize(pagefind.section)}}"
-    data-pagefind-meta="{{pagefind.section}}:{{filename}}"{{ /if }}>
+    {{ if pagefind && pagefind.topic }}data-pagefind-filter="topic:{{capitalize(pagefind.topic)}}"
+    data-pagefind-meta="{{pagefind.topic}}:{{filename}}"{{ /if }}>
     {{ content }}
     <div class="toolbox">
       {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/src/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}

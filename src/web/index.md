@@ -1,7 +1,7 @@
 ---
 id: web
 title: Web
-section: Web interface
+topic: Web interface
 lang: en
 shortcut: true
 icon: web

@@ -1,7 +1,7 @@
 ---
 id: how-to
 title: How to
-section: How to & guides
+topic: How to & guides
 lang: en
 nav_order: 40
 shortcut: true

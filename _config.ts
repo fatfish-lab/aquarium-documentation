@@ -46,7 +46,7 @@ site.use(pagefind({
     showEmptyFilters: false,
     showSubResults: false,
     resetStyles: true,
-    openFilters: ['section']
+    openFilters: ['topic']
   }
 }));
 site.use(nav());

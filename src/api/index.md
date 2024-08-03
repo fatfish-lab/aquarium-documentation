@@ -1,7 +1,7 @@
 ---
 id: api
 title: Introduction
-section: API & modules
+topic: API & modules
 lang: en
 nav_order: 20
 shortcut: true
