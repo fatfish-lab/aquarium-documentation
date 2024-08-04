@@ -248,7 +248,7 @@ body {
             border-style: solid;
             max-height: 60vh;
             overflow-y: auto;
-            box-shadow: 0 8px 16px 0 color-mix(in oklab, var(--text-30), transparent 45%);
+            box-shadow: 0 8px 16px 0 color-mix(in oklab, #000, transparent 65%);
             container: drawer / inline-size;
 
             .pagefind-ui__filter-panel {
@@ -331,7 +331,7 @@ body {
                   padding: 0;
 
                   mark {
-                    background-color: var(--yellow-10);
+                    background-color: var(--yellow-10-oc);
                     border-radius: 4px;
                     padding: 0.1em 0;
                   }
@@ -339,6 +339,10 @@ body {
                   .pagefind-ui__result-thumb {
                     border-radius: 8px;
                     background-color: var(--bg-20);
+                  }
+
+                  .pagefind-ui__result-tag {
+                    color: var(--bg-00);
                   }
                 }
               }
