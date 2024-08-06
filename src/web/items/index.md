@@ -86,7 +86,7 @@ Those presets are used to define lower level permissions. You can click on the `
 
 > The `Inherit these permissions` is a special flag that is enabled by default, that allow the children items to inherit the permissions of the parent item. This flag is represented by the `*` on the permission. Most of the time, you don't need to change this flag, it's only here for special cases.
 
-# What actions can I do on an item ?
+# What actions can I do on an item ? {#actions}
 
 On Aquarium, you can do several actions on an item. Here is a list of the most common actions :
 
