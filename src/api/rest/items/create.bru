@@ -1,0 +1,26 @@
+meta {
+  name: Create an item
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "type": "Task",
+      "data": {
+          "name": "My new task"
+      }
+  }
+}
+
+docs {
+  Create an item. This item won't be attached to any other item, therefore unreachable using a traversal. Use its `_key` or `_id` to retrieve it with the routes `GET /items/:_key` or `POST /query`. To create an item attached to an existing one, use the route `POST /items/existingItemKey/append`.
+
+  > Permissions: w
+}

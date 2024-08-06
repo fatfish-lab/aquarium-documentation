@@ -1,6 +1,17 @@
+{{if url != null}}
 <a href="{{url}}" class="shortcut {{ if active }}active{{ /if }}">
-  {{ if icon }}
+  {{ if chip }}
+    <span class="aq-chip {{chip}}">{{chip}}</span>
+  {{ else if icon }}
     <span class="aq-icon">{{icon}}</span>
   {{ /if }}
   {{ topic || title }}
 </a>
+{{ else }}
+<span class="shortcut {{ if active }}active{{ /if }}">
+  {{ if icon }}
+    <span class="aq-icon">{{icon}}</span>
+  {{ /if }}
+  {{ topic || title || slug }}
+</span>
+{{ /if }}

@@ -1,0 +1,25 @@
+meta {
+  name: Re-generate a personal access token
+  type: http
+  seq: 19
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/users/me/tokens/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: {{tokenId}}
+}
+
+body:json {
+  {
+      "expireAt": "2023-12-31"
+  }
+}
+
+docs {
+  No description
+}

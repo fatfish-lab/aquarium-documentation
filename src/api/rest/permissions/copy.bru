@@ -1,0 +1,31 @@
+meta {
+  name: Copy permissions
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/permissions/copy
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{targetCopyPermissionsKey}}
+}
+
+body:json {
+  {
+      "targetKey": "{{targetCopyPermissionsKey}}",
+      "propagate": true
+  }
+}
+
+docs {
+  Copy the permissions of item `_key` onto item `targetKey`.
+  `propagate` option allow to propagate the permission copy to the hierarchy.
+
+  > The endpoint only create and update existing permissions. It do not delete any existing participant.
+
+  > Permissions: `r` on the source item, `s` on the target item.
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Delete file
+  type: http
+  seq: 9
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/files/:_key
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: 249588
+}
+
+docs {
+  Delete a file.
+
+  > Permissions: `d` on the domain usergroup.
+}

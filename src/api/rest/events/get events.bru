@@ -1,0 +1,42 @@
+meta {
+  name: Get events
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/events/list
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "types": ["item.create.Group"],
+      "search": "keyword",
+      "offset": 0,
+      "limit": 50,
+      "createdBy": "12345",
+      "updatedBy": "12345",
+      "start": "2024-05-01T08:24:27.164Z",
+      "end": "2024-05-05T08:24:27.164Z"
+  }
+}
+
+docs {
+  Retrieve a list of events.
+
+  > Authenticated.
+  > Permissions: User is admin or super-admin.
+
+  #### Request Body
+
+  - types (array of strings, optional): An array of event types to filter the results.
+  - search (string, optional): A search string to filter the results.
+  - offset (integer, optional): The offset for paginating through the results.
+  - limit (integer, optional): The limit of results to be returned.
+  - createdBy (string, optional): Filter the results by the creator of the event.
+  - updatedBy (string, optional): Filter the results by the user who last updated the event.
+  - start (string, optional): The start date for filtering the events.
+  - end (string, optional): The end date for filtering the events.
+}

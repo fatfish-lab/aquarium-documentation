@@ -1,0 +1,27 @@
+meta {
+  name: Rename authenticator
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{protocol}}://{{url}}/{{version}}/users/me/authenticator/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 123
+}
+
+body:json {
+  {
+      "name": "New authenticator name"
+  }
+}
+
+docs {
+  Rename an authenticator device.
+
+  > Permissions: `w` on the authenticated user.
+}

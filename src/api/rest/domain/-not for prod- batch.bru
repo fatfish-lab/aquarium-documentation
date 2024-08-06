@@ -1,0 +1,38 @@
+meta {
+  name: [Not ready for production] Batch
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/batch
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "payload": [
+          {
+              "method": "GET",
+              "route": "items",
+              "data": {
+                  "_key": "{{meKey}}"
+              }
+          },
+          {
+              "method": "GET",
+              "route": "items",
+              "data": {
+                  "_key": "{{meKey}}"
+              }
+          }
+      ]
+  }
+}
+
+docs {
+  Execute multiple API queries at once.
+
+  > Permissions: none.
+}

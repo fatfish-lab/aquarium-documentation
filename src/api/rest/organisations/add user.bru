@@ -1,0 +1,27 @@
+meta {
+  name: Add user in organisation
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/organisations/:_key/member
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:path {
+  _key: 341
+}
+
+body:form-urlencoded {
+  userKey: {{meKey}}
+  email: {{email}}
+}
+
+docs {
+  Add a user in the usergroup.
+
+  > Authenticated.
+  > Permissions: `a` on the usergroup.
+}

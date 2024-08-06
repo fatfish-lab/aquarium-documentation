@@ -1,0 +1,17 @@
+meta {
+  name: Get my authenticator devices
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/users/me/authenticator
+  body: none
+  auth: inherit
+}
+
+docs {
+  Get the list of the authentication devices of the connected user.
+
+  > Permissions: none.
+}

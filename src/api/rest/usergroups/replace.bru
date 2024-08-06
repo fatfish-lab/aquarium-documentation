@@ -1,0 +1,28 @@
+meta {
+  name: Replace users in usergroup
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{protocol}}://{{url}}/{{version}}/usergroups/:_key
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: domain
+}
+
+body:json {
+  {
+      "userKeys": ["{{meKey}}"]
+  }
+}
+
+docs {
+  Replace users in the usergroup.
+
+  > Authenticated.
+  Permissions: `s` on the usergroup.
+}

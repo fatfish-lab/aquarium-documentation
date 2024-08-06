@@ -1,0 +1,29 @@
+meta {
+  name: Traverse events
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/events/:id//traverse
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id:
+}
+
+body:json {
+  {
+  	"query": "# -(3)> path.edges[*].type ALL IN ['Chain', 'Trigger'] SORT null",
+      "aliases": {}
+  }
+}
+
+docs {
+  Traverse events using an item or event as startpoint
+
+  > Authenticated.
+  Permissions: `r` on each item being traversed and admin or super-admin.
+}

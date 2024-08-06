@@ -1,0 +1,17 @@
+meta {
+  name: Get my user profile
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/users/me
+  body: none
+  auth: inherit
+}
+
+docs {
+  Get the authenticated user profile and its usergroups and organisations.
+
+  > Permissions: none.
+}

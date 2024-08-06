@@ -1,0 +1,17 @@
+meta {
+  name: Status (stream)
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/status/stream
+  body: none
+  auth: inherit
+}
+
+docs {
+  Get the server status as a continuous stream of data (for dashboard apps for example).
+
+  > Permissions: none.
+}

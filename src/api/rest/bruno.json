@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Aquarium V2.1",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

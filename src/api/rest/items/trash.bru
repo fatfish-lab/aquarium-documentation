@@ -1,0 +1,28 @@
+meta {
+  name: Trash item
+  type: http
+  seq: 18
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/trash
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:path {
+  _key: 72015
+}
+
+body:form-urlencoded {
+  propagate: true
+}
+
+docs {
+  Trash an item.
+
+  The optional `propagate` body parameter define if you want to propagate the trash action on the item's content. By default propagate is `true`.
+
+  > Authenticated.
+  Permissions: `t` on the item.
+}

@@ -1,0 +1,28 @@
+meta {
+  name: Remove a user from a usergroup
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/usergroups/:_key
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: domain
+}
+
+body:json {
+  {
+      "userKey": "{{meKey}}"
+  }
+}
+
+docs {
+  Remove a user from the usergroup.
+
+  > Authenticated.
+  > Permissions: `a` on the usergoup.
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get an item
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key?populate=true
+  body: none
+  auth: inherit
+}
+
+params:query {
+  populate: true
+  ~history: true
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+docs {
+  Get an item by its `_key` property.
+
+  > Permissions: r
+}

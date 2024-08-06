@@ -1,0 +1,25 @@
+meta {
+  name: Get flat permissions
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/permissions/flat?accountKey={{meKey}}
+  body: none
+  auth: inherit
+}
+
+params:query {
+  accountKey: {{meKey}}
+}
+
+params:path {
+  _key: domain
+}
+
+docs {
+  Get the list of users and their access to an item.
+
+  > Permissions: `r` on the item.
+}

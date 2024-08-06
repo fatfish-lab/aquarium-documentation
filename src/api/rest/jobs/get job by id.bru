@@ -1,0 +1,20 @@
+meta {
+  name: Get job by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/jobs/:queue/:_key
+  body: none
+  auth: inherit
+}
+
+params:path {
+  queue: queries
+  _key: 1234
+}
+
+docs {
+  No description
+}

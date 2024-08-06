@@ -1,5 +1,6 @@
 _site
-_build
 _cache
 .DS_Store
 .env
+./src/api/rest/environments
+!./src/api/rest/environments/default.bru

@@ -1,0 +1,27 @@
+meta {
+  name: Shortest path
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/items/:startKey/path/:targetKey?enforceEndpoints=true
+  body: none
+  auth: inherit
+}
+
+params:query {
+  enforceEndpoints: true
+}
+
+params:path {
+  startKey: {{meKey}}
+  targetKey: {{meKey}}
+}
+
+docs {
+  Get the shortest path between two items.
+
+  > Authenticated.
+  Permissions: `r` on the starting item, `r` on the destination item.
+}

@@ -1,0 +1,26 @@
+meta {
+  name: Get MFA status
+  type: http
+  seq: 13
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/users/:_key/mfa/status
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+headers {
+  Authorization: {{token}}
+  Content-Type: application/x-www-form-urlencoded
+}
+
+docs {
+  Get the status of the Multiple Authentication Factor system for this user.
+
+  > Permissions: `r` on the user.
+}

@@ -1,0 +1,25 @@
+meta {
+  name: Upload file
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/files
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  ~Content-Type: application/x-www-form-urlencoded
+}
+
+body:multipart-form {
+  file: @file(/E:/Aquarium/video_small.mp4)
+}
+
+docs {
+  Upload a file and return its meta data. The meta data can also contain a `jobKey` property. This allows to track the progress of the processing being done on the file (video conversion, audio spectrogram vizualisation,...)
+
+  > Permissions: none.
+}

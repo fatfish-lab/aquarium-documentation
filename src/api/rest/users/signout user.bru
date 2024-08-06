@@ -1,0 +1,21 @@
+meta {
+  name: Signout user
+  type: http
+  seq: 14
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/users/:_key/signout
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+docs {
+  Sign out a user.
+
+  > Permissions: `w` on the user.
+}

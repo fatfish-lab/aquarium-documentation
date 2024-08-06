@@ -1,7 +1,7 @@
-{{ import { capitalize, filename } from 'utils.vto'}}
+{{ import { capitalize, filename } from '../utils.vto'}}
 
 <main id="main" class="{{ if notoc != true }}with-toc{{ /if }}">
-  {{ include "./sidebar.vto" }}
+  {{ include "../sidebar.vto" }}
   <div id="content"
     {{ if pagefind && pagefind.topic }}data-pagefind-filter="topic:{{capitalize(pagefind.topic)}}"
     data-pagefind-meta="{{pagefind.topic}}:{{filename}}"{{ /if }}>
@@ -18,26 +18,7 @@
       </a>
     </div>
   </div>
-  {{ if notoc != true && toc.length }}
-    <nav class="toc">
-      <h4 class="title">On this page</h4>
-      <ol>
-        {{ for item of toc }}
-        <li>
-          <a href="#{{ item.slug }}">{{ item.text }}</a>
-
-          {{ if item.children.length }}
-          <ul>
-            {{ for child of item.children }}
-            <li>
-              <a href="#{{ child.slug }}">{{ child.text }}</a>
-            </li>
-            {{ /for }}
-          </ul>
-          {{ /if }}
-        </li>
-        {{ /for }}
-      </ol>
-    </nav>
+  {{ if notoc != true && toc && toc.length }}
+    {{ include "./toc.vto" }}
   {{ /if }}
 </main>

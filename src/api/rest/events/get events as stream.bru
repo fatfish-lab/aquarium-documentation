@@ -1,0 +1,24 @@
+meta {
+  name: Get events as stream
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/events/stream
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "types": ["item.create.Group"]
+  }
+}
+
+docs {
+  Get events as stream
+
+  > Authenticated.
+  > Permissions: User is admin or super-admin.
+}

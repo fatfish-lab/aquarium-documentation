@@ -1,0 +1,27 @@
+meta {
+  name: Remove permissions
+  type: http
+  seq: 7
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/permissions
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+      "userKey": "266"
+  }
+}
+
+docs {
+  Remove an item permissions. This will revoke the access of an item for a specified user or usergroup.
+
+  > Permissions: `g` on the item.
+}

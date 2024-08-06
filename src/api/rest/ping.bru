@@ -1,0 +1,15 @@
+meta {
+  name: Ping
+  type: http
+  seq: 10000
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/ping
+  body: none
+  auth: none
+}
+
+docs {
+  Ping the server.
+}

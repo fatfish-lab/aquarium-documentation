@@ -1,0 +1,28 @@
+meta {
+  name: Verify
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/mfa/webauthn/add/verify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "id": "",
+      "rawId": "",
+      "transports": ["usb"],
+      "type": "public-key",
+      "response": {
+          "attestationObject": "",
+          "clientDataJSON": ""
+      }
+  }
+}
+
+docs {
+  No description
+}

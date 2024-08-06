@@ -1,0 +1,54 @@
+meta {
+  name: Compare
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/templates/:templateKey/compare/:itemKey
+  body: json
+  auth: inherit
+}
+
+params:path {
+  templateKey: 277056
+  itemKey: 278053
+}
+
+body:json {
+  {
+      "properties": ["data.name", "data.status"],
+      "types": ["Comment"],
+      "exclude": false
+  }
+}
+
+docs {
+  Apply a template to an item.
+
+  > Permissions: `a` on the item on which the template is applied.
+
+  By default, all item's type in the `types` parameter will be included. To exclude elements, you can use the `exclude` boolean parameter.
+
+  Examples :
+
+  To only include Task when comparing a template :
+
+  ``` json
+  {
+      "types": ["Task"],
+      "exclude": false
+  }
+
+  ```
+
+  To include all types except for Task when comparing a template :
+
+  ``` json
+  {
+      "types": ["Task"],
+      "exclude": true
+  }
+
+  ```
+}

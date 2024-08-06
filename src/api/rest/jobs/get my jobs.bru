@@ -1,0 +1,19 @@
+meta {
+  name: Get my jobs
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/jobs/me/:mode
+  body: none
+  auth: inherit
+}
+
+params:path {
+  mode: normal
+}
+
+docs {
+  No description
+}

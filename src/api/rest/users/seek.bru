@@ -1,0 +1,21 @@
+meta {
+  name: Seek
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/users/seek/:name
+  body: none
+  auth: inherit
+}
+
+params:path {
+  name: Sys
+}
+
+docs {
+  Search for a user or usergroup whose name starts with the provided string.
+
+  > Permissions: none.
+}

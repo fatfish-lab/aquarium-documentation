@@ -1,0 +1,21 @@
+meta {
+  name: Remove license
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/licenses/:filename
+  body: none
+  auth: inherit
+}
+
+params:path {
+  filename: license.lic
+}
+
+docs {
+  Remove a license by its filename.
+
+  > Permissions: `d` on the domain usergroup.
+}

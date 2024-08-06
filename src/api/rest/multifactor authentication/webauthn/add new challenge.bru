@@ -1,0 +1,15 @@
+meta {
+  name: Add a new challenge
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/mfa/webauthn/add
+  body: none
+  auth: inherit
+}
+
+docs {
+  No description
+}

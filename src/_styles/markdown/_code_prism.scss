@@ -21,6 +21,8 @@ limitations under the License.
 pre {
     &[class*="language-"] {
         > code {
+            background: transparent;
+
             @include prism-theme-punctuation($code-text-dark);
             @include prism-theme-comment($code-text-dark);
             @include prism-theme-selector($code-selector-dark);
@@ -28,7 +30,6 @@ pre {
             @include prism-theme-function($code-function-dark);
             @include prism-theme-number($code-number-dark);
 
-            background: transparent;
 
             &,
             .token {

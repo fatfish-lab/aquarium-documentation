@@ -1,0 +1,34 @@
+meta {
+  name: Traverse
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/traverse
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+  	"query": "# -()> 0, 3 * VIEW $output",
+      "aliases": {
+          "output": {
+              "name": "item.data.name",
+              "createdBy": "GETITEM(item.createdBy).data.name"
+          }
+      }
+  }
+}
+
+docs {
+  Query the items connected to a specific item.
+
+  > Authenticated.
+  > Permissions: `r` on each item being traversed.
+}

@@ -54,13 +54,14 @@ table {
 
 details > summary.shortcut,
 details[open] > summary.shortcut,
+span.shortcut:not(summary span.shortcut),
 a.shortcut:not(summary a.shortcut) {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
   gap: 16px;
   color: var(--text-00);
-  padding: 8px 16px;
+  padding: 8px;
   border-radius: 8px;
   width: 100%;
   position: relative;
@@ -255,6 +256,43 @@ article.card {
     text-transform: uppercase;
     font-size: var(--font);
     white-space: nowrap;
+  }
+}
+
+.aq-chip {
+  &.get {
+    text-transform: uppercase;
+    font-family: monospace;
+    --color: var(--green-50);
+    min-width: 54px;
+  }
+
+  &.post {
+    text-transform: uppercase;
+    font-family: monospace;
+    --color: var(--orange-50);
+    min-width: 54px;
+  }
+
+  &.put {
+    text-transform: uppercase;
+    font-family: monospace;
+    --color: var(--blue-50);
+    min-width: 54px;
+  }
+
+  &.delete {
+    text-transform: uppercase;
+    font-family: monospace;
+    --color: var(--red-50);
+    min-width: 54px;
+  }
+
+  &.patch {
+    text-transform: uppercase;
+    font-family: monospace;
+    --color: var(--grape-50);
+    min-width: 54px;
   }
 }
 

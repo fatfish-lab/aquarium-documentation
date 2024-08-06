@@ -1,0 +1,22 @@
+meta {
+  name: Signin (with redirect)
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/sso/oidc/signin?code={{oidcCode}}&redirect={{oidcRedirect}}
+  body: formUrlEncoded
+  auth: none
+}
+
+params:query {
+  code: {{oidcCode}}
+  redirect: {{oidcRedirect}}
+}
+
+docs {
+  Sign in a user and get a token.
+
+  > Permissions: none
+}

@@ -21,6 +21,7 @@
       "jsr:@std/fmt@^0.225.5": "jsr:@std/fmt@0.225.5",
       "jsr:@std/fmt@^1.0.0-rc.1": "jsr:@std/fmt@1.0.0-rc.1",
       "jsr:@std/front-matter@0.224.3": "jsr:@std/front-matter@0.224.3",
+      "jsr:@std/fs": "jsr:@std/fs@0.229.3",
       "jsr:@std/fs@0.229.3": "jsr:@std/fs@0.229.3",
       "jsr:@std/fs@^1.0.0-rc.3": "jsr:@std/fs@1.0.0-rc.5",
       "jsr:@std/fs@^1.0.0-rc.5": "jsr:@std/fs@1.0.0-rc.6",
@@ -34,6 +35,7 @@
       "jsr:@std/log@0.224.5": "jsr:@std/log@0.224.5",
       "jsr:@std/media-types@^1.0.0-rc.1": "jsr:@std/media-types@1.0.2",
       "jsr:@std/net@^0.224.3": "jsr:@std/net@0.224.5",
+      "jsr:@std/path": "jsr:@std/path@1.0.0",
       "jsr:@std/path@0.225.2": "jsr:@std/path@0.225.2",
       "jsr:@std/path@1.0.0": "jsr:@std/path@1.0.0",
       "jsr:@std/path@1.0.0-rc.1": "jsr:@std/path@1.0.0-rc.1",
@@ -48,6 +50,8 @@
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
       "npm:@types/estree@1.0.5": "npm:@types/estree@1.0.5",
       "npm:@types/node": "npm:@types/node@18.16.19",
+      "npm:@usebruno/lang": "npm:@usebruno/lang@0.15.0",
+      "npm:@usebruno/lang@0.15.0": "npm:@usebruno/lang@0.15.0",
       "npm:date-fns@3.6.0": "npm:date-fns@3.6.0",
       "npm:estree-walker@3.0.3": "npm:estree-walker@3.0.3",
       "npm:highlight.js@11.9.0": "npm:highlight.js@11.9.0",
@@ -311,6 +315,15 @@
         "integrity": "sha512-IfYcSBWE3hLpBg8+X2SEa8LVkJdJEkT2Ese2aaLs3ptGdVtABxndrMaxuFlQ1qdFf9Q5rDvDpxI3WwgvKFAsQA==",
         "dependencies": {}
       },
+      "@usebruno/lang@0.15.0": {
+        "integrity": "sha512-bSWMnZpbpXK/SyG4bDPhaD2mj2U0h0mQbur0UPDjOjb9hckP1miu5d+QNz9Rsgfaf+Dnsf69uhtiUE4DFjuFmQ==",
+        "dependencies": {
+          "arcsecond": "arcsecond@5.0.0",
+          "dotenv": "dotenv@16.4.5",
+          "lodash": "lodash@4.17.21",
+          "ohm-js": "ohm-js@16.6.0"
+        }
+      },
       "a-sync-waterfall@1.0.1": {
         "integrity": "sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==",
         "dependencies": {}
@@ -321,6 +334,10 @@
           "normalize-path": "normalize-path@3.0.0",
           "picomatch": "picomatch@2.3.1"
         }
+      },
+      "arcsecond@5.0.0": {
+        "integrity": "sha512-J/fHdyadnsIencRsM6oUSsraCKG+Ni9Udcgr/eusxjTzX3SEQtCUQSpP0YtImFPfIK6DdT1nqwN0ng4FqNmwgA==",
+        "dependencies": {}
       },
       "argparse@2.0.1": {
         "integrity": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==",
@@ -694,6 +711,10 @@
           "domhandler": "domhandler@5.0.3"
         }
       },
+      "dotenv@16.4.5": {
+        "integrity": "sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==",
+        "dependencies": {}
+      },
       "elkjs@0.9.3": {
         "integrity": "sha512-f/ZeWvW/BCXbhGEf1Ujp29EASo/lk1FDnETgNKwJrsVvGZhUWCZyg3xLJjAsxfOmt8KjswHmI5EwCQcPMpOYhQ==",
         "dependencies": {}
@@ -805,6 +826,10 @@
       },
       "lodash-es@4.17.21": {
         "integrity": "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==",
+        "dependencies": {}
+      },
+      "lodash@4.17.21": {
+        "integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
         "dependencies": {}
       },
       "markdown-it-attrs@4.1.6_markdown-it@14.1.0": {
@@ -1105,6 +1130,10 @@
           "asap": "asap@2.0.6",
           "commander": "commander@5.1.0"
         }
+      },
+      "ohm-js@16.6.0": {
+        "integrity": "sha512-X9P4koSGa7swgVQ0gt71UCYtkAQGOjciJPJAz74kDxWt8nXbH5HrDOQG6qBDH7SR40ktNv4x61BwpTDE9q4lRA==",
+        "dependencies": {}
       },
       "pagefind@1.1.0": {
         "integrity": "sha512-1nmj0/vfYcMxNEQj0YDRp6bTVv9hI7HLdPhK/vBBYlrnwjATndQvHyicj5Y7pUHrpCFZpFnLVQXIF829tpFmaw==",

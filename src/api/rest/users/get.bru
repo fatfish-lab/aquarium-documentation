@@ -1,0 +1,21 @@
+meta {
+  name: Get user profile
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/users/:_key
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+docs {
+  Get the profile informations of a user.
+
+  > Permissions: `r` on the user.
+}

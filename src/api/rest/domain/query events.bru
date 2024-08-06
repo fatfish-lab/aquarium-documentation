@@ -1,0 +1,26 @@
+meta {
+  name: Query events
+  type: http
+  seq: 11
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/query/events
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  	"query": "# 0,3 item.type == 'Task' VIEW $view",
+  	"aliases": {
+  		"view": "item.data.name"
+  	}
+  }
+}
+
+docs {
+  Execute a domain-wide [meshQL](https://docs.fatfish.app/#/dev/meshql) query.
+
+  > Permissions: none.
+}

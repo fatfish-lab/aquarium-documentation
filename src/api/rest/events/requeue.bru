@@ -1,0 +1,22 @@
+meta {
+  name: Requeue an event
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/events/:_key/requeue
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key:
+}
+
+docs {
+  Requeue an event to be processed again.
+
+  > Authenticated.
+  Permissions: User is admin or super-admin.
+}

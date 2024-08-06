@@ -1,0 +1,37 @@
+meta {
+  name: Signin
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/bots/:_key/signin
+  body: json
+  auth: none
+}
+
+params:path {
+  _key:
+}
+
+headers {
+  ~x-aquarium-domain: {{domain}}
+}
+
+body:json {
+  {
+      "secret": "{{secret}}"
+  }
+}
+
+tests {
+  var jsonData = JSON.parse(responseBody);
+  // postman.setEnvironmentVariable("token", jsonData.token);
+  bru.setEnvVar("meKey", jsonData.bot._key);
+}
+
+docs {
+  Sign in a user and get a token.
+
+  > Permissions: none
+}

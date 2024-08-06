@@ -1,0 +1,28 @@
+meta {
+  name: Add user in usergroup
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/usergroups/:_key
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: domain
+}
+
+body:json {
+  {
+      "userKey": "{{meKey}}"
+  }
+}
+
+docs {
+  Add a user in the usergroup.
+
+  > Authenticated.
+  Permissions: `s` on the usergroup.
+}

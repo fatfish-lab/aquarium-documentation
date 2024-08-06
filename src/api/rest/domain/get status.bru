@@ -1,0 +1,17 @@
+meta {
+  name: Get status
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/
+  body: none
+  auth: inherit
+}
+
+docs {
+  Get the status of the domain.
+
+  > Permissions: none.
+}

@@ -1,0 +1,27 @@
+meta {
+  name: Move an item
+  type: http
+  seq: 11
+}
+
+put {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/move
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:path {
+  _key: 1234
+}
+
+body:form-urlencoded {
+  oldParentKey: {{oldParentKey}}
+  newParentKey: {{newParentKey}}
+}
+
+docs {
+  Move an item to change its parent. Affects inbount edge of type "Child"
+
+  > Authenticated.
+  > Permissions: `w` on the item being moved, `a` on the target item `newParentKey`.
+}

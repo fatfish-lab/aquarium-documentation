@@ -1,0 +1,23 @@
+meta {
+  name: Console
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/console
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+  	"value": "help"
+  }
+}
+
+docs {
+  Send a command to the domain console.
+
+  > Permissions: `w` on the domain usergroup.
+}

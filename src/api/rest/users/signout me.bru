@@ -1,0 +1,17 @@
+meta {
+  name: Signout me
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/signout
+  body: none
+  auth: inherit
+}
+
+docs {
+  Sign out the authenticated user.
+
+  > Permissions: none.
+}

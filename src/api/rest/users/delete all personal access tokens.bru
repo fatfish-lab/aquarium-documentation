@@ -1,0 +1,15 @@
+meta {
+  name: Delete all personal access tokens
+  type: http
+  seq: 21
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/users/me/tokens
+  body: none
+  auth: inherit
+}
+
+docs {
+  No description
+}

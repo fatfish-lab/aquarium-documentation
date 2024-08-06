@@ -1,0 +1,26 @@
+meta {
+  name: Get an edge
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/edges/:_key?history=true
+  body: none
+  auth: inherit
+}
+
+params:query {
+  history: true
+  ~populate: true
+}
+
+params:path {
+  _key: 1234
+}
+
+docs {
+  Get an edge by its `_key` property.
+
+  > Permissions: `r` on the item from which the edge originates.
+}

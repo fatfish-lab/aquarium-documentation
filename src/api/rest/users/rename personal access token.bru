@@ -1,0 +1,25 @@
+meta {
+  name: Rename a personal access token
+  type: http
+  seq: 18
+}
+
+patch {
+  url: {{protocol}}://{{url}}/{{version}}/users/me/tokens/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: {{tokenId}}
+}
+
+body:json {
+  {
+      "name": "My renamed token"
+  }
+}
+
+docs {
+  No description
+}

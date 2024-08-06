@@ -1,0 +1,26 @@
+meta {
+  name: Download item file
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/download?versionKey
+  body: none
+  auth: inherit
+}
+
+params:query {
+  versionKey: null
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+docs {
+  Download the file attached to an item if existing.
+
+  > Authenticated.
+  > Permissions: `r` on the item.
+}

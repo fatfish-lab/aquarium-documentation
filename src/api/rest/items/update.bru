@@ -1,0 +1,32 @@
+meta {
+  name: Update an item
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+      "data": {
+          "name": "System",
+          "email": "system@fatfi.sh"
+      },
+      "history": true,
+      "message": "Completion updated !"
+  }
+}
+
+docs {
+  Update an item. This will completely **replace** the existing `data` by the provided `data`.
+
+  > Permissions: `w` on the item to update.
+}

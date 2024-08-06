@@ -1,0 +1,22 @@
+meta {
+  name: Remove
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/trashed_items/:_key
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: 1234
+}
+
+docs {
+  Query the items connected to a specific item.
+
+  > Authenticated.
+  > Permissions: `r` on each item being traversed.
+}

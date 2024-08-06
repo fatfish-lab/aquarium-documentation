@@ -1,0 +1,29 @@
+meta {
+  name: Get an event
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/events/:_key?populate=false
+  body: json
+  auth: inherit
+}
+
+params:query {
+  populate: false
+}
+
+params:path {
+  _key: {{eventKey}}
+}
+
+body:json {
+  {
+      "types": ["item.create.Group"]
+  }
+}
+
+docs {
+  No description
+}

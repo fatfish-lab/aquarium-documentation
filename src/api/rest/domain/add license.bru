@@ -1,0 +1,21 @@
+meta {
+  name: Add license
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/licenses
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  file: @file(/E:/Aquarium/License.lic)
+}
+
+docs {
+  Upload a new license file (.lic).
+
+  > Permissions: none
+}

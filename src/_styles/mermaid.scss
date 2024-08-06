@@ -50,7 +50,6 @@ $items: (
 
   svg[id^="mermaid-"] {
     @each $name, $styles in $items {
-
       .#{$name},
       [data-id^="#{$name}"] {
         .label {
@@ -65,6 +64,12 @@ $items: (
           stroke: map-get($styles, stroke) !important;
           stroke-width: 4px !important;
         }
+      }
+    }
+
+    text {
+      &.sequenceNumber {
+        fill: var(--bg-00) !important;
       }
     }
   }

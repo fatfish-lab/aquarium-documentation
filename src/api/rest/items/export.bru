@@ -1,0 +1,23 @@
+meta {
+  name: Export
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/export/:format
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+  format: json
+}
+
+docs {
+  Query the items connected to a specific item.
+
+  > Authenticated.
+  > Permissions: `r` on each item being traversed.
+}

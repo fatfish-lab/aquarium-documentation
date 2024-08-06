@@ -1,0 +1,38 @@
+meta {
+  name: Append
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/append
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+  	"item": {
+  		"type": "Group",
+          "data": {
+              "name": "my new group"
+          }
+  	},
+  	"edge": {
+  		"type": "Child"
+  	},
+  	"applyTemplate": false,
+  	"templateKey": ""
+  }
+}
+
+docs {
+  Attach a new item to an existing item with an edge of type "Child"
+
+  > Authenticated.
+  > Permissions: `a` on the item on which the new item will be attached.
+}

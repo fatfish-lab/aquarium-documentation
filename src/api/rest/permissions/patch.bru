@@ -1,0 +1,31 @@
+meta {
+  name: Patch permissions
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/permissions
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{patch}}
+}
+
+body:json {
+  {
+      "userKey": "3865814",
+      "data": {
+          "permissions": "rawsg"
+      },
+      "propagate": true
+  }
+}
+
+docs {
+  Patch an item permissions with `data`.
+
+  > Permissions: `g` on the item.
+}

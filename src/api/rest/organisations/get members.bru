@@ -1,0 +1,29 @@
+meta {
+  name: Get members
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/organisations/:_key/members/:mode
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~offset: 0
+  ~limit: 5
+  ~sort: type DESC, data.name DESC
+}
+
+params:path {
+  _key: domain
+  mode: all
+}
+
+docs {
+  Get all users in the usergroup.
+
+  > Authenticated.
+  > Permissions: `r` on the usergoup.
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Get SSO with OIDC
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/sso/oidc
+  body: formUrlEncoded
+  auth: inherit
+}
+
+docs {
+  Get SSO OIDC configuration
+
+  > Permissions 'r' on domain (Admin & Super Admin)
+}

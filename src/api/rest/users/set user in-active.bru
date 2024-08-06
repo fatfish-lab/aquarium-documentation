@@ -1,0 +1,27 @@
+meta {
+  name: Set user active/inactive
+  type: http
+  seq: 11
+}
+
+patch {
+  url: {{protocol}}://{{url}}/{{version}}/users/:_key/active
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+      "activate": true
+  }
+}
+
+docs {
+  Change the state of a user (active/inactive).
+
+  > Permissions: `w` on the user.
+}

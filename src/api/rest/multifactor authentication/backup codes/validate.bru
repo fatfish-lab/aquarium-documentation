@@ -1,0 +1,23 @@
+meta {
+  name: Validate a backup code
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/mfa/backup/validate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "{{email}}",
+      "password": "{{password}}",
+      "code": "abc"
+  }
+}
+
+docs {
+  Validate one backup code and remove it from the list. THis will return a token to authenticate the user.
+}

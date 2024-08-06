@@ -1,0 +1,21 @@
+meta {
+  name: Remove an edge
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/edges/:_key
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: 1243
+}
+
+docs {
+  Remove an edge **permanently**.
+
+  > Permissions: `d` on the item from which the edge starts.
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Get my personal access tokens
+  type: http
+  seq: 16
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/users/me/tokens
+  body: none
+  auth: inherit
+}
+
+docs {
+  No description
+}

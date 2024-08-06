@@ -1,0 +1,27 @@
+meta {
+  name: Set bot active/inactive
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{protocol}}://{{url}}/{{version}}/bots/:_key/active
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+      "activate": true
+  }
+}
+
+docs {
+  Change the state of a bot (active/inactive).
+
+  > Permissions: `w` on the bot.
+}

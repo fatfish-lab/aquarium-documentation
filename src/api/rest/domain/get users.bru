@@ -1,0 +1,17 @@
+meta {
+  name: Get users
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/users
+  body: none
+  auth: inherit
+}
+
+docs {
+  Get a list of the users (active or inactive) existing in the domain.
+
+  > Permissions: `r` on the domain usergroup.
+}

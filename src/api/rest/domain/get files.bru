@@ -1,0 +1,28 @@
+meta {
+  name: Get files
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/files?offset=0&limit=100&mimetypes=["video/mp4","image/jpeg"]&filenames=["file-1234.mp4"]&itemKeys=["12345"]&search="keyword"&after="2024-05-01T08:24:27.164Z"&before="2024-05-05T08:24:27.164Z"
+  body: none
+  auth: inherit
+}
+
+params:query {
+  offset: 0
+  limit: 100
+  mimetypes: ["video/mp4","image/jpeg"]
+  filenames: ["file-1234.mp4"]
+  itemKeys: ["12345"]
+  search: "keyword"
+  after: "2024-05-01T08:24:27.164Z"
+  before: "2024-05-05T08:24:27.164Z"
+}
+
+docs {
+  Get a list of the uploaded files on this domain.
+
+  > Permissions: `r` on the domain usergroup.
+}

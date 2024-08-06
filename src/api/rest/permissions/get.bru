@@ -1,0 +1,30 @@
+meta {
+  name: Get permissions
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/permissions
+  body: json
+  auth: inherit
+}
+
+params:query {
+  ~populate: true
+  ~offset: 0
+  ~limit: 10
+  ~sort: item._key ASC
+  ~depth: 10
+  ~includeMembers: true
+}
+
+params:path {
+  _key: domain
+}
+
+docs {
+  Get the list of users and their access to an item.
+
+  > Permissions: `r` on the item.
+}

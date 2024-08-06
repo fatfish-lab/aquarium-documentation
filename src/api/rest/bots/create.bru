@@ -1,0 +1,26 @@
+meta {
+  name: Create a bot
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/bots
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "My bot",
+      "description": "My test bot"
+  }
+}
+
+docs {
+  Create a user on the domain. If the number of active user exceeds the maximum of users allowed by all the valid licenses combined, then an inactive user will be created.
+
+  You can use the property `inviteExpiration` to choose how many seconds the invitation is valid. This property is ignored if a password is provided.
+
+  > Permissions: `w` on the domain usergroup.
+}

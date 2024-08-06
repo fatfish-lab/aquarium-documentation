@@ -1,0 +1,29 @@
+meta {
+  name: Copy an item
+  type: http
+  seq: 12
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/copy
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: 1234
+}
+
+body:json {
+  {
+      "targetKey": "3865804",
+      "prefixed": true
+  }
+}
+
+docs {
+  Copy an item to duplicate it.
+
+  > Authenticated.
+  > Permissions: `r` on the item to copy, `a` on the target item defined by the parameter `parentKey`.
+}

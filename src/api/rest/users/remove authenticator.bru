@@ -1,0 +1,25 @@
+meta {
+  name: Remove authenticator
+  type: http
+  seq: 8
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/users/me/authenticator/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: abc123
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+docs {
+  Remove an authenticator device.
+
+  > Permissions: `w` on the authenticated user.
+}

@@ -1,0 +1,22 @@
+meta {
+  name: Create a personal access token
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/users/me/tokens
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "name": "My personal token",
+      "expireAt": "2023-04-14T15:17:00.860+02:00"
+  }
+}
+
+docs {
+  No description
+}

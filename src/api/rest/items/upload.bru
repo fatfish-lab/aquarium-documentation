@@ -1,0 +1,26 @@
+meta {
+  name: Upload
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/upload
+  body: multipartForm
+  auth: inherit
+}
+
+params:path {
+  _key: 281578
+}
+
+body:multipart-form {
+  file: @file(/E:/Aquarium/image.jpg)
+}
+
+docs {
+  Attach a new file to an existing item.
+
+  > Authenticated.
+  > Permissions: `w` on the item on which the new file will be attached.
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Signin Callback
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/sso/oidc/callback?{...}=&verifier={{oidcVerifier}}
+  body: none
+  auth: none
+}
+
+params:query {
+  {...}:
+  verifier: {{oidcVerifier}}
+}
+
+docs {
+  No description
+}

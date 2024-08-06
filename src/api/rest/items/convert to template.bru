@@ -1,0 +1,22 @@
+meta {
+  name: Convert to template
+  type: http
+  seq: 16
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/convertToTemplate
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: 1234
+}
+
+docs {
+  Apply a template to an item.
+
+  > Authenticated.
+  > Permissions: `a` on the item on which the template is applied.
+}

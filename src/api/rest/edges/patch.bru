@@ -1,0 +1,28 @@
+meta {
+  name: Patch an edge
+  type: http
+  seq: 3
+}
+
+patch {
+  url: {{protocol}}://{{url}}/{{version}}/edges/:_key
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: 1234
+}
+
+body:json {
+  {
+      "data": {},
+      "deepMerge": true
+  }
+}
+
+docs {
+  Patch an edge. This will **merge** the provided `data` with the existing.
+
+  > Permissions: `w` on the item from which the edge starts.
+}

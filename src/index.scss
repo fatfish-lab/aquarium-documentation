@@ -2,6 +2,7 @@
 @import "_styles/theme.scss";
 @import "_styles/vars.scss";
 @import "_styles/icons.scss";
+@import "_styles/chip.scss";
 @import "_styles/button.scss";
 @import "_styles/mermaid.scss";
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&family=Fredoka+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -110,7 +111,9 @@ body {
     position: sticky;
     top: 0;
     display: grid;
-    grid-template-columns: 148px 1fr repeat(3, max-content);
+    grid-template-columns: 148px 1fr repeat(2, max-content);
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
     align-items: center;
     padding: 8px 30px;
     gap: 16px;
@@ -562,7 +565,81 @@ body {
 
         ol {
           margin: 0;
-          padding-left: 1.5em;
+          padding-left: 0.5em;
+          counter-reset: toc;
+          list-style-type: none;
+
+          li:not(ul li):before {
+            counter-increment: toc;
+            content: counters(toc, ".") " ";
+          }
+
+          ul {
+            margin-bottom: 0;
+            list-style-type: circle;
+            li:before {
+              content: none;
+            }
+          }
+
+          li {
+            margin: 4px 0;
+
+            &.line {
+              display: inline-flex;
+              width: 100%;
+              gap: 4px;
+            }
+
+            details {
+              all: revert;
+              width: 100%;
+
+              summary {
+                all: revert;
+                position: relative;
+                list-style-type: none;
+              }
+            }
+
+            &::before,
+            &::marker {
+              color: var(--text-20);
+            }
+            a.active {
+              padding: 0 8px;
+              color: var(--white-00);
+              border-radius: 8px 8px 8px 0;
+              background: linear-gradient(160deg, color-mix(in srgb, var(--blue-70), transparent 15%), color-mix(in srgb, var(--blue-90), transparent 15%));
+              box-shadow: 2px 2px 0 0 color-mix(in oklab, var(--blue-50), transparent 95%);
+            }
+          }
+        }
+      }
+    }
+
+    &.bruno {
+      #content {
+        gap: 16px;
+
+        .title {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+
+          h1 {
+            margin: 0;
+          }
+        }
+
+        .url {
+          padding: 8px;
+        }
+
+        .auth {
+          strong {
+            color: var(--orange-50);
+          }
         }
       }
     }
@@ -599,6 +676,11 @@ body {
         gap: 2px;
         margin: 0;
 
+        hr {
+          margin: 4px;
+          border-color: transparent;
+        }
+
         >h5 {
           color: var(--text-20);
         }
@@ -623,7 +705,7 @@ body {
         details {
           background: none;
           padding: 0;
-          margin: 0 0 8px 0;
+          margin: 0;
 
           &[open] {
             summary {

@@ -1,0 +1,30 @@
+meta {
+  name: Get templates
+  type: http
+  seq: 17
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/templates
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+      "templateType": "Shot",
+      "limit": 5,
+      "view": "item.data.name"
+  }
+}
+
+docs {
+  Apply a template to an item.
+
+  > Authenticated.
+  > Permissions: `a` on the item on which the template is applied.
+}

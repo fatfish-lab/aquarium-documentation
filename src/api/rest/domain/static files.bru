@@ -1,0 +1,23 @@
+meta {
+  name: Static files
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{protocol}}://{{url}}/files/:filename
+  body: none
+  auth: inherit
+}
+
+params:path {
+  filename: {{filename}}
+}
+
+headers {
+  Authorization: {{token}}
+}
+
+docs {
+  The endpoint to get an uploaded file.
+}

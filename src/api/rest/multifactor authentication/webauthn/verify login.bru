@@ -1,0 +1,32 @@
+meta {
+  name: Verify login
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/mfa/webauthn/validate
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "{{email}}",
+      "rawId": "xOfd...",
+      "response": {
+          "authenticatorData": "SZYN...",
+          "signature": "Ei8f...",
+          "userHandle": null,
+          "clientDataJSON": "base64 url encoded data"
+      },
+      "authenticatorAttachment": "cross-platform",
+      "getClientExtensionResults": {},
+      "id": "xOfd...",
+      "type": "public-key"
+  }
+}
+
+docs {
+  No description
+}

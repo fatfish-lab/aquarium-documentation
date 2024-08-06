@@ -1,0 +1,17 @@
+meta {
+  name: Create backup codes
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/mfa/backup
+  body: none
+  auth: inherit
+}
+
+docs {
+  Generates 10 backup codes usable if the authenticators failed.
+
+  > Permissions: `w` on the user
+}

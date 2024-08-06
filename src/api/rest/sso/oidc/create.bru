@@ -1,0 +1,25 @@
+meta {
+  name: Create SSO with OIDC Copy
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/sso/oidc
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  clientId: {{oidcClientId}}
+  clientSecret: {{oidcClientSecret}}
+  authorizationEndpoint: {{oidcAuthorizationEndpoint}}
+  tokenEndpoint:
+  createUsers: false
+}
+
+docs {
+  Create SSO OIDC configuration
+
+  > Permissions 'w' on domain (Super admin)
+}

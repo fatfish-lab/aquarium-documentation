@@ -1,0 +1,33 @@
+meta {
+  name: Create a permission
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/permissions
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+      "userKey": "",
+      "data": {
+          "permissions": "rwatlugs"
+      },
+      "propagate": true
+  }
+}
+
+docs {
+  Create a permission on an item (and its content if `propagate` is `true`) to make it accessible to `userKey`.
+
+  The response contains a `jobKey` property. This allows to get the progression of the propagation of the permissions.
+
+  > Permissions: `s` on the item to share.
+}

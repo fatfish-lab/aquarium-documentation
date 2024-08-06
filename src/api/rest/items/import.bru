@@ -1,0 +1,35 @@
+meta {
+  name: Import
+  type: http
+  seq: 13
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/import/:format
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+  format: json
+}
+
+body:json {
+  {
+  	"items": [{
+          "type": "Task",
+          "data": {
+              "name": "Imported task"
+          }
+      }],
+  	"edges": []
+  }
+}
+
+docs {
+  Query the items connected to a specific item.
+
+  > Authenticated.
+  > Permissions: `r` on each item being traversed.
+}

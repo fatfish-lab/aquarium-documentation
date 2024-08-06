@@ -1,0 +1,22 @@
+meta {
+  name: Restore
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/trashed_items/:_key/restore
+  body: formUrlEncoded
+  auth: inherit
+}
+
+params:path {
+  _key: 12345
+}
+
+docs {
+  Restore a trashed item.
+
+  > Authenticated.
+  > Permissions: `a` on the destination item for restoration.
+}

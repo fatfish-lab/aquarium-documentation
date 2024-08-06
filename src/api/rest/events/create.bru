@@ -1,0 +1,26 @@
+meta {
+  name: Create a custom event
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/events
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "topic": "test.postman",
+  	"data": {
+  		"--foo": "Hello World !"
+  	}
+  }
+}
+
+docs {
+  Get the server status.
+
+  > Permissions: none.
+}

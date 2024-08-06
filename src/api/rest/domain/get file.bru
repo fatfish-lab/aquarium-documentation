@@ -1,0 +1,21 @@
+meta {
+  name: Get file
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/files/:_key
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: 249588
+}
+
+docs {
+  Get the metadata of a file by its key.
+
+  > Permissions: `r` on the domain usergroup.
+}

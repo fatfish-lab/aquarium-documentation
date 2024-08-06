@@ -1,0 +1,25 @@
+meta {
+  name: Update SSO OIDC configuration
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{protocol}}://{{url}}/{{version}}/sso/oidc
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:form-urlencoded {
+  clientId: {{oidcClientId}}
+  clientSecret: {{oidcClientSecret}}
+  authorizationEndpoint: {{oidcAuthorizationEndpoint}}
+  tokenEndpoint:
+  createUsers: false
+}
+
+docs {
+  Update SSO OIDC configuration
+
+  > Permissions 'w' on domain (Super admin)
+}

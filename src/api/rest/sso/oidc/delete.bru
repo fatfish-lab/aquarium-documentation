@@ -1,0 +1,17 @@
+meta {
+  name: Delete SSO with OIDC
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/sso/oidc
+  body: formUrlEncoded
+  auth: inherit
+}
+
+docs {
+  Delete SSO OIDC configuration
+
+  > Permissions 'w' on domain (Super admin)
+}

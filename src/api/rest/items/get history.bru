@@ -1,0 +1,26 @@
+meta {
+  name: Get an item history
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/history
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~populate: true
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+docs {
+  Get all the versions of a specific item.
+
+  > Authenticated.
+  > Permissions: `r` on the item retrieved.
+}

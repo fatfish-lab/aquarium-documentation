@@ -21,7 +21,10 @@ function getMermaidConfig(theme = 'light') {
     flowchart: {
       curve: 'linear',
       padding: 22,
-    }
+    },
+    sequence: {
+      noteMargin: 24
+    },
   }
 }
 function setMermaidTheme(theme = 'light') {

@@ -1,0 +1,17 @@
+meta {
+  name: Get licenses
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/licenses
+  body: none
+  auth: inherit
+}
+
+docs {
+  Get a list of the licenses uploaded. This includes expired licenses.
+
+  > Permissions: `r` on the domain usergroup.
+}

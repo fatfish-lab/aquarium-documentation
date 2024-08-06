@@ -1,4 +1,5 @@
-{{ import { capitalize, levels } from "../utils.vto" }}
+{{ import { capitalize, levels } from "./utils.vto" }}
+
 <aside id="sidebar">
   <nav>
     <ol>
@@ -12,14 +13,14 @@
       {{ /if }}
     </ol>
     <ol>
-      {{ set root = nav.menu(`/${levels[0]}/`, `nav_order<10 lang=${lang}`, 'title nav_order') }}
-      {{ set sub = nav.menu(`/${levels[0]}/`, `nav_order>=10 lang=${lang}`, 'title nav_order') }}
+      {{ set root = nav.menu(`/${levels[0]}/`, `nav_order<10 lang=${lang}`, 'nav_order title') }}
+      {{ set sub = nav.menu(`/${levels[0]}/`, `nav_order>=10 lang=${lang}`, 'nav_order title') }}
       {{ if root && root.children }}
         {{ for item of root.children }}
             {{ include "./sidebar_item.vto" { item } }}
         {{ /for }}
       {{ /if }}
-      <li/>
+      <hr/>
       {{ if sub && sub.children }}
         {{ for item of sub.children }}
             {{ include "./sidebar_item.vto" { item } }}

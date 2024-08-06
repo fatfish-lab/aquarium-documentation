@@ -29,8 +29,6 @@ code {
 
 // Code blocks
 pre {
-    @include code-block-theme($code-background-dark, $code-text-dark);
-
     border-radius: 1em;
     box-shadow: inset 0 0 0 0.125em $card-stroke;
     display: block;
@@ -40,6 +38,9 @@ pre {
     padding: 1.5em;
     white-space: normal;
     word-wrap: normal;
+
+    @include code-block-theme($code-background-dark, $code-text-dark);
+
 
     code {
         background: none;

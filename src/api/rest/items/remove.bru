@@ -1,0 +1,23 @@
+meta {
+  name: Remove an item
+  type: http
+  seq: 5
+}
+
+delete {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key
+  body: none
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+docs {
+  completely delete an item.
+  __To simply trash an item, please see the "trash" section.__
+
+  > Authenticated.
+  > Permissions: `d` on the item to delete.
+}
