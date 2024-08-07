@@ -18,6 +18,33 @@ It's is completely abstract, their is no mention of Project, Shots, Tasks, etc. 
 
 There are some endpoints dedicated to specific actions, like permissions, sso, administration, ...
 
+## What's Aquarium's nodal ?
+
+All the data in Aquarium is stored in a nodal way : items are connected to each other using edges. It's a way to represent a graph.
+
+<!-- Create a mermaid graph with a project, connected to 2 folders (Docs, Tasks) with 2 tasks (Write user guide and Send newsletter) -->
+
+```mermaid
+graph TB
+  Project -->|Child| Docs[Docs<br/><small>Group</small>]:::Group
+  Project -->|Child| Tasks[Tasks<br/><small>Group</small>]:::Group
+  Bob[Bob<br/><small>User</small>]:::User -->|Assigned| Send
+  Tasks -->|Child| Send[Send newsletter<br/><small>Task</small>]:::Task
+  Tasks -->|Child| Write[Write user guide<br/><small>Task</small>]:::Task
+  Alice[Alice<br/><small>User</small>]:::User -->|Assigned| Write
+  Alice -->|Assigned| Send
+```
+
+> In this example, we have a project where 2 folders are stored. On folders contains 2 tasks, that are assigned to Bob and Alice.
+
+### Data hierarchy
+
+By default Aquarium is using `Child` edge type to define a parent-child relationship : the default hierarchy.
+
+> You can imagine that like on a file system, where a folder can contain other folders or files. This "relationship" is represented by the `Child` edge.
+
+You can create your own edge type to represent other relationships. Look at the dedicated items documentation, where we show some of the default structures used for each of them.
+
 ## Authentication
 
 Most of the endpoints require authentication. You can ask for a token using:
@@ -45,7 +72,7 @@ sequenceDiagram
   end
   box transparent Internet
     participant A as Aquarium
-    participant IDP as Identity provider
+    participant IDP as Identity<br/>provider
   end
 
   Note over C: Generate PKCE<br/>$code + $verifier
