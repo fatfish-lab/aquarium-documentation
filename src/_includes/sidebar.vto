@@ -17,13 +17,13 @@
       {{ set sub = nav.menu(`/${levels[0]}/`, `nav_order>=10 lang=${lang}`, 'nav_order title') }}
       {{ if root && root.children }}
         {{ for item of root.children }}
-            {{ include "./sidebar_item.vto" { item } }}
+            {{ include "./sidebar_item.vto" { item, level: 2 } }}
         {{ /for }}
       {{ /if }}
       <hr/>
       {{ if sub && sub.children }}
         {{ for item of sub.children }}
-            {{ include "./sidebar_item.vto" { item } }}
+            {{ include "./sidebar_item.vto" { item, level: 2 } }}
         {{ /for }}
       {{ /if }}
     </ol>
