@@ -8,7 +8,7 @@ const getTocAnchorById = (id) => {
   return document.querySelector(selector)
 }
 
-const highlightToc = () => {
+function highlightToc () {
   const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 
   anchors.forEach(anchor => {
@@ -29,15 +29,24 @@ const highlightToc = () => {
 
   if (closestAnchor) {
     const tocHeading = getTocAnchorById(closestAnchor.getAttribute('id'));
-    if (tocHeading) tocHeading.classList.add('active');
-
-    const detail = tocHeading.closest('details');
-    if (detail) {
-      detail.open = true;
-      details
-        .filter(d => d !== detail)
-        .forEach(d => d.open = false);
+    if (tocHeading) {
+      tocHeading.classList.add('active');
+      const detail = tocHeading.closest('details');
+      if (detail) {
+        detail.open = true;
+        details
+          .filter(d => d !== detail)
+          .forEach(d => d.open = false);
+      }
     }
+  }
+}
+
+function scrollIntoSidebar() {
+  const activeShortcuts = document.querySelectorAll('nav ol:nth-of-type(2) .shortcut.active')
+  if (activeShortcuts.length) {
+    const last = activeShortcuts[activeShortcuts.length - 1]
+    last.scrollIntoView({ block: 'center' })
   }
 }
 
@@ -49,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
   $details.forEach(detail => details.push(detail))
 
   highlightToc()
+  scrollIntoSidebar()
 })
 
 document.addEventListener('scroll', function () {
