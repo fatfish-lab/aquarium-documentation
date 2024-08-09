@@ -1,10 +1,10 @@
 ---
-id: shoteditor
-title: Shot editor
+id: filters
+title: Filters
 lang: en
 nav_order: 10
 ---
 
-# Shot editor
+# Filters
 
 <!-- TODO: Add content -->

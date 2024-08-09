@@ -11,7 +11,7 @@ A **<span class="aq-icon outline">notifications_none</span> Notification** is an
 
 You can automatically send notifications to users or usergroups using the [Action](./action.md) system.
 
-You can see all your notifications using the [notification center](./notify.md).
+You can see all your notifications using the [notification center](../applications/notify.md).
 
 ## Data
 

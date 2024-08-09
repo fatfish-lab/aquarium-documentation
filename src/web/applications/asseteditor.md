@@ -1,10 +1,10 @@
 ---
-id: shoteditor
-title: Shot editor
+id: asseteditor
+title: Asset editor
 lang: en
 nav_order: 10
 ---
 
-# Shot editor
+# Asset editor
 
 <!-- TODO: Add content -->

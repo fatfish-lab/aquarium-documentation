@@ -29,7 +29,7 @@ Once you clicked on an item, the form creation will be displayed. By default we 
 
 ![Form creation](../../_medias/addmenu-form.png)
 
-1. A [template](/web/items/template) is automatically selected for you. This menu allow you to:
+1. A [template](../items/template.md) is automatically selected for you. This menu allow you to:
    1. Create a new template
    2. Edit an existing template
    3. Create an item without a template
@@ -45,7 +45,7 @@ If you use a `#` in the name of the item, Aquarium will automatically transform 
 
 The templates are loaded based on where you are creating your item. Please refer to the **breadcrumb**  displayed in [Add menu](#add-menu).
 
-If you are in a [Project](/web/items/project), by default, templates are hidden at the root of your project.
+If you are in a [Project](../items/project.md), by default, templates are hidden at the root of your project.
 
 More details about [template are available in dedicated section](../items/template.md).
 ]

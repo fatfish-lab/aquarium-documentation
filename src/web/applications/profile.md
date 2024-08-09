@@ -37,7 +37,7 @@ Sometimes, instead of providing your password, you can use a personal access tok
 
 ## Preferences
 
-You can change the [default interface](../introduction.md#how-can-i-use-aquarium-) and choose the default theme (`light`, `dark` or `system` to automatically switch between light and dark theme depending on your system preferences).
+You can change the [default interface](../introduction/index.md#how-can-i-use-aquarium-) and choose the default theme (`light`, `dark` or `system` to automatically switch between light and dark theme depending on your system preferences).
 
 By pressing `F1` or by clicking on the <span class="aq-icon outline">help</span> icon, Aquarium provide quests to help you to discover the application. You can reset your quests from here.
 
@@ -72,7 +72,7 @@ So it's super easy to deploy an action for a group of user of for the entire org
 
 ## Focus view
 
-Open the [Diary in the focus interface](../_interfaces/focus.md#diary) of the user in a new tab.
+Open the [Diary in the focus interface](../introduction/focus.md#diary) of the user in a new tab.
 
 ## Browse trash
 

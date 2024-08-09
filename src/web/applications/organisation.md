@@ -53,13 +53,13 @@ More details about that section in the [Profile](./profile.md#actions) applicati
 
 ## Shortcuts
 
-When you use the [Aquarium Studio interface](../_interfaces/studio.md), you can add shortcuts to the [dock](../_interfaces/studio.md#dock).
+When you use the [Aquarium Studio interface](../introduction/studio.md), you can add shortcuts to the [dock](../introduction/studio.md#dock).
 
 This section allow you to manage those shortcuts. You can add or remove them. You can also edit its icon, color and description.
 
 ## Assistants
 
-When you use the [Aquarium Studio interface](../_interfaces/studio.md), assistants are provided to help you to create and manage your projects. Those assistants appear in the [Homepage workspace](../workspaces/homepage.md).
+When you use the [Aquarium Studio interface](../introduction/studio.md), assistants are provided to help you to create and manage your projects. Those assistants appear in the [Homepage workspace](../workspaces/homepage.md).
 
 When an assistant is finished, it's automatically discarded. This interface allow you to manage those assistants, to manually discard them or to enable them again.
 

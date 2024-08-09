@@ -9,13 +9,13 @@ nav_order: 10
 
 This workspace is dedicated to the management of your assets. It is the place where you will create, edit, and delete your assets.
 
-You can regroup assets into [Library](../items/library) to regroup them by type.
+You can regroup assets into [Library](../items/library.md) to regroup them by type.
 > Example: character, props, environment, etc.
 
 ![Assets manager](/_medias/assetsmanager.png)
 
-1. **Create**: Click on this button to create a new [Library](/web/items/library) or a new [Asset](/web/items/asset). You can also access [import a CSV file](/web/how-to/setup/assets) to create [episodes](/web/items/espiode), [libraries](/web/items/library), [assets](/web/items/asset) and [tasks](/web/items/tasks) in bulk.
-2. **Add column**: Choose the columns you want to enable in your workspace. Those columns are based on our presets. But if you want to create a custom column, follow our [guide](/web/how-to/create/column).
+1. **Create**: Click on this button to create a new [Library](../items/library.md) or a new [Asset](../items/asset.md). You can also access [import a CSV file](../../how-to/setup/assets.md) to create [episodes](../items/episode.md), [libraries](../items/library.md), [assets](../items/asset.md) and [tasks](../items/task.md) in bulk.
+2. **Add column**: Choose the columns you want to enable in your workspace. Those columns are based on our presets. But if you want to create a custom column, follow our [guide](../../../how-to/create/column.md).
 3. **Add a asset into an existing library** : Click on this button to add a asset into an existing library.
 4. **Add a new task** : Click on this button to add a new task to a asset. Two options are available:
    1. "Add a task in Asset's template": This will a new task in the Asset's template, so all your assets can use the task.
@@ -31,5 +31,5 @@ You can regroup assets into [Library](../items/library) to regroup them by type.
 
 1. Right click on a asset and click on `Properties...`
 2. Locate the `Template` field and click on the template you want to edit
-3. Refer to the [Template editor](/web/applications/templateditor) application for more information on how to manager a template.
+3. Refer to the [Template editor](/web/applications/templateeditor) application for more information on how to manager a template.
 ![Assets template](/_medias/assets-template.png)

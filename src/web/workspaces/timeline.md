@@ -15,7 +15,7 @@ This workspace is still in beta. If you have any feedback or suggestions, please
 
 ![Timeline](/_medias/timeline.png)
 
-1. **Add you columns**: Define the columns you want to see in your workspace. You can choose between our presets or create your own custom column. To create a custom column, follow our [guide](/web/how-to/create/column).
+1. **Add you columns**: Define the columns you want to see in your workspace. You can choose between our presets or create your own custom column. To create a custom column, follow our [guide](../../../how-to/create/column).
 2. **Choose your tool**: Enable the tools you want to use in your schedule:
    1. **Move**: Allow you to move across time or if some days are selected move the selected days
    2. **Select**: Allow you to select a range of days

@@ -20,4 +20,4 @@ This workspace is still in beta. If you have any feedback, please [let us know](
 3. **Save**: You can save your review to freeze it's content. You can save it:
    1. **As a playlist**: This will save the review in a playlist.
    2. **In a room**: Rooms are our system in place to share data with external users with out giving them access to the all project.
-   3. **To Syncsketch**: You can publish your review to Syncsketch. Checkout more in our [integration guide](../integration/syncsketch.md).
+   3. **To Syncsketch**: You can publish your review to Syncsketch. Checkout more in our [integration guide](../../integrations/syncsketch.md).

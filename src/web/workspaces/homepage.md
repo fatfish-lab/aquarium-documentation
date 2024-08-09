@@ -7,7 +7,7 @@ nav_order: 10
 
 # Homepage
 
-This workspace is a special workspace, provided by default in the [Aquarium Studio interface](../_interfaces/studio.md), at the root of a [Project](../items/project.md), an [Organisation](../items/organisation.md) or your [User](../items/user.md).
+This workspace is a special workspace, provided by default in the [Aquarium Studio interface](../introduction/studio.md), at the root of a [Project](../items/project.md), an [Organisation](../items/organisation.md) or your [User](../items/user.md).
 
 ![Homepage](../../_medias/homepage.png)
 

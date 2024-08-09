@@ -8,7 +8,7 @@ icon: category
 
 # What are items?
 
-In Aquarium items are the entity you can create to represent your project's data. An item can be a [Project](/web/items/project), a [Task](/web/items/task), a [User](/web/items/user), an [Asset](/web/items/asset), etc.
+In Aquarium items are the entity you can create to represent your project's data. An item can be a [Project](./project), a [Task](./task), a [User](./user), an [Asset](./asset), etc.
 
 <$>[note]
 By convention, the type of an item always starts with a capital letter.
@@ -18,9 +18,9 @@ Explore our section for learn more about the different types available by defaul
 
 # How to create an Item?
 
-In most [workspace](/web/items/workspace) you can create new items by clicking on the "Create" button. This will open the [Add menu](/web/applications/addmenu) application, where you can select the type of item you want to create.
+In most [workspace](./workspace) you can create new items by clicking on the "Create" button. This will open the [Add menu](../applications/addmenu) application, where you can select the type of item you want to create.
 
-[![Create Item](/_medias/create-button.png)](/web/applications/addmenu)
+[![Create Item](/_medias/create-button.png)](../applications/addmenu)
 
 # How can I see the item's data ?
 
@@ -39,19 +39,19 @@ You can see and edit item's data using the [Quickeditor](../applications/quicked
 3. Click on the `Advanced` tab
 4. Click on `Editor` button
 
-[![Item Properties](/_medias/item-properties.png)](/web/application/quickeditor)
+[![Item Properties](/_medias/item-properties.png)](../applications/quickeditor)
 
 <$>[note]
-When an item is displayed in the interface, you can try to right click on it. Most of the time we will open the [quickeditor](/web/applications/quickeditor). If it's not the case, [let us know](/contact) !
+When an item is displayed in the interface, you can try to right click on it. Most of the time we will open the [quickeditor](../applications/quickeditor). If it's not the case, [let us know](/contact) !
 <$>
 
 # How can I manage item's permissions ? {#permissions}
 
 On Aquarium, permissions works like on a Google Drive or a filesystem : you can set permissions on any items to control who can read, write, trash, ...
 
-You can assign permission for [Organisation](/web/items/organisation), [User group](/web/items/usergroup), [User](/web/items/user) or [Bot](/web/items/bot).
+You can assign permission for [Organisation](./organisation), [User group](./usergroup), [User](./user) or [Bot](./bot).
 
-For all items, you can access the permission from the [Quickeditor](/web/applications/quickeditor) application.
+For all items, you can access the permission from the [Quickeditor](../applications/quickeditor) application.
 
 ![Item Permissions](/_medias/quickeditor-permissions.png)
 

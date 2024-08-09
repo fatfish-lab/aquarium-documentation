@@ -7,7 +7,7 @@ layout: homepage/index.vto
 ---
 
 [column
-```card [<span class="aq-icon">flag</span> Introduction](./web/introduction.md)
+```card [<span class="aq-icon">flag</span> Introduction](./web/introduction/index.md)
 Learn the basics about Aquarium.
 ```
 ]
@@ -39,7 +39,7 @@ Let's deep dive into Aquarium API & modules.
 ]
 
 [column
-```card [<span class="aq-icon">api</span> REST API](./api/rest.md)
+```card [<span class="aq-icon">api</span> REST API](./api/index.md)
 Discover our REST API. All routes and methods are listed here.
 ```
 ]
@@ -51,7 +51,7 @@ Learn how to use meshQL to filter you data.
 ]
 
 [column
-```card [<span class="aq-icon">code</span> Python](./api/modules/python.md)
+```card [<span class="aq-icon">code</span> Python](./api/modules/python/index.md)
 Integrate your Aquarium with Python.
 ```
 ]

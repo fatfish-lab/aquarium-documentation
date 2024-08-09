@@ -1,10 +1,9 @@
 ---
-id: shoteditor
-title: Shot editor
+id: room
+title: Room
 lang: en
 nav_order: 10
 ---
 
-# Shot editor
-
+# Room
 <!-- TODO: Add content -->

@@ -12,14 +12,23 @@ Like we explained in the [introduction](/web/introduction), the workspaces are l
 
 Workspaces works the same way in the focus or studio interface. The only difference is the way you access them.
 
-| In [focus interface](/web/interfaces/focus) | In [studio interface](/web/interfaces/studio) |
+| In [focus interface](../introduction/focus) | In [studio interface](../introduction/studio) |
 |:--------:|:-------:|
 | ![Focus workspaces](/_medias/focus-workspaces.png) | ![Studio workspaces](/_medias/studio-workspaces.png) |
 | Workspaces are regrouped by need (assets manager, shots manager, ...) | Workspaces are regrouped by location. You need to go the the correct folder to be able to active the workspace you want. |
 
-# Different workspaces
+# Workspace types
 
 We created several workspaces, to fit specific project management needs : [shots manager](./shotsmanager.md), [assets manager](./assetsmanager.md), [timeline](./timeline.md), ... You can explore the rest of this section to learn more about each of them.
+
+- [Homepage](./homepage.md)
+- [Shots manager](./shotsmanager.md)
+- [Assets manager](./assetsmanager.md)
+- [Episodes manager](./episodes.md)
+- [Timeline](./timeline.md)
+- [Wiki](./wiki.md)
+- [Medias](./medias.md)
+- [Review](./review.md)
 
 # Options
 
@@ -168,7 +177,7 @@ In the <span class="aq-icon">more_vert</span> menu, more options are available:
 - **Select by...**: Select items based on criteria. You can also paste names from a spreadsheet that you copied.
 - **Configure workspace**: Launch the [workspaces application](../applications/workspaces.md) to edit it.
 - **Auto save is enabled**: Enable or disable the auto-save feature. When enabled, all changes are saved automatically. The save button have a timer to show you when the next save will occur. Just over it to cancel the auto-save.
-- **Import in Spreadsheet**: Copy in the clipboard a special function that you can paste in a Google Spreadsheet to import the data. Please refer to the [Google Spreadsheet integration](../integrations/google-spreadsheet.md) for more information.
+- **Import in Spreadsheet**: Copy in the clipboard a special function that you can paste in a Google Spreadsheet to import the data. Please refer to the [Google Spreadsheet integration](../../integrations/spreadsheet.md) for more information.
 - **Copy sharable link**: Copy in the clipboard a link to the current workspace.
 - **Browse trash...**: Open the [trash application](../applications/trash.md) to restore items.
 
@@ -184,4 +193,4 @@ You can click on the name of the views to edit it using the [views application](
 
 ### Columns
 
-You can add or remove columns from the view, based on our presets or by creating a new custom columns by right-clicking on a cell and selecting `Add column from property`. Learn more in our how-to [create a custom column](../how-to/create/column.md) guide.
+You can add or remove columns from the view, based on our presets or by creating a new custom columns by right-clicking on a cell and selecting `Add column from property`. Learn more in our how-to [create a custom column](../../how-to/create/column.md) guide.

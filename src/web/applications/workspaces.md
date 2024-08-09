@@ -33,7 +33,7 @@ Those permissions are only for the workspace itself (filters, column, ...). The 
 
 ## Favorites
 
-You can add a workspace as a favorite to access it quickly from the [Focus interface](../_interfaces/focus.md).
+You can add a workspace as a favorite to access it quickly from the [Focus interface](../introduction/focus.md).
 
 You can also add as favorite for other users, so they don't have to do it themselves.
 
