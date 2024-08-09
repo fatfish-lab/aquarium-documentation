@@ -16,6 +16,10 @@ const server = new Server({
 });
 
 async function searchFor404() {
+  if (args.exclude) {
+    console.log('Excluding URL using:', args.exclude);
+  }
+
   const base = `http://localhost:${args.port || 8010}`;
   // Walk to find all .html files
   for await (const file of walk(`${Deno.cwd()}/_site`, { exts: ["html"] })) {

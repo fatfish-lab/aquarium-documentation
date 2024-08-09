@@ -53,7 +53,7 @@ export class Session {
     const login = await signin.json()
     const me = login.user
     const token = login.token
-    const aq = new Aquarium(Deno.env.get("AQ_API") || 'http://localhost:3000', token, Deno.env.get("AQ_DOMAIN"))
+    const aq = new Aquarium(Deno.env.get("AQ_API") || 'http://localhost:8000', token, Deno.env.get("AQ_DOMAIN"))
 
     const cookies = parseSetCookies(signin.headers.getSetCookie())
 
@@ -66,7 +66,7 @@ export class Session {
     const page = await browser.newPage();
     await page.setViewport({ width: 1920, height: 1080 })
 
-    await page.goto(Deno.env.get('AQ_WEB'))
+    await page.goto(Deno.env.get('AQ_WEB') || 'http://localhost:3000')
     await page.evaluate(() => {
       localStorage.setItem('alreadyRecoChrome', 'true');
     })
