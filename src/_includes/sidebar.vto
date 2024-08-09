@@ -22,7 +22,7 @@
       {{ /if }}
       <hr/>
       {{ if sub && sub.children }}
-        {{ for item of sub.children }}
+        {{ for item of sub.children.sort((a,b) => (a.data?.nav_order || 0) - (b.data?.nav_order || 0)) }}
             {{ include "./sidebar_item.vto" { item, level: 2 } }}
         {{ /for }}
       {{ /if }}

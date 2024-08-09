@@ -51,6 +51,56 @@ table {
   }
 }
 
+.adjacent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 32px 0;
+
+  .prev,
+  .next {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, min-content);
+    width: 100%;
+    min-width: 0;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 8px;
+    color: var(--text-20);
+    // background-color: var(--bg-10);
+    border: solid 1px var(--bg-10);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    justify-self: start;
+
+    &:hover {
+      background-color: var(--bg-10);
+      border: solid 1px var(--bg-20);
+      color: var(--text-00);
+    }
+
+    .title {
+      grid-row: 2;
+      color: var(--blue-50);
+      grid-column: 1 / -1;
+    }
+
+    .aq-icon {
+      color: var(--text-30);
+    }
+  }
+
+  .next {
+    grid-column: 4;
+    justify-self: end;
+    grid-template-columns: 1fr min-content;
+
+  }
+}
+
 
 details > summary.shortcut,
 details[open] > summary.shortcut,
@@ -67,14 +117,12 @@ a.shortcut:not(summary a.shortcut) {
   position: relative;
 
   &::after {
-    top: calc(50% - 6px);
-    right: 16px;
+    top: calc(50% - 14px);
+    right: 8px;
     transform: rotate(45deg);
     border-color: var(--text-30);
-  }
-
-  &:hover {
     z-index: 1;
+    margin: 8px;
   }
 
   &:hover,
@@ -99,6 +147,8 @@ a.shortcut:not(summary a.shortcut) {
   a.shortcut {
     display: inherit;
     gap: inherit;
+    width: calc(100% - 28px);
+    height: inherit;
   }
 
   .aq-icon {

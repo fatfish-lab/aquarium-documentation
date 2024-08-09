@@ -1,4 +1,5 @@
-{{ import { capitalize, filename, levels } from '../utils.vto'}}
+{{ import { capitalize, filename, levels, getAdjacentPages } from '../utils.vto'}}
+{{ set adjacent = getAdjacentPages(url) }}
 {{ set hasAuth = (bruno.auth && bruno.auth != 'none') || (bruno.http.auth && bruno.http.auth != 'none') }}
 
 <main id="main" class="bruno with-sidebar">
@@ -31,9 +32,9 @@
       <div class="auth">
         <h3>Authentication</h3>
         {{ if bruno.http && bruno.http.auth == "inherit" && bruno.collection }}
-          <span>Auth inherited from the collection: <strong>{{capitalize(bruno.collection.auth.mode)}}</strong>.</span>
+          <span>Authentication inherited from the collection: <strong>{{capitalize(bruno.collection.auth.mode)}}</strong>.</span>
         {{ else if bruno.auth && bruno.auth.mode }}
-          <span>Auth is set on: <strong>{{capitalize(bruno.auth.mode)}}</strong></span>
+          <span>Authentication is set on: <strong>{{capitalize(bruno.auth.mode)}}</strong></span>
         {{ /if }}
       </div>
     {{ /if }}
@@ -43,9 +44,9 @@
         <table>
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Type</th>
-              <th>Value</th>
+              <th style="text-align:left">Name</th>
+              <th style="text-align:left">Type</th>
+              <th style="text-align:left">Value</th>
             </tr>
           </thead>
           <tbody>
@@ -86,5 +87,6 @@
         {{ comp.button({ content: 'Share an idea', icon: 'emoji_objects', color: 'bg-30' }) }}
       </a>
     </div>
+    {{ comp.adjacent(adjacent) }}
   </div>
 </main>
