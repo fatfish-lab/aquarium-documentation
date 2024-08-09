@@ -1,0 +1,90 @@
+[{
+  "name": "focus-project",
+  "url": "/focus/1057833351/",
+  "click": [".collapse-header"],
+  "focus": [{
+    "selector": ".workspaces-list",
+    "type": "circle",
+    "content": "1"
+  }, {
+    "selector": "#project-module-quest",
+    "type": "circle",
+    "content": "2"
+  },{
+    "selector": ".focus-project-container header .settings",
+    "type": "circle",
+    "content": "3"
+  }]
+},{
+  "name": "focus-project-workspaces",
+  "url": "/focus/1057833351/shotsmanager",
+  "focus": [
+    {
+      "selector": ".focus-workspaces-container",
+      "type": "circle",
+      "content": "1"
+    },
+    {
+      "selector": ".favorite",
+      "type": "circle",
+      "content": "2"
+    },
+    {
+      "selector": "#module-create-workspace-quest",
+      "type": "circle",
+      "content": "3"
+    }
+  ]
+}, {
+  "name": "focus-project-workspace",
+  "url": "/focus/1057833351/shotsmanager/1057833656?itemKey=1057833459"
+},
+{
+  "name": "focus-diary",
+  "url": "/focus/diary",
+  "localStorage": {
+    "diary.presented": true
+  },
+  "focus": [{
+    "selector": ".todolist",
+    "type": "circle",
+    "content": "1"
+  }, {
+    "selector": ".month strong",
+    "type": "circle",
+    "content": "2"
+  }]
+},{
+  "name": "focus-inbox",
+  "url": "/focus/inbox",
+  "localStorage": {
+    "diary.presented": true
+  }
+},{
+  "name": "studio-explained",
+  "url": "120709667?app=Home&workspace=286725727",
+  "localStorage": {
+    "dockWidth": 304
+  },
+  "focus": [{
+    "selector": ".nav",
+    "type": "overlay",
+    "content": "Nav bar"
+  },{
+    "selector": ".dock",
+    "type": "overlay",
+    "content": "Dock",
+    "color": "green-50"
+  },
+  {
+    "selector": ".view",
+    "type": "overlay",
+    "content": "Active workspace",
+    "color": "blue-50"
+  },{
+    "selector": ".workspaces-tabs-container",
+    "type": "overlay",
+    "content": "Workspaces",
+    "color": "grape-50"
+  }]
+}]
