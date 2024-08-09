@@ -1,5 +1,5 @@
 meta {
-  name: Create SSO with OIDC Copy
+  name: Create SSO with OIDC
   type: http
   seq: 2
 }
@@ -14,12 +14,12 @@ body:form-urlencoded {
   clientId: {{oidcClientId}}
   clientSecret: {{oidcClientSecret}}
   authorizationEndpoint: {{oidcAuthorizationEndpoint}}
-  tokenEndpoint:
+  tokenEndpoint: 
   createUsers: false
 }
 
 docs {
   Create SSO OIDC configuration
-
+  
   > Permissions 'w' on domain (Super admin)
 }

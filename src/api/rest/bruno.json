@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "Aquarium V2.1",
+  "name": "Aquarium REST API",
   "type": "collection",
   "ignore": [
     "node_modules",

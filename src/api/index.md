@@ -15,8 +15,14 @@ You can interact with Aquarium using our [REST API](rest).
 Our REST API documentation is build with [Bruno](https://usebruno.com). It allows you to download our API and play with requests directly in the GUI or with the CLI of Bruno.
 
 [column
-```card [<span class="aq-icon">flag</span> Start here](./introduction.md)
+```card [<span class="aq-icon">flag</span> Introduction](./introduction.md)
 Start here to get an introduction about our API.
+```
+]
+
+[column
+```card [<span class="aq-icon">layers</span> REST API](./rest)
+Discover our REST API. All routes and methods are listed here.
 ```
 ]
 
@@ -37,7 +43,7 @@ Connect your javascript/typescript code with Aquarium.
 ]
 
 [column
-```card [<span class="aq-icon">deployed_code</span> Python](./modules/python.md)
+```card [<span class="aq-icon">deployed_code</span> Python](./modules/python/index.md)
 Integrate your Aquarium with Python.
 ```
 ]

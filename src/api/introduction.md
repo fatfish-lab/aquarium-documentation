@@ -1,11 +1,8 @@
 ---
 id: introduction
 title: Introduction
-# topic: API & modules
 lang: en
 nav_order: 1
-# shortcut: true
-# icon: api
 ---
 
 # Introduction to API
@@ -14,11 +11,11 @@ You can interact with Aquarium using our [REST API](../rest). There is no limita
 
 It's is completely abstract, their is no mention of Project, Shots, Tasks, etc. You interact with items and edges.
 
-> If you want a more easy start, you should look at the [python module](./modules/python.md). We added project related functions, helping you get your shots, assigned tasks, ...
+> If you want a more easy start, you should look at the [python module](./modules/python/index.md). We added project related functions, helping you get your shots, assigned tasks, ...
 
 There are some endpoints dedicated to specific actions, like permissions, sso, administration, ...
 
-## What's Aquarium's nodal ?
+## What's Aquarium's nodal structure ?
 
 All the data in Aquarium is stored in a nodal way : items are connected to each other using edges. It's a way to represent a graph.
 
@@ -44,6 +41,21 @@ By default Aquarium is using `Child` edge type to define a parent-child relation
 > You can imagine that like on a file system, where a folder can contain other folders or files. This "relationship" is represented by the `Child` edge.
 
 You can create your own edge type to represent other relationships. Look at the dedicated items documentation, where we show some of the default structures used for each of them.
+
+Every edge has a direction, from the item to the connected item.
+
+Aquarium have only one limitation on the item and edge you can create : their can't be twice the same edge type with the same direction between 2 items.
+
+### meshQL : data filtering and navigation
+
+To access and filter the data in a graph, you need to use a traversal or a query :
+
+| Method   | Description                                                       |
+| :------- | :---------------------------------------------------------------- |
+| traverse | Traverse the tree of data from a starting point                   |
+| query    | Query data without starting point. It's more like a global search |
+
+Those methods are using [meshQL](./meshql.md). It's a language used to describe your filters and the output of the API.
 
 ## Authentication
 
@@ -187,7 +199,3 @@ The API is separated in several endpoints, that [you can find in the dedicated s
 - Trash
 - Usergroups
 - Users
-
-## meshQL
-
-Some endpoints use [meshQL](./meshql.md) to filter and navigate the data. It's also a way to customize the output of our API.

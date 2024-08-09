@@ -8,37 +8,39 @@ auth:bearer {
 
 docs {
   The Aquarium API is used by Aquarium clients to interact with the server.
-  
+
   This API documentation is written with [Bruno](https://usebruno.com).
-  
+
   ![bruno_logo](https://avatars.githubusercontent.com/u/114530840?s=48&v=4)
-  
+
   You can [clone or download our repository](https://github.com/fatfish-lab/aquarium-documentation) and load the collection located in `src/api/rest` in your Bruno GUI or CLI.
-  
+
+  ![bruno_gui](../../_medias/bruno_gui.png)
+
   # Overview
-  
-  > Don't forget to update Bruno collection environment with your own data. 
-    
-  
+
+  This collection use the system of environment variables available in Bruno. We provide an environment called `default` that you can customize or copy to add you own data.
+
   1. An account on Aquarium is required to signin and get a token for authenticate your requests.
+      - An automatic script is available when you use the [/signin endpoint](./users/signin).
   2. The response of every request is sent as JSON.
   3. The request method (verb) determines the nature of the action you intend to perform. A request made using the `GET` method implies that you want to fetch something from Aquarium, and `PATCH` implies that you want to update something on Aquarium.
   4. The API will respond with an appropriate HTTP status code and an error message in format of a JSON object.
   5. The API version number must be specified in the url. `your-aquarium.com/v1/...`
   6. The body of a request can be send as form-data or JSON data, but the Content-Type header must match the format of the data.
-      
-  
+
+
   # Authentication
-  
+
   1. Use the route `signin` to get a token or generate a `personal access token`.
   2. Requests on endpoints that required authentication must contain a `Authorization` header containing the token.
-      
-  
+
+
   If a token is missing, malformed, or invalid, you will receive a `401 Unauthorised` response code
-  
+
   # Support
-  
+
   Please send an email to [support@fatfi.sh](mailto:support@fatfi.sh) if you have any questions.
-  
+
   Have fun !
 }
