@@ -58,6 +58,7 @@ export class Session {
     const cookies = parseSetCookies(signin.headers.getSetCookie())
 
     const options = {
+      executablePath: Deno.env.get("PUPPETEER_EXECUTABLE_PATH"),
       devtools: Boolean(Deno.env.get("DEBUG")),
     }
     const browser = await puppeteer.launch(options);
