@@ -6,7 +6,7 @@
   {{ include "../sidebar.vto" }}
   <div id="content"
     {{ if pagefind && pagefind.topic }}
-      data-pagefind-filter="topic:{{capitalize(pagefind.topic)}}"
+      data-pagefind-filter="{{levels[0]}}:{{capitalize(pagefind.topic)}}"
       data-pagefind-meta="{{pagefind.topic}}:{{filename}}"
     {{ /if }}>
     <div class="title">

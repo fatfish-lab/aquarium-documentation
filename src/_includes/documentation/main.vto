@@ -1,11 +1,13 @@
-{{ import { capitalize, filename, getAdjacentPages } from '../utils.vto'}}
+{{ import { levels, capitalize, filename, getAdjacentPages } from '../utils.vto'}}
 {{ set adjacent = getAdjacentPages(url) }}
 
 <main id="main" class="{{ if notoc != true }}with-toc{{ /if }}">
   {{ include "../sidebar.vto" }}
   <div id="content"
-    {{ if pagefind && pagefind.topic }}data-pagefind-filter="topic:{{capitalize(pagefind.topic)}}"
-    data-pagefind-meta="{{pagefind.topic}}:{{filename}}"{{ /if }}>
+    {{ if pagefind && pagefind.topic }}
+      data-pagefind-filter="{{levels[0]}}:{{capitalize(pagefind.topic)}}"
+      data-pagefind-meta="{{pagefind.topic}}:{{filename}}"
+    {{ /if }}>
     {{ content }}
     <div class="toolbox">
       {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/src/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}

@@ -40,7 +40,7 @@ const options = {
       showEmptyFilters: false,
       showSubResults: false,
       resetStyles: true,
-      openFilters: ['topic']
+      openFilters: ['web', 'api']
     },
     indexing: {
       verbose: false,
