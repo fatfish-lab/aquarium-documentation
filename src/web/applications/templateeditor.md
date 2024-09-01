@@ -22,6 +22,10 @@ You will find some general information about the template:
 - **Template location**: The location of the template. Please refer the [Template item](../items/template.md#usage) for more information about it's usage. You can clone the template to multiple locations.
 - **Description**: A description of the template
 
+<$>[note]
+A template can be only for a specific item's type.
+<$>
+
 ## Form
 
 On templates, you can define a form to fill when creating an item from the template. This tab allow you to define the form:

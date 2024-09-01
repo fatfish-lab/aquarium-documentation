@@ -1,7 +1,7 @@
 ---
 id: quickstart
 title: Quick start
-nav_order: 2
+nav_order: 1
 lang: en
 ---
 
