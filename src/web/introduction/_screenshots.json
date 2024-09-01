@@ -87,4 +87,45 @@
     "content": "Workspaces",
     "color": "grape-50"
   }]
+}, {
+  "name": "rooms-selected",
+  "url": "https://fatfishlab.aquarium.app/rooms/918035399/playlists",
+  "focus": [{
+    "selector": ".room-displays",
+    "type": "circle",
+    "content": "1"
+  },{
+    "selector": ".playlist-container",
+    "type": "circle",
+    "content": "2"
+  }]
+}, {
+  "name": "rooms-playlist",
+  "url": "https://fatfishlab.aquarium.app/rooms/918035399/playlists/918037783",
+  "focus": [{
+    "selector": ".panel.medias",
+    "type": "overlay",
+    "content": "Medias",
+    "color": "yellow-50"
+  },{
+    "selector": ".panel.activity",
+    "type": "overlay",
+    "content": "Comments",
+    "color": "blue-50"
+  },
+  {
+    "selector": ".players.single",
+    "type": "overlay",
+    "content": "Players",
+    "color": "orange-50"
+  },{
+    "selector": ".active-item-detail .chip-container",
+    "type": "circle",
+    "content": "1"
+  },
+  {
+    "selector": ".toggle-timeline",
+    "type": "circle",
+    "content": "2"
+  }]
 }]
