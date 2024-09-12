@@ -158,5 +158,86 @@
       "type": "circle",
       "content": "2"
     }]
+  },
+  {
+    "name": "shoteditor",
+    "url": "apps/shoteditor?itemKeys=1346076954&tabName=viewer&taskName=layout&versionIndex=1",
+    "focus": [{
+      "selector": ".draggable-tasks-container",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": ".header > div:nth-child(2)",
+      "type": "circle",
+      "content": "2"
+    },{
+      "selector": ".center-container",
+      "type": "overlay",
+      "content": "3: chosen display",
+      "color": "orange-50"
+    },{
+      "selector": ".collapse-header",
+      "type": "circle",
+      "content": "4"
+    }]
+  },
+  {
+    "name": "shoteditor-upload",
+    "url": "apps/shoteditor?itemKeys=1346076954&tabName=viewer&taskName=layout&versionIndex=1",
+    "upload": {
+      "selector": ".footer-container > .upload-container > input[type=file]",
+      "file": "src/_medias/favicon.png"
+    },
+    "focus": [{
+      "selector": ".drop-choose-container > .choice:nth-child(1)",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": ".drop-choose-container > .choice:nth-child(2)",
+      "type": "circle",
+      "content": "2"
+    }]
+  },
+  {
+    "name": "asseteditor",
+    "url": "apps/asseteditor?itemKeys=1418918815&mediaIndex=1&historyIndex=1&tabName=viewer&taskName=design&versionIndex=1",
+    "focus": [{
+      "selector": ".draggable-tasks-container",
+      "type": "circle",
+      "content": "1"
+    },{
+      "selector": ".header > div:nth-child(2)",
+      "type": "circle",
+      "content": "2"
+    },{
+      "selector": ".center-container",
+      "type": "overlay",
+      "content": "3: chosen display",
+      "color": "orange-50"
+    },{
+      "selector": ".collapse-header",
+      "type": "circle",
+      "content": "4"
+    }]
+  },
+  {
+    "name": "asseteditor-upload",
+    "url": "apps/asseteditor?itemKeys=1418918815&mediaIndex=1&historyIndex=1&tabName=viewer&taskName=design&versionIndex=1",
+    "upload": {
+      "selector": ".footer-container > .upload-container > input[type=file]",
+      "file": "src/_medias/favicon.png"
+    },
+    "focus": [
+      {
+        "selector": ".drop-choose-container > .choice:nth-child(1)",
+        "type": "circle",
+        "content": "1"
+      },
+      {
+        "selector": ".drop-choose-container > .choice:nth-child(2)",
+        "type": "circle",
+        "content": "2"
+      }
+    ]
   }
 ]
