@@ -1,8 +1,13 @@
 import { Session } from "./page.ts";
-import { getAllScreenshots, log } from "./utils.ts";
+import { getAllScreenshots, log, Spinner } from "./utils.ts";
 import vento from "https://deno.land/x/vento@v1.12.10/mod.ts";
 import { parseArgs } from "@std/cli/parse-args";
 
+Deno.addSignalListener("SIGINT", async () => {
+  log.info("SIGINT received, exiting...")
+  if (session) await session.close()
+  else Deno.exit(0)
+})
 
 const args = parseArgs(Deno.args)
 if (args.debug || args.d) {
@@ -12,6 +17,8 @@ if (args.debug || args.d) {
 
 const isDebug = Boolean(Deno.env.get("DEBUG"))
 const screenshotsNames = args._
+
+const spinner = new Spinner({ message: "Taking screenshot...", color: "yellow" });
 
 const v = vento()
 const screenshots = (await getAllScreenshots(args.path)).filter((screenshot) => {
@@ -27,11 +34,14 @@ if (projectKey) {
   ventoData.project = await session.aq.get(`items/${Deno.env.get("AQ_PROJECT")}`)
 }
 
-for (const screenshot of screenshots) {
+spinner.start()
+// screenshots.forEach(async (screenshot, index) => {
+for (const [index, screenshot] of screenshots.entries()) {
+  spinner.message = `Taking screenshot (${index + 1}/${screenshots.length})...`
   const path = await v.runString(screenshot.url, ventoData)
   const url = new URL(path.content, Deno.env.get("AQ_WEB")).toString()
 
-  log.info(`Taking ${screenshot.name} screenshot of ${url}`)
+  log.debug(`Taking ${screenshot.name} screenshot of ${url}`)
 
   if (screenshot.localStorage) {
     await session.page.evaluate((dataToStore: Record<string, unknown>) => {
@@ -48,15 +58,25 @@ for (const screenshot of screenshots) {
   if (screenshot.click) {
     for (const click of screenshot.click) {
       if (click.length == 0) {
-        log.info(`Waiting for network idle`)
-        await session.page.waitForNetworkIdle()
+        log.debug(`Waiting for network idle`)
+        await session.page.waitForNetworkIdle().catch(() => {
+          log.warn(`Waiting for network idle failed. Please check screenshot ${screenshot.name}`)
+        })
       } else {
-        log.info(`Click on ${click}`)
+        log.debug(`Click on ${click}`)
         await session.page.waitForSelector(click)
         await session.page.click(click)
-        log.info(`* Clicked`)
+        log.debug(`* Clicked`)
       }
     }
+  }
+
+  if (screenshot.upload) {
+    log.debug(`Uploading file, looking for selector ${screenshot.upload.selector}`)
+    const uploader = await session.page.$(screenshot.upload.selector)
+    if (uploader == null) throw new Error(`Uploader not found for ${screenshot.name}`)
+    log.debug(`Uploading file ${screenshot.upload.file}`)
+    await uploader.uploadFile(screenshot.upload.file).catch(log.error)
   }
 
   if (screenshot.scrollTo) {
@@ -166,9 +186,14 @@ for (const screenshot of screenshots) {
       }
     }
   }
+  await session.page.screenshot({ type: 'webp', path: `src/_medias/screenshots/${screenshot.name}.webp` })
 
-
-  await session.page.screenshot({ path: `src/_medias/${screenshot.name}.png` })
 }
 
-if (!isDebug) await session.close()
+spinner.stop()
+
+if (!isDebug) {
+  await session.close()
+} else {
+  log.info("Screenshots finished")
+}

@@ -1,8 +1,8 @@
 import "@std/dotenv/load";
 
 import Aquarium from "https://raw.githubusercontent.com/fatfish-lab/aquarium-ts-api/main/src/index.ts"
-import puppeteer from "https://deno.land/x/puppeteer@16.2.0/mod.ts";
-import type { Browser, Page } from "https://deno.land/x/puppeteer@16.2.0/mod.ts";
+import puppeteer from "npm:puppeteer@23.3.0";
+import type { Browser, Page } from "npm:puppeteer@23.3.0";
 
 import { parseSetCookies } from "./utils.ts";
 
@@ -77,6 +77,6 @@ export class Session {
   }
 
   close() {
-    return this.browser.close()
+    return this.browser.close().then(() => Deno.exit(0)).catch(() => Deno.exit(1))
   }
 }

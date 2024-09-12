@@ -1,4 +1,6 @@
 export * as log from "https://deno.land/std@0.218.2/log/mod.ts"
+export { Spinner } from "jsr:@std/cli@1.0.5";
+
 
 export function parseSetCookies(headers) {
   return headers.map(header => {
@@ -45,6 +47,10 @@ interface Screenshot {
   click: string[]
   scrollTo: string
   localStorage: Record<string, unknown>
+  upload: {
+    selector: string
+    file: string
+  }
   focus: {
     hover: boolean
     selector: string
