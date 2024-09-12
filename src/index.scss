@@ -47,6 +47,7 @@ body {
   min-height: 100%;
   position: relative;
   --header-height: 58px;
+  overscroll-behavior: none;
 
   &::before {
     content: "";
