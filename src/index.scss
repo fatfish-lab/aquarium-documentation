@@ -47,7 +47,7 @@ body {
   min-height: 100%;
   position: relative;
   --header-height: 58px;
-  overscroll-behavior: none;
+  overscroll-behavior-y: none;
 
   &::before {
     content: "";
@@ -337,7 +337,8 @@ body {
                   padding: 0;
 
                   mark {
-                    background-color: var(--yellow-10-oc);
+                    background-color: color-mix(in srgb, var(--yellow-50), transparent 85%);
+                    color: var(--text-00);
                     border-radius: 4px;
                     padding: 0.1em 0;
                   }
