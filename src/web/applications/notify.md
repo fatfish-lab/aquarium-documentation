@@ -9,7 +9,7 @@ nav_order: 10
 
 This application allow user to see its notifications.
 
-![Notify](../../_medias/notify.png)
+![Notify](../../_medias/screenshots/notify.webp)
 
 From this application, you can see all the notifications that you have received. You can also mark them as read or unread.
 

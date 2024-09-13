@@ -9,7 +9,7 @@ nav_order: 10
 
 This application is used to manage [tasks](../items/task.md).
 
-![Tasks editor](../../_medias/tasks.png)
+![Tasks editor](../../_medias/screenshots/tasks.webp)
 
 The top section allow you to edit some basic informations about the task:
 

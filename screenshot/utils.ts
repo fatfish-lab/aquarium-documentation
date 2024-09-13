@@ -62,23 +62,42 @@ interface Screenshot {
 }
 
 export async function getAllScreenshots(rootPath = 'src') {
-  const screenshots: Screenshot[] = [];
+  const screenshots: Record<string, Screenshot[]> = {}
 
-  const getScreenshots = async (path) => {
+  const getScreenshots = async (path: string) => {
     for await (const entry of Deno.readDir(path)) {
       if (entry.isFile && entry.name === "_screenshots.json") {
-        const file = await Deno.readTextFile(`${path}/${entry.name}`);
-        screenshots.push(...JSON.parse(file));
+        const filepath = `${path}/${entry.name}`
+        const file = await Deno.readTextFile(`${path}/${entry.name}`)
+        screenshots[filepath] = JSON.parse(file)
       } else if (entry.isDirectory) {
-        await getScreenshots(`${path}/${entry.name}`);
+        await getScreenshots(`${path}/${entry.name}`)
       }
     }
   }
-  await getScreenshots(rootPath);
+  await getScreenshots(rootPath)
 
-  if (screenshots.length === 0) {
+  if (Object.keys(screenshots).length === 0) {
     throw new Error('No screenshots)');
   }
 
-  return screenshots;
+  // Verify that screenshots are unique. For all non unique screenshot, throw a global error with the name of the file and screenshots names
+  const screenshotNames = Object.values(screenshots)
+    .map(screenshots => screenshots.map(screenshot => screenshot.name))
+    .flat()
+
+  const duplicateNames = screenshotNames.filter((name, index) => screenshotNames.indexOf(name) !== index)
+  if (duplicateNames.length > 0) {
+    const duplicatedScreenshots: Record<string, string[]> = {}
+    for (const screenshotName of duplicateNames) {
+      duplicatedScreenshots[screenshotName] = Object.keys(screenshots).filter(path => {
+        const s = screenshots[path]
+        return s.some(screenshot => screenshot.name === screenshotName)
+      })
+    }
+    throw new Error(`Duplicate screenshot names: ${Object.keys(duplicatedScreenshots).map(name => `\n\t - ${name} (${duplicatedScreenshots[name].join(', ')})`).join(', ')}`)
+  }
+
+  const allScreenshots = Object.values(screenshots).flat()
+  return allScreenshots
 }

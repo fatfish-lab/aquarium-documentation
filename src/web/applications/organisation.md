@@ -9,7 +9,7 @@ nav_order: 10
 
 This application is used to edit [Organisation item](../items/organisation.md).
 
-![Organisation](../../_medias/organisation.png)
+![Organisation](../../_medias/screenshots/organisation.webp)
 
 You have several tabs to manage the organisation:
 

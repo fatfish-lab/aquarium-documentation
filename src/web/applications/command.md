@@ -14,7 +14,7 @@ You can press `SHIFT + :` (the `/` key) to open the Command application. From
 the [studio interface](../introduction/studio.md), you can also click on the
 <span class="aq-icon">search</span> icon.
 
-![Command](../../_medias/command.png)
+![Command](../../_medias/screenshots/command.webp)
 
 The available commands are:
 
@@ -42,7 +42,7 @@ You can use the arrow keys to navigate through the list of commands and press `E
 
 The console is a powerful tool that allows you to explore the content of your Aquarium in a nodal way.
 
-![Console](../../_medias/command-console.png)
+![Console](../../_medias/screenshots/command-console.webp)
 
 - **Browse**: From the console you can browse your items using a nodal interface. Click on the <span class="aq-icon outline">flag</span> icon to use this item as the starting point of the query.
   1. You can also enter the _key of the item by clicking on the button.

@@ -9,7 +9,7 @@ nav_order: 10
 
 The views application is used to manage [view item](../items/view.md). A view is used in [workspaces](./workspaces.md) to regroup columns together.
 
-![Views](../../_medias/views.png)
+![Views](../../_medias/screenshots/views.webp)
 
 On the top of the interface you can change the name of a view.
 

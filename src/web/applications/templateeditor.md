@@ -9,7 +9,7 @@ nav_order: 10
 
 The template editor is the application dedicated to edit [templates](../items/template.md).
 
-![Template editor](../../_medias/templateeditor.png)
+![Template editor](../../_medias/screenshots/templateeditor.webp)
 
 This application have different tabs on the left to manage the template:
 
@@ -39,7 +39,7 @@ By default Aquarium will use the [default form](./addmenu.md#form-creation) aski
 
 Here is [an example of a form with multiple fields](../items/template.md):
 
-![Template form](../../_medias/template-form.png)
+![Template form](../../_medias/screenshots/template-form.webp)
 
 <$>[warning]
 At least one field need to be tight to the `item.data.name` property.
@@ -65,7 +65,7 @@ Today, the nodal view is read-only.
 
 ## Synchronize items
 
-![Synchronize items](../../_medias/templateeditor-sync.png)
+![Synchronize items](../../_medias/screenshots/templateeditor-sync.webp)
 
 1. **Linked items** : This tab give you the list of all items that are dependent of the template.
    1. Click on the item to expand it and see the compare result. You can choose between a tree view or a nodal view.

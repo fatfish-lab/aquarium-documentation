@@ -32,6 +32,8 @@ Check our how-to guides to learn how to interact with Aquarium.
 ```
 ]
 
+----
+
 ## Modules
 
 Several modules are available as an API wrapper:

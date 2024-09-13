@@ -9,7 +9,7 @@ nav_order: 10
 
 This workspace is dedicated to the management of your episodes.
 
-![Episodes](/_medias/episodes.png)
+![Episodes](/_medias/screenshots/episodes.webp)
 
 It's a pretty straightforward workspace. You can create, edit, and delete episodes. Click on an episode to visualize all it's sequence and shots.
 

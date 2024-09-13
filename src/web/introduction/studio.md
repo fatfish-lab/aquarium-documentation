@@ -11,7 +11,7 @@ The studio interface is the most complete interface of Aquarium. This main diffe
 
 ## Interface layout
 
-![Studio](../../_medias/studio-explained.png)
+![Studio](../../_medias/screenshots/studio-explained.webp)
 
 - **Nav bar**: This is the main navigation bar. You can select a project, an organization, or your user. The breadcrumb is also displayed. You always now where you are.
 - **Dock**: This is the dock. You can open/close it by clicking on the arrow. It's working like on a Mac or Windows : On the top you can see the project shortcuts, and on the bottom you have a browser to navigate in the project. The shortcuts are the same for all users of the project.

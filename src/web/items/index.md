@@ -20,7 +20,7 @@ Explore our section for learn more about the different types available by defaul
 
 In most [workspace](./workspace) you can create new items by clicking on the "Create" button. This will open the [Add menu](../applications/addmenu) application, where you can select the type of item you want to create.
 
-[![Create Item](/_medias/create-button.png)](../applications/addmenu)
+[![Create Item](/_medias/screenshots/create-button.webp)](../applications/addmenu)
 
 # How can I see the item's data ?
 
@@ -39,7 +39,7 @@ You can see and edit item's data using the [Quickeditor](../applications/quicked
 3. Click on the `Advanced` tab
 4. Click on `Editor` button
 
-[![Item Properties](/_medias/item-properties.png)](../applications/quickeditor)
+[![Item Properties](/_medias/screenshots/item-properties.webp)](../applications/quickeditor)
 
 <$>[note]
 When an item is displayed in the interface, you can try to right click on it. Most of the time we will open the [quickeditor](../applications/quickeditor). If it's not the case, [let us know](/contact) !
@@ -53,7 +53,7 @@ You can assign permission for [Organisation](./organisation), [User group](./use
 
 For all items, you can access the permission from the [Quickeditor](../applications/quickeditor) application.
 
-![Item Permissions](/_medias/quickeditor-permissions.png)
+![Item Permissions](/_medias/screenshots/quickeditor-permissions.webp)
 
 1. This is the list of all participants that have a permission on the item.
 2. Use this input to search for an Organisation, User group, User or Bot.

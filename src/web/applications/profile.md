@@ -11,7 +11,7 @@ This application is dedicated to edit [User item](../items/user.md).
 
 If you open the profile application with another user than you, some options might be disabled, depending your permission level.
 
-![Profile](../../_medias/profile.png)
+![Profile](../../_medias/screenshots/profile.webp)
 
 ## Account
 

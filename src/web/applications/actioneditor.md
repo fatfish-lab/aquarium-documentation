@@ -11,7 +11,7 @@ The action editor is the application used to edit [Action item](../items/action.
 
 An action is used to automate process. It's with this system that you can send notifications to users, set automatic status changes, etc. Some examples are available in the [add menu](./addmenu.md#form-creation) as templates. You can also checkout our [how-to guides](../../how-to/index.md).
 
-![Action editor](../../_medias/actioneditor.png)
+![Action editor](../../_medias/screenshots/actioneditor.webp)
 
 The goal of an action is to listen for a specific [event's topic](./domain.md#events) and execute the associated [Operations](../items/operation.md).
 

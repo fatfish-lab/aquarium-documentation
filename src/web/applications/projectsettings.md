@@ -9,7 +9,7 @@ nav_order: 10
 
 This application is used to edit [Project item](../items/project.md).
 
-![Project settings](../../_medias/projectsettings.png)
+![Project settings](../../_medias/screenshots/projectsettings.webp)
 
 ## Informations
 

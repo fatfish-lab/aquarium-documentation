@@ -9,7 +9,7 @@ nav_order: 10
 
 This application allows you to view and edit [Job item](../items/job.md).
 
-![Timelogs](../../_medias/timelogs.png)
+![Timelogs](../../_medias/screenshots/timelogs.webp)
 
 In this application you can see at the top on which task or item the job is linked from.
 

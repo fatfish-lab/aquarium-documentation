@@ -9,7 +9,7 @@ nav_order: 10
 
 This application allow you to create new [items](/web/items).
 
-![Add menu](/_medias/addmenu.png)
+![Add menu](/_medias/screenshots/addmenu.webp)
 
 1. **Breadcrumb**: The items will be created at this location.
 2. **Search**: You can search any item type by typing in the search bar. If the type is not recognized, Aquarium allow you to create a new item type.
@@ -27,7 +27,7 @@ When you search for an item, if only one type is displayed, you can press `Enter
 
 Once you clicked on an item, the form creation will be displayed. By default we only asked for the name of the item. But using [templates](../items/template.md), you can defined more advanced form fields.
 
-![Form creation](../../_medias/addmenu-form.png)
+![Form creation](../../_medias/screenshots/addmenu-form.webp)
 
 1. A [template](../items/template.md) is automatically selected for you. This menu allow you to:
    1. Create a new template

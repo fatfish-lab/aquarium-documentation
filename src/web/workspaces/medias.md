@@ -9,7 +9,7 @@ nav_order: 10
 
 This workspace is dedicated to display medias.
 
-![Medias](/_medias/medias.png)
+![Medias](/_medias/screenshots/medias.webp)
 
 By default it will load all medias present in the current location and its sub-folders. The default [depth search](../#depth) is set to 10.
 

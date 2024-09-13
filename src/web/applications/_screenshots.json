@@ -157,6 +157,11 @@
       "selector": ".console-container .toolbar button",
       "type": "circle",
       "content": "2"
+    },{
+      "selector": ".console-container.console",
+      "type": "overlay",
+      "content": "The nodal console",
+      "color": "blue-50"
     }]
   },
   {
@@ -239,5 +244,30 @@
         "content": "2"
       }
     ]
+  },{
+    "name": "blah",
+    "url": "apps/blah?itemKeys=1420141051&appName=blah"
+  },{
+    "name": "filters",
+    "url": "apps/filters?itemKeys=1420158502"
+  },{
+    "name": "milestones",
+    "url": "apps/milestones?itemKeys=1345672759&appName=milestones&mode=editor"
+  },{
+    "name": "rooms",
+    "url": "apps/rooms?itemKeys=1421094518&appName=rooms&mode=editor",
+    "focus": [{
+      "selector": ".header-tools",
+      "type": "circle",
+      "content": "1"
+    }]
+  },{
+    "name": "rooms-overviews",
+    "url": "apps/rooms?itemKeys=1421094518&mode=editor&appName=rooms&activeDisplay=overviews&activeItemKey=1421101921",
+    "focus": [{
+      "selector": ".overview.add",
+      "type": "arrow",
+      "vignetting": true
+    }]
   }
 ]

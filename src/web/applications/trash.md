@@ -9,7 +9,7 @@ nav_order: 10
 
 This application is used to display the trash of the opened item.
 
-![Trash](../../_medias/trash.png)
+![Trash](../../_medias/screenshots/trash.webp)
 
 On Aquarium, the trash is not global, it's contextualized where the item was before being trashed.
 

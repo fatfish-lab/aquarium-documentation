@@ -11,7 +11,7 @@ This application is used with any items and allows to access universal items pro
 
 You can see that application as the the `File properties` application in Windows or the `Informations` viewer on MacOS.
 
-![Quickeditor](../../_medias/quickeditor.png)
+![Quickeditor](../../_medias/screenshots/quickeditor.webp)
 
 ## Infos
 

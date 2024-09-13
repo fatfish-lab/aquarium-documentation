@@ -11,7 +11,7 @@ This application is used to edit the [Workspace item](../items/workspace.md).
 
 Workspaces are an **important notion** in Aquarium. Find more information about them in [the dedicated section](../workspaces/index.md).
 
-![Workspaces](../../_medias/workspaces.png)
+![Workspaces](../../_medias/screenshots/workspaces.webp)
 
 ## Infos
 

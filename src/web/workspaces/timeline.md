@@ -13,7 +13,7 @@ This workspace is dedicated to display tasks and define schedules.
 This workspace is still in beta. If you have any feedback or suggestions, please [let us know](/contact).
 <$>
 
-![Timeline](/_medias/timeline.png)
+![Timeline](/_medias/screenshots/timeline.webp)
 
 1. **Add you columns**: Define the columns you want to see in your workspace. You can choose between our presets or create your own custom column. To create a custom column, follow our [guide](../../../how-to/create/column).
 2. **Choose your tool**: Enable the tools you want to use in your schedule:

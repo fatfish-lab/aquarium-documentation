@@ -12,7 +12,7 @@ This workspace is dedicated to the management of your assets. It is the place wh
 You can regroup assets into [Library](../items/library.md) to regroup them by type.
 > Example: character, props, environment, etc.
 
-![Assets manager](/_medias/assetsmanager.png)
+![Assets manager](/_medias/screenshots/assetsmanager.webp)
 
 1. **Create**: Click on this button to create a new [Library](../items/library.md) or a new [Asset](../items/asset.md). You can also access [import a CSV file](../../how-to/setup/assets.md) to create [episodes](../items/episode.md), [libraries](../items/library.md), [assets](../items/asset.md) and [tasks](../items/task.md) in bulk.
 2. **Add column**: Choose the columns you want to enable in your workspace. Those columns are based on our presets. But if you want to create a custom column, follow our [guide](../../../how-to/create/column.md).
@@ -32,4 +32,4 @@ You can regroup assets into [Library](../items/library.md) to regroup them by ty
 1. Right click on a asset and click on `Properties...`
 2. Locate the `Template` field and click on the template you want to edit
 3. Refer to the [Template editor](/web/applications/templateeditor) application for more information on how to manager a template.
-![Assets template](/_medias/assets-template.png)
+![Assets template](/_medias/screenshots/assets-template.webp)

@@ -11,7 +11,7 @@ This workspace is dedicated to the management of your shots. It is the place whe
 
 You can also manage sequences from here.
 
-![Shots manager](/_medias/shotsmanager.png)
+![Shots manager](/_medias/screenshots/shotsmanager.webp)
 
 1. **Create**: Click on this button to create a new [Sequence](../../items/sequence) or a new [Shot](../../items/shot). You can also access [import a CSV file](../../../how-to/setup/shots) to create [episodes](../../items/episode), [sequences](../../items/sequence), [shots](../../items/shot) and [tasks](../../items/task) in bulk.
 2. **Add column**: Choose the columns you want to enable in your workspace. Those columns are based on our presets. But if you want to create a custom column, follow our [guide](../../../how-to/create/column).
@@ -31,4 +31,4 @@ You can also manage sequences from here.
 1. Right click on a shot and click on `Properties...`
 2. Locate the `Template` field and click on the template you want to edit
 3. Refer to the [Template editor](/web/applications/templateeditor) application for more information on how to manager a template.
-![Shots template](/_medias/shots-template.png)
+![Shots template](/_medias/screenshots/shots-template.webp)

@@ -9,7 +9,7 @@ nav_order: 10
 
 The Shot editor is the application dedicated to edit [Shot item](../items/shot.md).
 
-![Shot editor](../../_medias/shoteditor.png)
+![Shot editor](../../_medias/screenshots/shoteditor.webp)
 
 1. **Tasks**: The list of tasks associated with the Shot. You can click on a task to visualize its Medias. A task can have sub-tasks.
 2. **Display**: Choose the display mode of the shot. You can define the default display by clicking on the <span class="aq-icon">star</span> icon. The available display modes are:
@@ -34,7 +34,7 @@ Depending on your workflow, you might want to regroup medias into versions. A ve
 
 When you drag and drop a media file on the interface, a popup will appear to ask you if you want to create a new version or add the media to an existing version.
 
-![shoteditor-upload](../../_medias/shoteditor-upload.png)
+![shoteditor-upload](../../_medias/screenshots/shoteditor-upload.webp)
 
 
 1. **New version**: If you select `New version`, a new version will be created with the media you just uploaded. We automatically detect the version number based on the existing versions. You can override it if needed.

@@ -13,7 +13,7 @@ This application is used to edit and visualize [Playlist items](../items/playlis
 Don't forget to try our [Review workspace](../workspaces/review.md). It's a good tool to create quick playlist.
 <$>
 
-![playlist](../../_medias/playlist.png)
+![playlist](../../_medias/screenshots/playlist.webp)
 
 1. **Medias**: Open/close this panel to see the list of medias in the playlist.
 2. **Comments**: Open/close this panel to see the comments of medias on screen.

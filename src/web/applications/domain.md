@@ -13,7 +13,7 @@ This application is here to manage all administrative settings of your domain.
 This application is only accessible to the administrator and super-administrator of the domain.
 <$>
 
-![Domain](../../_medias/domain.png)
+![Domain](../../_medias/screenshots/domain.webp)
 
 From this application, you can manage the following settings:
 

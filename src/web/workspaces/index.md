@@ -14,7 +14,7 @@ Workspaces works the same way in the focus or studio interface. The only differe
 
 | In [focus interface](../introduction/focus) | In [studio interface](../introduction/studio) |
 |:--------:|:-------:|
-| ![Focus workspaces](/_medias/focus-workspaces.png) | ![Studio workspaces](/_medias/studio-workspaces.png) |
+| ![Focus workspaces](/_medias/screenshots/focus-workspaces.webp) | ![Studio workspaces](/_medias/screenshots/studio-workspaces.webp) |
 | Workspaces are regrouped by need (assets manager, shots manager, ...) | Workspaces are regrouped by location. You need to go the the correct folder to be able to active the workspace you want. |
 
 # Workspace types
@@ -34,7 +34,7 @@ We created several workspaces, to fit specific project management needs : [shots
 
 All workspaces works quite the same way and have same options available:
 
-![Workspaces options](/_medias/workspaces-options.png)
+![Workspaces options](/_medias/screenshots/workspaces-options.webp)
 
 <$>[info]
 Don't forget to save your workspace after editing it. The <span class="aq-icon">save</span> save button is located at the top right of the workspace, when a change is detected.

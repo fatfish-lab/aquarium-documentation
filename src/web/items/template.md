@@ -13,7 +13,7 @@ A **<span class="aq-icon outline">deployed_code</span> Template** is used to cre
 
 A template can have a form, so when a user will create an item from this template, they will have to fill the form.
 
-![Template form](../../_medias/template-form.png)
+![Template form](../../_medias/screenshots/template-form.webp)
 
 You can convert an item into a template using the [Quickeditor application](../applications/quickeditor.md).
 

@@ -2,6 +2,8 @@ import { Session } from "./page.ts";
 import { getAllScreenshots, log, Spinner } from "./utils.ts";
 import vento from "https://deno.land/x/vento@v1.12.10/mod.ts";
 import { parseArgs } from "@std/cli/parse-args";
+import { walk } from "jsr:@std/fs/walk";
+
 
 Deno.addSignalListener("SIGINT", async () => {
   log.info("SIGINT received, exiting...")
@@ -9,18 +11,27 @@ Deno.addSignalListener("SIGINT", async () => {
   else Deno.exit(0)
 })
 
-const args = parseArgs(Deno.args)
-if (args.debug || args.d) {
+const args = parseArgs(Deno.args, {
+  string: ["path", "type"],
+  boolean: ["debug", "d", "force", "f", 'clean', 'c', 'dry-run', 'dry'],
+  collect: ["_"],
+  default: {
+    type: "webp"
+  }
+})
+const forceScreenshots = args.force || args.f
+const cleanScreenshots = args.clean || args.c
+const dryRun = args['dry-run'] || args.dry
+const screenshotsExtension = (args.type || undefined) as "webp" | "png" | "jpeg" | undefined
+const screenshotsNames = args._
+if (args.debug == true || args.d == true) {
   Deno.env.set("DEBUG", "true")
 }
 
-
-const isDebug = Boolean(Deno.env.get("DEBUG"))
-const screenshotsNames = args._
-
-const spinner = new Spinner({ message: "Taking screenshot...", color: "yellow" });
-
 const v = vento()
+const isDebug = Boolean(Deno.env.get("DEBUG"))
+const spinner = new Spinner({ message: "Taking screenshot...", color: "yellow" })
+
 const screenshots = (await getAllScreenshots(args.path)).filter((screenshot) => {
   return screenshotsNames.length === 0 || screenshotsNames.includes(screenshot.name)
 })
@@ -35,9 +46,23 @@ if (projectKey) {
 }
 
 spinner.start()
-// screenshots.forEach(async (screenshot, index) => {
+
 for (const [index, screenshot] of screenshots.entries()) {
   spinner.message = `Taking screenshot (${index + 1}/${screenshots.length})...`
+  const screenshotPath = `src/_medias/screenshots/${screenshot.name}.${screenshotsExtension}`
+
+  if (forceScreenshots == false) {
+    try {
+      const image = Deno.lstatSync(screenshotPath)
+      if (image.isFile) {
+        log.info(`Screenshot ${screenshot.name} already exists, skipping...`)
+        continue
+      }
+    } catch {}
+  }
+
+  if (dryRun) continue
+
   const path = await v.runString(screenshot.url, ventoData)
   const url = new URL(path.content, Deno.env.get("AQ_WEB")).toString()
 
@@ -186,8 +211,20 @@ for (const [index, screenshot] of screenshots.entries()) {
       }
     }
   }
-  await session.page.screenshot({ type: 'webp', path: `src/_medias/screenshots/${screenshot.name}.webp` })
 
+  await session.page.screenshot({ type: screenshotsExtension, path: screenshotPath })
+}
+
+if (cleanScreenshots && screenshotsNames.length === 0 && args.path == null) {
+  log.info("Cleaning screenshots...")
+  const allScreenshotsFilenames = screenshots.map(screenshot => `${screenshot.name}.${screenshotsExtension}`)
+  const screenshotsFiles = await Array.fromAsync(walk(`${Deno.cwd()}/src/_medias/screenshots`, { exts: [`.${screenshotsExtension}` || ".webp"] }))
+  for (const file of screenshotsFiles) {
+    if (!allScreenshotsFilenames.includes(file.name)) {
+      log.info(`Removing ${file.path}`)
+      if (!dryRun) await Deno.remove(file.path)
+    }
+  }
 }
 
 spinner.stop()

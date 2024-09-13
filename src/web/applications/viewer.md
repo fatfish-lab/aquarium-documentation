@@ -9,7 +9,7 @@ nav_order: 10
 
 The viewer application is dedicated to open [Media item](../items/media.md).
 
-![Viewer](../../_medias/viewer.png)
+![Viewer](../../_medias/screenshots/viewer.webp)
 
 > This application is embedded into several other applications like the [Playlist](./playlist.md), the [Shot editor](./shoteditor.md), the [Review workspace](../workspaces/review.md), ...
 
