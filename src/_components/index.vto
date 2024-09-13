@@ -10,13 +10,17 @@
   <link rel="stylesheet" href="/index.css">
 
   <link rel="preload" href="/index.css" as="style">
-  <link rel="preload" href="/_js/theme.js" as="script">
 
   <script src="/_js/theme.js"></script>
   <script src="/_js/search.js"></script>
   <script src="/_js/toc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
   <script src="/_js/mermaid.js"></script>
+  <script>
+    const html = document.documentElement
+    const theme = localStorage.getItem('preferredTheme')
+    html.setAttribute('theme', theme)
+  </script>
 
 </head>
 <body>
