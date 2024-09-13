@@ -11,7 +11,7 @@ nav_order: 3
 
 The Aquarium plugin for Prism allow you to synchronize your project's assets and shots, publish media from to Aquarium and also create timelogs from Prism.
 
-New features are coming ! Feel free to [reach us](/support.md) if you have specific needs.
+New features are coming ! Feel free to [reach us](/contact.md) if you have specific needs.
 
 This documentation is for the Prism v1.3. The Prism v2 documentation is coming soon. More information about the v2 in our [repository](https://github.com/fatfish-lab/aquarium-studio-prism).
 
@@ -146,7 +146,7 @@ After selecting dates from the calendar view, you can create timelogs on specifi
 
 ?> You can double click on days, to create same timelog on multiple days.
 
-Today you can't create timelog to specific task from Prism interface. If you need it, feel free to [contact us](support.md).
+Today you can't create timelog to specific task from Prism interface. If you need it, feel free to [contact us](/contact.md).
 
 ## Publish to Aquarium
 
@@ -173,9 +173,9 @@ If you have any issue with this plugin here is some lead :
   - With this mode enabled, Aquarium plugin will also be in debug verbose output.
   - Prism logs are stored in the Document folder of the current user.
     - Example : `C:\Users\fatfishlab\Documents\Prism`
-- We are here to help you, so do not hesitate to [contact us](support.md).
+- We are here to help you, so do not hesitate to [contact us](/contact.md).
 
 <div class="right">
 
-If you have any questions or you have specific needs, [contact us >](support.md)
+If you have any questions or you have specific needs, [contact us >](/contact.md)
 

@@ -6,7 +6,7 @@ lang: en
 ---
 
 <$>[note]
-Don't know where to start ? Follow our [quick start guides](../quickstart/index.md).
+Don't know where to start ? Follow our [quick start guides](../quickstart/manager.md).
 <$>
 
 # How Aquarium works ?

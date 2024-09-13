@@ -10,7 +10,7 @@ nav_order: 1
 
 This focus interface offer an easy way to discover and use Aquarium. It's also a dedicated interface for people who need to focus on their work with the [Diary](#diary) feature.
 
-![Focus](../../_medias/screenshots/interface-interface-focus.webp)
+![Focus](../../_medias/screenshots/interface-focus.webp)
 
 On top of the screen, you can select 3 different pages :
 

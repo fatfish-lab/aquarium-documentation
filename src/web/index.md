@@ -12,13 +12,13 @@ icon: web
 This documentation is here to present the interface and general principles of the Aquarium web application.
 
 [column
-```card [<span class="aq-icon">rocket_launch</span> Quick start](./quickstart.md)
+```card [<span class="aq-icon">rocket_launch</span> Quick start](./quickstart/manager.md)
 Looking for a quick start?
 ```
 ]
 
 [column
-```card [<span class="aq-icon">flag</span> Introduction](./quickstart.md)
+```card [<span class="aq-icon">flag</span> Introduction](./introduction/index.md)
 Learn the basics about Aquarium.
 ```
 ]
