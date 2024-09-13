@@ -76,7 +76,7 @@
         </pre>
       </details>
     {{ /if }} #}}
-    <div class="toolbox">
+    <div class="toolbox" data-pagefind-ignore>
       {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/src/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}
       <a {{`href=${contribution}`}} target="_blank" rel="noreferrer" class="contribute">
         {{ comp.button({ content: 'Make a contribution', icon: 'edit_square', color: 'bg-30' }) }}

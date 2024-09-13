@@ -9,7 +9,7 @@
       data-pagefind-meta="{{pagefind.topic}}:{{filename}}"
     {{ /if }}>
     {{ content }}
-    <div class="toolbox">
+    <div class="toolbox" data-pagefind-ignore>
       {{ set contribution = new URL(`${repository.author}/${repository.name}/edit/${repository.branch}/src/${page.src.path.slice(1)}${page.src.ext}`, repository.host).toString() }}
       <a {{`href=${contribution}`}} target="_blank" rel="noreferrer" class="contribute">
         {{ comp.button({ content: 'Make a contribution', icon: 'edit_square', color: 'bg-30' }) }}
@@ -20,7 +20,7 @@
         {{ comp.button({ content: 'Share an idea', icon: 'emoji_objects', color: 'bg-30' }) }}
       </a>
     </div>
-    {{ comp.adjacent(adjacent)}}
+    {{ comp.adjacent(adjacent) }}
   </div>
   {{ if notoc != true && toc && toc.length }}
     {{ include "./toc.vto" }}
