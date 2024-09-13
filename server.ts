@@ -1,12 +1,18 @@
 import Server from "https://deno.land/x/lume@v2.2.4/core/server.ts";
 import { parseArgs } from "jsr:@std/cli/parse-args";
 import { walk } from "jsr:@std/fs/walk";
-import { DOMParser, Element } from "jsr:@b-fuze/deno-dom";
+import { DOMParser, HTMLDocument } from "jsr:@b-fuze/deno-dom";
+import { Spinner } from "./screenshot/utils.ts";
+
+const spinner = new Spinner({ message: "Checking 404 errors...", color: "yellow" })
 
 const args = parseArgs(Deno.args, {
   boolean: ["404"],
   string: ["port"],
   collect: ["exclude"],
+  default: {
+    exclude: ["google.com", "github.com"]
+  }
 })
 
 
@@ -17,38 +23,61 @@ const server = new Server({
 
 async function searchFor404() {
   if (args.exclude) {
-    console.log('Excluding URL using:', args.exclude);
+    console.log('Excluding URL using:', args.exclude)
   }
 
-  const base = `http://localhost:${args.port || 8010}`;
+  const base = `http://localhost:${args.port || 8010}`
+
+  function getAttributes(doc: HTMLDocument, tag: string, attr: string) {
+    const elements = Array.from(doc.querySelectorAll(tag))
+    return elements.map(el => el.getAttribute(attr))
+  }
+
   // Walk to find all .html files
-  for await (const file of walk(`${Deno.cwd()}/_site`, { exts: ["html"] })) {
+  const htmlFiles = await Array.fromAsync(walk(`${Deno.cwd()}/_site`, { exts: ["html"] }))
+  let index = 0
+  spinner.start()
+  for await (const file of htmlFiles) {
+    index++
+    spinner.message = `Checking 404 errors (${index}/${htmlFiles.length})...`
+
+    let has404 = false
     const html = await Deno.readTextFile(file.path);
     const doc = new DOMParser().parseFromString(html, "text/html");
-    const anchors = doc.querySelectorAll("a");
+    const urls = [
+      ...getAttributes(doc, 'a', 'href'),
+      ...getAttributes(doc, 'img', 'src'),
+      ...getAttributes(doc, 'video', 'src'),
+      ...getAttributes(doc, 'audio', 'src'),
+    ]
 
-    for (const anchor of anchors) {
-      const href = anchor.getAttribute("href");
-      if (!href) continue;
-      if (href.startsWith("mailto")) continue;
+    for (const url of urls) {
+      if (!url) continue;
+      if (url.startsWith("mailto")) continue;
 
-      let url
+      let Url
       try {
-        if (!href.startsWith("http")) {
+        if (!url.startsWith("http")) {
           const location = file.path.split("/_site/")[1].replace('index.html', '');
-          url = new URL(href, `${base}/${location}`);
+          Url = new URL(url, `${base}/${location}`);
         } else {
-          url = new URL(href);
+          Url = new URL(url);
         }
-      } catch (e) {
-        throw new Error(`Invalid URL: ${href} on file ${file.path}`);
+      } catch {
+        throw new Error(`Invalid URL: ${url} on file ${file.path}`);
       }
 
-      const response = await fetch(url.href);
+      const response = await fetch(Url.href);
       if (response.ok === false) {
         const domainToExclude = args.exclude as string[] || [];
         if (domainToExclude.some((e) => url.toString().includes(e))) continue;
-        console.error(`- ${file.path} --> ${href} | ${url.href}`);
+        if (has404 == false) {
+          has404 = true
+          console.error(`\n404 errors on ${file.path}:`);
+        }
+
+        const isURLEqualToHref = Url.toString() == url
+        console.error(`\t- ${url} ${isURLEqualToHref ? '' : `| ${Url.href}`}`);
       }
     }
   }
@@ -56,8 +85,9 @@ async function searchFor404() {
 
 if (args['404']) {
 
-  server.addEventListener("start", () => {
-    searchFor404();
+  server.addEventListener("start", async() => {
+    await searchFor404();
+    Deno.exit(0)
   });
 }
 
