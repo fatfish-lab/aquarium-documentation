@@ -7,9 +7,9 @@
   <link rel="icon" href="/_medias/favicon.png" />
   <title>Aquarium docs {{ if title }}- {{ title }}{{ /if }}</title>
 
-  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="{{"/index.css" |> url}}">
 
-  <link rel="preload" href="/index.css" as="style">
+  <link rel="preload" href="{{"/index.css" |> url}}" as="style">
 
   <script src="/_js/theme.js"></script>
   <script src="/_js/search.js"></script>
@@ -24,7 +24,6 @@
 
 </head>
 <body>
-  <div class="reference"></div>
   {{ content }}
 </body>
 </html>

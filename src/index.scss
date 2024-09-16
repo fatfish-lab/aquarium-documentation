@@ -84,23 +84,6 @@ body {
     cursor: pointer;
   }
 
-  .reference {
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: -18px;
-    left: -227px;
-    background-color: var(--bg-20);
-    z-index: 1;
-    opacity: 0.6;
-    pointer-events: none;
-    background-image: url('/_medias/reference.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-  }
-
   h1,
   h2,
   h3,
