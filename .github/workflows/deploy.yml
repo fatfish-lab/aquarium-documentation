@@ -23,7 +23,9 @@ jobs:
           deno-version: v1.x
 
       - name: Build site
-        run: deno task build
+        run: |
+          GITHUB_PAGES_URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          deno task build --location=${GITHUB_PAGES_URL}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
