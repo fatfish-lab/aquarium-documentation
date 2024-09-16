@@ -21,6 +21,7 @@
   },
   "fmt": {
     "semiColons": false,
-    "exclude": ["src/**/*.md"]
+    "lineWidth": 120,
+    "exclude": ["**/*.md"]
   }
 }

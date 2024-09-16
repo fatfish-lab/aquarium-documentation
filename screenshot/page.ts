@@ -1,13 +1,12 @@
-import "@std/dotenv/load";
+import "@std/dotenv/load"
 
 import Aquarium from "https://raw.githubusercontent.com/fatfish-lab/aquarium-ts-api/main/src/index.ts"
-import puppeteer from "npm:puppeteer@23.3.0";
-import type { Browser, Page } from "npm:puppeteer@23.3.0";
+import puppeteer from "npm:puppeteer@23.3.0"
+import type { Browser, Page } from "npm:puppeteer@23.3.0"
 
-import { parseSetCookies } from "./utils.ts";
+import { parseSetCookies } from "./utils.ts"
 
-
-const url = new URL('/v1/signin', Deno.env.get("AQ_API"))
+const url = new URL("/v1/signin", Deno.env.get("AQ_API"))
 
 const headers = new Headers()
 headers.set("Content-Type", "application/json")
@@ -20,8 +19,8 @@ const signin = await fetch(url, {
   headers,
   body: JSON.stringify({
     "email": Deno.env.get("AQ_EMAIL"),
-    "password": Deno.env.get("AQ_PASSWORD")
-  })
+    "password": Deno.env.get("AQ_PASSWORD"),
+  }),
 })
 
 if (!signin.ok) {
@@ -35,7 +34,13 @@ export class Session {
   browser: Browser
   page: Page
 
-  constructor(aq: Aquarium, me: Record<string, unknown>, cookies: Record<string, unknown>[], browser: Browser, page: Page) {
+  constructor(
+    aq: Aquarium,
+    me: Record<string, unknown>,
+    cookies: Record<string, unknown>[],
+    browser: Browser,
+    page: Page,
+  ) {
     this.aq = aq
     this.me = me
     this.cookies = []
@@ -46,14 +51,13 @@ export class Session {
       // @ts-ignore, Can't find type for CookieParam
       this.page.setCookie(cookie)
     })
-
   }
 
   static async new() {
     const login = await signin.json()
     const me = login.user
     const token = login.token
-    const aq = new Aquarium(Deno.env.get("AQ_API") || 'http://localhost:8000', token, Deno.env.get("AQ_DOMAIN"))
+    const aq = new Aquarium(Deno.env.get("AQ_API") || "http://localhost:8000", token, Deno.env.get("AQ_DOMAIN"))
 
     const cookies = parseSetCookies(signin.headers.getSetCookie())
 
@@ -61,14 +65,14 @@ export class Session {
       executablePath: Deno.env.get("PUPPETEER_EXECUTABLE_PATH"),
       devtools: Boolean(Deno.env.get("DEBUG")),
     }
-    const browser = await puppeteer.launch(options);
+    const browser = await puppeteer.launch(options)
 
-    const page = await browser.newPage();
+    const page = await browser.newPage()
     await page.setViewport({ width: 1920, height: 1080 })
 
-    await page.goto(Deno.env.get('AQ_WEB') || 'http://localhost:3000')
+    await page.goto(Deno.env.get("AQ_WEB") || "http://localhost:3000")
     await page.evaluate(() => {
-      localStorage.setItem('alreadyRecoChrome', 'true');
+      localStorage.setItem("alreadyRecoChrome", "true")
     })
 
     const session = new Session(aq, me, cookies, browser, page)

@@ -1,26 +1,26 @@
-import lume from "lume/mod.ts";
+import lume from "lume/mod.ts"
 
 // Custom plugins
-import mermaid from "./src/_plugins/markdown/mermaid.js";
-import card from "./src/_plugins/markdown/card.js";
-import brunoLoader from "./src/_plugins/bruno.ts";
+import mermaid from "./src/_plugins/markdown/mermaid.js"
+import card from "./src/_plugins/markdown/card.js"
+import brunoLoader from "./src/_plugins/bruno.ts"
 
 // Plugins
-import robots from "lume/plugins/robots.ts";
-import sitemap from "lume/plugins/sitemap.ts";
-import multilanguage from "lume/plugins/multilanguage.ts";
-import resolveUrls from "lume/plugins/resolve_urls.ts";
-import nav from "lume/plugins/nav.ts";
-import sass from "lume/plugins/sass.ts";
-import pagefind from "lume/plugins/pagefind.ts";
+import robots from "lume/plugins/robots.ts"
+import sitemap from "lume/plugins/sitemap.ts"
+import multilanguage from "lume/plugins/multilanguage.ts"
+import resolveUrls from "lume/plugins/resolve_urls.ts"
+import nav from "lume/plugins/nav.ts"
+import sass from "lume/plugins/sass.ts"
+import pagefind from "lume/plugins/pagefind.ts"
 
 // Markdown plugins
-import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts";
-import digitalOceanMd from "npm:@digitalocean/do-markdownit";
-import prism from "lume/plugins/prism.ts";
-import 'npm:prismjs@1.29.0/components/prism-json.js';
-import 'npm:prismjs@1.29.0/components/prism-python.js';
-import 'npm:prismjs@1.29.0/components/prism-bash.js';
+import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts"
+import digitalOceanMd from "npm:@digitalocean/do-markdownit"
+import prism from "lume/plugins/prism.ts"
+import "npm:prismjs@1.29.0/components/prism-json.js"
+import "npm:prismjs@1.29.0/components/prism-python.js"
+import "npm:prismjs@1.29.0/components/prism-bash.js"
 
 const options = {
   robots: {
@@ -30,7 +30,7 @@ const options = {
     plugins: [mermaid, card, [digitalOceanMd, { prismjs: false, user_mention: false }]],
   },
   toc: {
-    level: 1
+    level: 1,
   },
   pagefind: {
     ui: {
@@ -40,7 +40,7 @@ const options = {
       showEmptyFilters: false,
       showSubResults: false,
       resetStyles: true,
-      openFilters: ['web', 'api']
+      openFilters: ["web", "api"],
     },
     indexing: {
       verbose: false,
@@ -53,7 +53,7 @@ const options = {
   multilanguage: {
     languages: ["en", "fr"],
     defaultLanguage: "en",
-  }
+  },
 }
 
 const site = lume({
@@ -69,29 +69,27 @@ const site = lume({
       (path: string) => path.endsWith("/_screenshots.json"),
     ],
   },
-}, { markdown: options.markdown });
+}, { markdown: options.markdown })
 
-
-site.use(resolveUrls());
-site.use(toc(options.toc));
-site.use(nav());
-site.use(sass(options.sass));
-site.use(prism());
+site.use(resolveUrls())
+site.use(toc(options.toc))
+site.use(nav())
+site.use(sass(options.sass))
+site.use(prism())
 
 site.loadPages([".bru"], brunoLoader)
 
-site.use(multilanguage(options.multilanguage));
-site.use(sitemap());
-site.use(robots(options.robots));
+site.use(multilanguage(options.multilanguage))
+site.use(sitemap())
+site.use(robots(options.robots))
 
-site.use(pagefind(options.pagefind));
+site.use(pagefind(options.pagefind))
 
-site.copy("_medias");
-site.copy("_styles");
-site.copy("_js");
+site.copy("_medias")
+site.copy("_styles")
+site.copy("_js")
 
-site.mergeKey("id", "array");
-site.mergeKey("pagefind", "object");
+site.mergeKey("id", "array")
+site.mergeKey("pagefind", "object")
 
-
-export default site;
+export default site

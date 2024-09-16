@@ -1,11 +1,10 @@
 [{
-    "name": "interface-studio",
-    "url": "{{me._key}}?app=Home"
-},{
+  "name": "interface-studio",
+  "url": "{{me._key}}?app=Home"
+}, {
   "name": "interface-focus",
   "url": "focus/home"
-},
-{
+}, {
   "name": "interface-rooms",
   "url": "rooms"
 }]

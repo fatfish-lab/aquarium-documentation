@@ -7,7 +7,7 @@
     "type": "arrow",
     "vignetting": true
   }]
-},{
+}, {
   "name": "item-properties",
   "url": "/apps/quickeditor/?itemKeys={{project._key}}&tabName=advanced",
   "focus": [{
@@ -15,8 +15,7 @@
     "type": "arrow",
     "vignetting": true
   }]
-},
-{
+}, {
   "name": "quickeditor-permissions",
   "url": "/apps/quickeditor/?itemKeys={{project._key}}&tabName=participants",
   "focus": [
@@ -31,7 +30,7 @@
       "content": "2"
     }
   ]
-},{
+}, {
   "name": "template-form",
   "url": "apps/addmenu?itemKeys=120712459&availableTypes=%5B%22Asset%22%5D&edgeType=Child&mode=append&template=120712548"
 }]

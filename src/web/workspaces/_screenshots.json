@@ -29,15 +29,18 @@
         "selector": ".create-container",
         "type": "circle",
         "content": "1"
-      },{
+      },
+      {
         "selector": ".toolbar-columns",
         "type": "circle",
         "content": "2"
-      },{
+      },
+      {
         "selector": "#aquarium_app > div.focus-container.router-view > div.app.focus-app > div > div > div > div > div.explorer-container.lister.with-header > div > div:nth-child(3) > div.collection-header > div > div > button",
         "type": "circle",
         "content": "3"
-      },{
+      },
+      {
         "selector": "#aquarium_app > div.focus-container.router-view > div.app.focus-app > div > div > div > div > div.explorer-container.lister.with-header > div > div:nth-child(3) > div.collection-list > div:nth-child(2) > div.end",
         "type": "circle",
         "content": "4"
@@ -64,15 +67,18 @@
         "selector": ".create-container",
         "type": "circle",
         "content": "1"
-      },{
+      },
+      {
         "selector": ".toolbar-columns",
         "type": "circle",
         "content": "2"
-      },{
+      },
+      {
         "selector": "#aquarium_app > div.focus-container.router-view > div.app.focus-app > div > div > div > div > div.explorer-container.lister.with-header > div > div:nth-child(3) > div.collection-header > div > div > button",
         "type": "circle",
         "content": "3"
-      },{
+      },
+      {
         "selector": "#aquarium_app > div.focus-container.router-view > div.app.focus-app > div > div > div > div > div.explorer-container.lister.with-header > div > div:nth-child(3) > div.collection-list > div:nth-child(2) > div.end",
         "type": "circle",
         "content": "4"
@@ -169,17 +175,17 @@
       "selector": ".explorer-container",
       "type": "circle",
       "content": "1"
-    },{
+    }, {
       "selector": ".main-playlist-container",
       "type": "circle",
       "content": "2"
-    },
-    {
+    }, {
       "selector": ".toolbar >:nth-child(3)",
       "type": "circle",
       "content": "3"
     }]
-  }, {
+  },
+  {
     "name": "episodes",
     "url": "focus/939107156/episodes/939107281?itemKey=939107193"
   },
@@ -190,19 +196,19 @@
       "selector": ".homepage-container .tools",
       "content": "1",
       "type": "circle"
-    },{
+    }, {
       "selector": ".homepage-container .shortcuts",
       "type": "circle",
       "content": "2"
-    },{
+    }, {
       "selector": ".homepage-container .wiki",
       "type": "circle",
       "content": "3"
-    },{
+    }, {
       "selector": ".homepage-container .section-vertical",
       "type": "circle",
       "content": "4"
-    },{
+    }, {
       "selector": ".workspace-tab.active",
       "type": "circle",
       "content": "5"

@@ -54,7 +54,8 @@
   {
     "name": "organisation",
     "url": "apps/organisation?itemKeys=70905130"
-  },{
+  },
+  {
     "name": "studio-jobs",
     "url": "{{me._key}}?app=Home&workspace=286725727",
     "focus": [{
@@ -62,43 +63,49 @@
       "type": "arrow",
       "vignetting": true
     }]
-  },{
+  },
+  {
     "name": "playlist",
     "url": "apps/playlist?itemKeys=865875327&appName=playlist",
     "focus": [{
       "selector": ".show-toolbar.medias",
       "type": "circle",
       "content": "1"
-    },{
+    }, {
       "selector": ".show-toolbar.comments",
       "type": "circle",
       "content": "2"
-    },{
+    }, {
       "selector": ".toggle-timeline",
       "type": "circle",
       "content": "3"
-    },{
+    }, {
       "selector": ".previous-media",
       "type": "circle",
       "content": "4"
     }]
-  },{
+  },
+  {
     "name": "profile",
     "url": "/apps/profile?itemKeys={{me._key}}"
   },
   {
     "name": "projectsettings",
     "url": "apps/projectsettings?itemKeys=939107156&tabName=information"
-  },{
+  },
+  {
     "name": "quickeditor",
     "url": "apps/quickeditor?itemKeys=939107156"
-  },{
+  },
+  {
     "name": "tasks",
     "url": "apps/tasks?itemKeys=1346077374&tabName=infos"
-  },{
+  },
+  {
     "name": "templateeditor",
     "url": "apps/templateeditor?itemKeys=939107246&appName=templateeditor"
-  },{
+  },
+  {
     "name": "templateeditor-sync",
     "url": "apps/templateeditor?itemKeys=939107246&appName=templateeditor&tabName=sync",
     "click": [".scroller-container.children > div:nth-child(2)"],
@@ -106,46 +113,54 @@
       "selector": ".scroller-container.children",
       "type": "circle",
       "content": "1"
-    },{
+    }, {
       "selector": ".tools > button",
       "type": "circle",
       "content": "2"
-    },{
+    }, {
       "selector": ".compare-options > .tool",
       "type": "circle",
       "content": "3"
-    },
-    {
+    }, {
       "selector": ".footer > .quickview-container",
       "type": "circle",
       "content": "4"
     }]
-  },{
+  },
+  {
     "name": "timelogs",
     "url": "apps/timelogs?itemKeys=1346245819&appName=timelogs"
-  },{
+  },
+  {
     "name": "trash",
     "url": "apps/trash?itemKeys=939107156&appName=trash"
-  },{
+  },
+  {
     "name": "viewer",
     "url": "apps/viewer?itemKeys=1346269344&mediaIndex=1&historyIndex=1"
-  },{
+  },
+  {
     "name": "workspaces",
     "url": "apps/workspaces?itemKeys=1330899299&appName=workspaces"
-  },{
+  },
+  {
     "name": "actioneditor",
     "url": "apps/actioneditor?itemKeys=286728210&appName=actioneditor&mode=editor"
-  },{
+  },
+  {
     "name": "views",
     "url": "apps/views?itemKeys=1330899343&appName=views&showPreview=true&columnIndex=3&showSave=false"
-  },{
+  },
+  {
     "name": "notify",
     "url": "apps/notify?itemKeys=120709667&appName=notify"
-  },{
+  },
+  {
     "name": "command",
     "url": "120709667?app=Home&workspace=286725727",
     "click": [".commands-container"]
-  },{
+  },
+  {
     "name": "command-console",
     "url": "939107156?workspace=939174968&app=Home",
     "click": [".commands-container", ".command-container .terminal", ""],
@@ -153,11 +168,11 @@
       "selector": ".console-container footer .quickview-container",
       "type": "circle",
       "content": "1"
-    },{
+    }, {
       "selector": ".console-container .toolbar button",
       "type": "circle",
       "content": "2"
-    },{
+    }, {
       "selector": ".console-container.console",
       "type": "overlay",
       "content": "The nodal console",
@@ -171,16 +186,16 @@
       "selector": ".draggable-tasks-container",
       "type": "circle",
       "content": "1"
-    },{
+    }, {
       "selector": ".header > div:nth-child(2)",
       "type": "circle",
       "content": "2"
-    },{
+    }, {
       "selector": ".center-container",
       "type": "overlay",
       "content": "3: chosen display",
       "color": "orange-50"
-    },{
+    }, {
       "selector": ".collapse-header",
       "type": "circle",
       "content": "4"
@@ -197,7 +212,7 @@
       "selector": ".drop-choose-container > .choice:nth-child(1)",
       "type": "circle",
       "content": "1"
-    },{
+    }, {
       "selector": ".drop-choose-container > .choice:nth-child(2)",
       "type": "circle",
       "content": "2"
@@ -210,16 +225,16 @@
       "selector": ".draggable-tasks-container",
       "type": "circle",
       "content": "1"
-    },{
+    }, {
       "selector": ".header > div:nth-child(2)",
       "type": "circle",
       "content": "2"
-    },{
+    }, {
       "selector": ".center-container",
       "type": "overlay",
       "content": "3: chosen display",
       "color": "orange-50"
-    },{
+    }, {
       "selector": ".collapse-header",
       "type": "circle",
       "content": "4"
@@ -244,16 +259,20 @@
         "content": "2"
       }
     ]
-  },{
+  },
+  {
     "name": "blah",
     "url": "apps/blah?itemKeys=1420141051&appName=blah"
-  },{
+  },
+  {
     "name": "filters",
     "url": "apps/filters?itemKeys=1420158502"
-  },{
+  },
+  {
     "name": "milestones",
     "url": "apps/milestones?itemKeys=1345672759&appName=milestones&mode=editor"
-  },{
+  },
+  {
     "name": "rooms",
     "url": "apps/rooms?itemKeys=1421094518&appName=rooms&mode=editor",
     "focus": [{
@@ -261,7 +280,8 @@
       "type": "circle",
       "content": "1"
     }]
-  },{
+  },
+  {
     "name": "rooms-overviews",
     "url": "apps/rooms?itemKeys=1421094518&mode=editor&appName=rooms&activeDisplay=overviews&activeItemKey=1421101921",
     "focus": [{
