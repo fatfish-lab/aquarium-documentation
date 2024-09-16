@@ -101,6 +101,7 @@ for (const [index, screenshot] of screenshots.entries()) {
     const uploader = await session.page.$(screenshot.upload.selector)
     if (uploader == null) throw new Error(`Uploader not found for ${screenshot.name}`)
     log.debug(`Uploading file ${screenshot.upload.file}`)
+    // @ts-ignore Deno check detect an error but can't fix it
     await uploader.uploadFile(screenshot.upload.file).catch(log.error)
   }
 

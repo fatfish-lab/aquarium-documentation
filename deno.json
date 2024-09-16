@@ -11,11 +11,16 @@
     "dev": "deno task lume -s --port 3007",
     "serve": "deno run -A server.ts",
     "404": "deno task lume && deno task serve --404",
-    "screenshot": "deno run -A screenshot/screenshot.ts"
+    "screenshot": "deno run -A screenshot/screenshot.ts",
+    "check": "deno check **/*.ts"
   },
   "compilerOptions": {
     "types": [
       "lume/types.ts"
     ]
+  },
+  "fmt": {
+    "semiColons": false,
+    "exclude": ["src/**/*.md"]
   }
 }

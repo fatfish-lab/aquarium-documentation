@@ -30,6 +30,7 @@ async function searchFor404() {
 
   function getAttributes(doc: HTMLDocument, tag: string, attr: string) {
     const elements = Array.from(doc.querySelectorAll(tag))
+    // @ts-ignore Element is not recognized from the NodeList
     return elements.map(el => el.getAttribute(attr))
   }
 

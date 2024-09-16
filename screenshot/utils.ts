@@ -2,9 +2,9 @@ export * as log from "https://deno.land/std@0.218.2/log/mod.ts"
 export { Spinner } from "jsr:@std/cli@1.0.5";
 
 
-export function parseSetCookies(headers) {
-  return headers.map(header => {
-    const cookieObj = {};
+export function parseSetCookies(headers: string[]) {
+  return headers.map((header: string) => {
+    const cookieObj: Record<string, string> = {};
 
     // Split the header into key-value pairs and attributes
     const parts = header.split(/; */);
@@ -19,7 +19,7 @@ export function parseSetCookies(headers) {
         cookieObj.value = value;
       } else {
         // These are the attributes
-        cookieObj[key.trim()] = value === '' ? true : value;
+        cookieObj[key.trim()] = value === '' ? 'true' : value;
       }
     });
 
