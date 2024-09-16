@@ -1,5 +1,5 @@
-{{if url != null}}
-<a href="{{url}}" class="shortcut {{ if active }}active{{ /if }}">
+{{ if url != null }}
+<a href="{{ url|> url }}" class="shortcut {{ if active }}active{{ /if }}">
   {{ if chip }}
     <span class="aq-chip {{chip}}">{{chip}}</span>
   {{ else if icon }}
