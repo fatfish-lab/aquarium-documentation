@@ -417,7 +417,7 @@ details {
     padding: 4px;
   }
 
-  > *:not(.alert-title) {
+  > :not(.alert-title):not(ol):not(ul) {
     padding-left: 16px;
     padding-right: 16px;
   }

@@ -23,13 +23,12 @@ This workspace is dedicated to display tasks and define schedules.
    5. Click on the <span class="aq-icon">settings</span> icon to access the settings of the timeline
 3. **The timeline**: Each cell correspond to a day. Be default the number is in `day` but you can switch to `hour` from the settings.
 
-<$>[note]
-You can use keyboard shortcuts to quickly select the tool you want:
-
-- `ESC` for Move
-- `S` for Select
-- `A` for Add
-- `R` for Remove
-<$>
+> [!note]
+> You can use keyboard shortcuts to quickly select the tool you want:
+>
+> - `ESC` for Move
+> - `S` for Select
+> - `A` for Add
+> - `R` for Remove
 
 Checkout [general information about workspace](/web/workspaces) to know how to filter, sort, and group your data.

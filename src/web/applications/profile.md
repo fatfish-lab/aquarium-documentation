@@ -64,10 +64,9 @@ Once an action is created, you can click on the <span class="aq-icon">launch</sp
 
 You can also enable/disable actions from here.
 
-<$>[warning]
-Actions can be triggered by any user who have at least the permission to read the item.
-So it's super easy to deploy an action for a group of user of for the entire organisation. You just need to invite them on this item. Open the [Action editor](./actioneditor.md) to learn more.
-<$>
+> [!warning]
+> Actions can be triggered by any user who have at least the permission to read the item.
+> So it's super easy to deploy an action for a group of user of for the entire organisation. You just need to invite them on this item. Open the [Action editor](./actioneditor.md) to learn more.
 
 ## Focus view
 

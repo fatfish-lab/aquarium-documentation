@@ -36,13 +36,12 @@ All workspaces works quite the same way and have same options available:
 
 ![Workspaces options](/_medias/screenshots/workspaces-options.webp)
 
-<$>[info]
-Don't forget to save your workspace after editing it. The <span class="aq-icon">save</span> save button is located at the top right of the workspace, when a change is detected.
-
-You can also enable auto-save in the [<span class="aq-icon">more_vert</span> menu](#more-options).
-
-If you don't have enough permissions to save the workspace, an error message will be displayed if you try to save it. Even if you can't save it, you can still temporary edit it and see the changes.
-<$>
+> [!info]
+> Don't forget to save your workspace after editing it. The <span class="aq-icon">save</span> save button is located at the top right of the workspace, when a change is detected.
+>
+> You can also enable auto-save in the [<span class="aq-icon">more_vert</span> menu](#more-options).
+>
+> If you don't have enough permissions to save the workspace, an error message will be displayed if you try to save it. Even if you can't save it, you can still temporary edit it and see the changes.
 
 Those options are also accessible from the [workspace editor](../applications/workspaces.md).
 

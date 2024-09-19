@@ -33,6 +33,7 @@ export default function alert(md) {
 
   md.renderer.rules.alert = (tokens, idx) => {
     const { type, title } = tokens[idx].alert
+    // FIXME: Not perfect, should append the content in a sub div for better styling/padding
     return `<div class="markdown-alert ${type}">${title ? `<span class="alert-title">${title}</span>` : ''}`
   }
 }

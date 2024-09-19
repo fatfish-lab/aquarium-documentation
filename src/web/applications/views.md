@@ -49,11 +49,10 @@ Under the preset's options, you can choose the behavior of the click on the colu
 
 On top of the application, you have a button `Advanced edition` to see the JSON data of the view.
 
-<$>[info]
-There is a special preset called `advanced`. It allows you to edit the column as code, without loosing your changes.
-
-So, if you use the `advanced edition` button, do not modify the columns that are not using the `advanced` preset. You will loose your changes.
-<$>
+> [!info]
+> There is a special preset called `advanced`. It allows you to edit the column as code, without loosing your changes.
+>
+> So, if you use the `advanced edition` button, do not modify the columns that are not using the `advanced` preset. You will loose your changes.
 
 ## Advanced edition
 

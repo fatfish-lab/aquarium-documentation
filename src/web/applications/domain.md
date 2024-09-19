@@ -61,20 +61,17 @@ Here is a table explaining the differences between admin and super-admin:
 | Can requeue [events](#events) | <span style="color: var(--red-50);">No</span> | <span style="color: var(--green-50);">Yes</span> |
 | Manage [SSO](#SSO) | <span style="color: var(--red-50);">No</span> | <span style="color: var(--green-50);">Yes</span> |
 
-<$>[error]
-[label **Use with caution**]
-If you don't want a admin or super-admin to access specific project, you can remove the `Domain admins` usergroup from the participant.
-<$>
+> [!error] Use with caution
+> If you don't want an admin or super-admin to access specific project, you can remove the `Domain admins` usergroup from the participant.
 
 ## Organisations
 
 This section allows you to manage the organisations of your domain. You can create as many organisations as you want. You can use an organisation to regroup users and projects together.
 
-<$>[info]
-Be default, users can't see each others, unless they are in the same organisation.
-
-If you need users from different organisations to collaborate, you can edit the organisation permissions to allow `Read only` on the other one (and vice versa).
-<$>
+> [!info]
+> Be default, users can't see each others, unless they are in the same organisation.
+>
+> If you need users from different organisations to collaborate, you can edit the organisation permissions to allow `Read only` on the other one (and vice versa).
 
 Each organisation have their own settings that you can edit using the [Organisation application](./organisation.md).
 

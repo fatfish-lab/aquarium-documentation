@@ -45,11 +45,10 @@ That's why Aquarium offer 3 different interfaces :
 | [![Focus](/_medias/screenshots/interface-focus.webp)](./focus) | [![Studio](/_medias/screenshots/interface-studio.webp)](./studio) | [![Rooms](/_medias/screenshots/interface-rooms.webp)](./rooms) |
 | [Focus](./focus), is the easy interface. It's a unique experience, where you can focus on your work. Users also have access to their diary, with all their tasks and timelogs. | [Studio](./studio) is the complete interface. It's working like on your computer, where you can create folders and choose how to display its content by creating workspaces. | [Rooms](./rooms) is the interface dedicated for external reviews. No need to give them access to the full project, only share some playlists and read-only workspaces. |
 
-<$>[info]
-As a user, you can choose the interface you want to use. You can switch between them at any time. And you can set the default one from your [profile preferences](../applications/profile.md).
-
-As an administrator, you can set the default interface for users from the [domain application](../applications/domain.md).
-<$>
+>[!info]
+> As a user, you can choose the interface you want to use. You can switch between them at any time. And you can set the default one from your [profile preferences](../applications/profile.md).
+>
+> As an administrator, you can set the default interface for users from the [domain application](../applications/domain.md).
 
 # How Aquarium is structured ?
 
