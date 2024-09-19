@@ -129,17 +129,15 @@ To display all shots being at the root of the project, you will need to set the 
 
 The depth option allows you to display items that are not directly connected to the current item. It's a powerful tool to display a lot of data at once.
 
-<$>[warning]
-Please keep in mind that big depth values can slow down the workspace. In the previous example, it will be better to displayed all shots starting from the `Group: Sequences` and use a depth of 2 instead.
-<$>
+> [!warning]
+> Please keep in mind that big depth values can slow down the workspace. In the previous example, it will be better to displayed all shots starting from the `Group: Sequences` and use a depth of 2 instead.
 
 ## Display
 
 Some workspaces have multiple display options like `table` or `card`.
 
-<$>[note]
-If this option is not available, it's because the workspace only works with a pre-defined display.
-<$>
+> [!note]
+> If this option is not available, it's because the workspace only works with a pre-defined display.
 
 ## Sort
 

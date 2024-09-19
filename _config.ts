@@ -3,6 +3,7 @@ import lume from "lume/mod.ts"
 // Custom plugins
 import mermaid from "./src/_plugins/markdown/mermaid.js"
 import card from "./src/_plugins/markdown/card.js"
+import alert from "./src/_plugins/markdown/alert.js"
 import brunoLoader from "./src/_plugins/bruno.ts"
 
 // Plugins
@@ -27,7 +28,7 @@ const options = {
     disallow: "/pagefind",
   },
   markdown: {
-    plugins: [mermaid, card, [digitalOceanMd, { prismjs: false, user_mention: false }]],
+    plugins: [mermaid, card, alert, [digitalOceanMd, { prismjs: false, user_mention: false }]],
   },
   toc: {
     level: 1,

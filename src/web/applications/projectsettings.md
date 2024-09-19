@@ -35,9 +35,8 @@ In the `Shared with` section, you can see all organisations, user groups, users 
 
 Click on a permission to edit it and change its level. Please refer to [items permissions](../items/index.md#how-can-i-manage-items-permissions-) for more information.
 
-<$>[warning]
-On big projects, to keep high performances, we recommend to only use Organisation or User group permissions.
-<$>
+> [!warning]
+> On big projects, to keep high performances, we recommend to only use Organisation or User group permissions.
 
 ## Shortcuts
 

@@ -13,7 +13,6 @@ A dedicated video is available soon to provide a quick overview on how to use th
 
 ![quickstart](/_medias/quickstart_developer.webp)
 
-<$>[error]
-The video will be available soon.
-<$>
+> [!error]
+> The video will be available soon.
 

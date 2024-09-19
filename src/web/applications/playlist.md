@@ -9,9 +9,8 @@ nav_order: 10
 
 This application is used to edit and visualize [Playlist items](../items/playlist.md).
 
-<$>[info]
-Don't forget to try our [Review workspace](../workspaces/review.md). It's a good tool to create quick playlist.
-<$>
+> [!info]
+> Don't forget to try our [Review workspace](../workspaces/review.md). It's a good tool to create quick playlist.
 
 ![playlist](../../_medias/screenshots/playlist.webp)
 

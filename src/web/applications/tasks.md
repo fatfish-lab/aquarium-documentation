@@ -53,9 +53,8 @@ You are able to visualize the inbound and outbound dependencies of the task.
 
 You can create subtasks from this tab. A subtask is a task that is a child of the current task. It's a way to split the task in smaller parts.
 
-<$>[note]
-Don't forget that you can use the [checklist](#checklist) to track small things to do without the need to create subtasks.
-<$>
+> [!note]
+> Don't forget that you can use the [checklist](#checklist) to track small things to do without the need to create subtasks.
 
 ## Attachments
 

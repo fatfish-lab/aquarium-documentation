@@ -68,9 +68,8 @@ project=aq.project(123456).get()
 shots=project.get_shots()
 ```
 
-<$>[note]
-Depending on the structure of your project, it may be more efficient to use a traverse with a custom query.
-<$>
+> [!note]
+> Depending on the structure of your project, it may be more efficient to use a traverse with a custom query.
 
 ## Retrieve available statuses for a task
 

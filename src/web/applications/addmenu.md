@@ -19,9 +19,8 @@ By default, we only provide relevant items types depending on the location you a
 
 > For example if you are in a [Sequence](../items/sequence.md), the interface will only display [Shot](../items/shot.md) and [Task](../items/task.md) types.
 
-<$>[info]
-When you search for an item, if only one type is displayed, you can press `Enter` to create the item.
-<$>
+> [!info]
+> When you search for an item, if only one type is displayed, you can press `Enter` to create the item.
 
 ## Form creation
 
@@ -37,9 +36,8 @@ Once you clicked on an item, the form creation will be displayed. By default we 
       - On some items, we provide some templates (ex: Actions, ...)
 2. This input allow you to set the name of the item.
 
-<$>[info]
-If you use a `#` in the name of the item, Aquarium will automatically transform it into a incremented number. For example, if you create a shot named `s010_p##0`, Aquarium will create the shots `s010_p010`, `s010_p020`, `s010_p030`, etc.
-<$>
+> [!info]
+> If you use a `#` in the name of the item, Aquarium will automatically transform it into a incremented number. For example, if you create a shot named `s010_p##0`, Aquarium will create the shots `s010_p010`, `s010_p020`, `s010_p030`, etc.
 
 [details How templates are displayed in the list ?
 

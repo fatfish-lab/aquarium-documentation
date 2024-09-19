@@ -15,6 +15,5 @@ The application is available in the Aquarium menu, or if you are using the studi
 
 ![studio-jobs](../../_medias/screenshots/studio-jobs.webp)
 
-<$>[warning]
-Today, you can only see your own jobs. We are working on a feature to allow admin and super-admin you to see all the jobs of the platform.
-<$>
+> [!warning]
+> Today, you can only see your own jobs. We are working on a feature to allow admin and super-admin you to see all the jobs of the platform.

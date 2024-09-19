@@ -13,7 +13,7 @@ The rooms application is used to edit and manage [Room items](../items/room.md) 
 
 
 1. **Manage display and sharing**: You can manage the displays in the room and share it with other users.
-   1. **Displays**: Their are two types of diplays in a room: `Overviews` allow you to share [workspaces](../workspaces/index.md) as read only to external users. `Playlists` allow you to share [playlists](../items/playlist.md) to gather reviews.
+   1. **Displays**: There are two types of diplays in a room: `Overviews` allow you to share [workspaces](../workspaces/index.md) as read only to external users. `Playlists` allow you to share [playlists](../items/playlist.md) to gather reviews.
    2. **Sharing**: You can invite new users and edit existing participants to edit their permissions. You can also open this room in the [Rooms interface](../introduction/rooms.md) and also directly copy that link to share it by email to other users.
 
 ## Playlists

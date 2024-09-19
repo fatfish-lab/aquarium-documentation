@@ -10,9 +10,8 @@ icon: category
 
 In Aquarium items are the entity you can create to represent your project's data. An item can be a [Project](./project), a [Task](./task), a [User](./user), an [Asset](./asset), etc.
 
-<$>[note]
-By convention, the type of an item always starts with a capital letter.
-<$>
+> [!note]
+> By convention, the type of an item always starts with a capital letter.
 
 Explore our section for learn more about the different types available by default.
 
@@ -41,9 +40,8 @@ You can see and edit item's data using the [Quickeditor](../applications/quicked
 
 [![Item Properties](/_medias/screenshots/item-properties.webp)](../applications/quickeditor)
 
-<$>[note]
-When an item is displayed in the interface, you can try to right click on it. Most of the time we will open the [quickeditor](../applications/quickeditor). If it's not the case, [let us know](/contact) !
-<$>
+> [!note]
+> When an item is displayed in the interface, you can try to right click on it. Most of the time we will open the [quickeditor](../applications/quickeditor). If it's not the case, [let us know](/contact) !
 
 # How can I manage item's permissions ? {#permissions}
 
@@ -59,9 +57,8 @@ For all items, you can access the permission from the [Quickeditor](../applicati
 2. Use this input to search for an Organisation, User group, User or Bot.
    1. By default, when you create or edit a permission, it will be inherited by all the children items. You can change this behavior by unchecking the `Propagate permissions` checkbox.
 
-<$>[warning]
-On big projects, to keep high performances, we recommend to only use Organisation or User group permissions.
-<$>
+> [!warning]
+> On big projects, to keep high performances, we recommend to only use Organisation or User group permissions.
 
 We provide several permissions presets to help you to quickly set the permissions you need :
 

@@ -5,9 +5,8 @@ lang: en
 nav_order: 20
 ---
 
-<$>[note]
-We advice you to read the [introduction about API documentation](../../introduction.md) first.
-<$>
+> [!note]
+> We advice you to read the [introduction about API documentation](../../introduction.md) first.
 
 # Prerequisites
 
@@ -36,9 +35,8 @@ If you want to allow your users to reconnect easily without having to enter a pa
 aq=Aquarium('https://studio.aquarium.app', token=token)
 ```
 
-<$>[error]
-Token is a sensitive information. Be sure to store it securely.
-<$>
+> [!error]
+> Token is a sensitive information. Be sure to store it securely.
 
 [details How to authenticate when MFA is enabled?
 
@@ -88,9 +86,8 @@ Subclasses inherited from the Item() class are also available to facilitate the 
 
 Every time we can, requests will return instances of the Item() or Edge() class.
 
-<$>[note]
-Checkout the reference documentation to see all the available methods with their parameters and return types.
-<$>
+> [!note]
+> Checkout the reference documentation to see all the available methods with their parameters and return types.
 
 ## How to initiate an Item class ?
 
@@ -139,9 +136,8 @@ Subclasses have been added to facilitate your access to certain data within Aqua
 
 For example, retrieving all projects accessible to the active user, retrieving tasks assigned to a user, or uploading a new version of media in a shot, etc.
 
-<$>[note]
-If you are missing certain functions, do not hesitate to [contact us](../../../contact.md) so that we can add them.
-<$>
+> [!note]
+> If you are missing certain functions, do not hesitate to [contact us](../../../contact.md) so that we can add them.
 
 ### meshQL
 These functions save you time by avoiding diving into [meshQL](../../meshql.md), the language used to write queries in Aquarium.

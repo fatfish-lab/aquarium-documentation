@@ -50,9 +50,8 @@ Integrate your Aquarium with Python.
 ```
 ]
 
-<$>[info]
-Looking for another language? [Contact us](../contact.md) and we will help you to build a module for your language.
-<$>
+> [!info]
+> Looking for another language? [Contact us](../contact.md) and we will help you to build a module for your language.
 
 ## meshQL
 

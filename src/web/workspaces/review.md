@@ -9,9 +9,8 @@ nav_order: 10
 
 This workspace is dedicated to review your medias and create playlist.
 
-<$>[info]
-This workspace is still in beta. If you have any feedback, please [let us know](/contact).
-<$>
+> [!info]
+> This workspace is still in beta. If you have any feedback, please [let us know](/contact).
 
 ![Review](/_medias/screenshots/review.webp)
 

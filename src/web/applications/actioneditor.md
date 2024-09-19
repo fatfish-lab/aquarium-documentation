@@ -28,9 +28,8 @@ At the end of the sidebar, you have special nodes :
 - You can also **regroup** operations in a group node. It's useful to organize your action, make it more readable and reusable.
 - You can also **import** an existing group.
 
-<$>[note]
-If you think that an operation is missing, [let us know](../../contact.md) ! We will be happy to add it to the list.
-<$>
+> [!note]
+> If you think that an operation is missing, [let us know](../../contact.md) ! We will be happy to add it to the list.
 
 Click on an operation to add it to the action. You can also grab it and drop it in the action interface.
 
@@ -49,7 +48,7 @@ You can see that some nodes have inputs and outputs of different colors. Each co
 
 You can only connects input to output of the same color. Except for neutral inputs/outputs, they can be connected to any other type.
 
-Their is a special operator called `Viewer` that you can use to debug your action and operations.
+There is a special operator called `Viewer` that you can use to debug your action and operations.
 
 ## Permissions
 

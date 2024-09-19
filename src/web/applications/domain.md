@@ -9,9 +9,8 @@ nav_order: 10
 
 This application is here to manage all administrative settings of your domain.
 
-<$>[warning]
-This application is only accessible to the administrator and super-administrator of the domain.
-<$>
+> [!warning]
+> This application is only accessible to the administrator and super-administrator of the domain.
 
 ![Domain](../../_medias/screenshots/domain.webp)
 
@@ -27,9 +26,8 @@ When you disable a user, all its sessions ends immediately.
 
 To create a user, or multiple users at the same time, you can use the `Create` button on top of the interface.
 
-<$>[info]
-The only mandatory information to create a user is the email address.
-<$>
+> [!info]
+> The only mandatory information to create a user is the email address.
 
 When you create a user, and you don't set a password, the user will receive an invitation email. The invitation email is only valid for a certain number of days, after which the user will have to request a new link using the `Forgot password` link on the login page. Lean more on this process [in our dedicated guide](../../how-to/reset-password.md).
 
@@ -39,9 +37,8 @@ You can also make its account as admin or super-admin.
 
 ### Admin and super-admin
 
-<$>[note]
-Aquarium works on the principle of domain system, like an Active Directory for example.
-<$>
+> [!note]
+> Aquarium works on the principle of domain system, like an Active Directory for example.
 
 Being an admin or super-admin makes you member of `Domain admins` usergroup. By default this usergroup is present on all items. So admin and super-admin can access all projects for example.
 
@@ -89,13 +86,11 @@ Here is a short video [from our guide](../../how-to/manage-licenses.md), explain
 
 [youtube DnCszP4uk0U]
 
-<$>[warning]
-If you think that your license is not updated after you requested more/less active users or storage, you click on the <span class="aq-icon">cached</span>  refresh button next to the `Upload license` button.
-<$>
+> [!warning]
+> If you think that your license is not updated after you requested more/less active users or storage, you click on the <span class="aq-icon">cached</span>  refresh button next to the `Upload license` button.
 
-<$>[info]
-If you need more than one license to have separate billing, [contact our sales team](../../contact.md).
-<$>
+> [!info]
+> If you need more than one license to have separate billing, [contact our sales team](../../contact.md).
 
 ## Bots
 
@@ -120,9 +115,8 @@ Here is Aquarium's requirements :
 - Minimum scopes: openid, email
 - PKCE as additional verification
 
-<$>[warning]
-Today, only Okta is compatible with user groups synchronisation. If you use another provider, feel free to [contact us](../../contact.md) to see if we can help you.
-<$>
+> [!warning]
+> Today, only Okta is compatible with user groups synchronisation. If you use another provider, feel free to [contact us](../../contact.md) to see if we can help you.
 
 To configure SSO, you need to fill the following fields:
 
@@ -166,7 +160,9 @@ Here is a short video showing how to configure Okta with Aquarium:
 
 This section allows you to manage the storage of your domain. All your upload files and medias will appear here.
 
-You can filter your files and delete them to release storage.
+You can filter your files and delete them to release storage. You can also click on a file to see the file, its metadata and locate it in your items.
+
+A file can be used on multiple items, to save space and money. That's why the locate section can display multiple items.
 
 ## Monitor
 
@@ -184,9 +180,8 @@ An event has a `topic` that represent the type of event. The `topic` is a string
 
 > Example: `item.created.Shot`, `edge.removed.Child`, `custom.{your.event}`, ...
 
-<$>[info]
-The conjugation of the verb is helping you to understand if the activity associated with the event already happened (past tense, ex: `item.created`) or is going to happen (present, ex: `file.encode`).
-<$>
+> [!info]
+> The conjugation of the verb is helping you to understand if the activity associated with the event already happened (past tense, ex: `item.created`) or is going to happen (present, ex: `file.encode`).
 
 Here is a list of the topics that Aquarium generates:
 
@@ -215,9 +210,8 @@ You can click on an event to see its metadata and data. You can also visualize t
 
 All the event can be requeue to be processed again.
 
-<$>[info]
-When you re-queue an event, Aquarium does not trigger the original activity that emit the event. Its only retriggers the [Action](../items/action.md) items that are listening for this event.
-<$>
+> [!info]
+> When you re-queue an event, Aquarium does not trigger the original activity that emit the event. Its only retriggers the [Action](../items/action.md) items that are listening for this event.
 
 > Example: If you re-queue an `item.created` event, Aquarium will not create the item again. But if you have an action that is triggered by the `item.created` event, this action will be triggered again.
 

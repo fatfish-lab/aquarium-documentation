@@ -18,8 +18,7 @@ nav_order: 10
 
 ![reset-password](../_medias/screenshots/reset-password.webp)
 
-<$>[note]
-You can search for `Aquarium` in your mailbox to find the email.
-<$>
+> [!note]
+> You can search for `Aquarium` in your mailbox to find the email.
 
 You can also contact your domain administrator to reset your password.

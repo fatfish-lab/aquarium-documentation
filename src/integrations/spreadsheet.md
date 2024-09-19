@@ -51,9 +51,8 @@ The following functions are available:
 | `AQ_GET_PLAYLIST_REVIEWS(playlistKey)` | Gets playlist reviews | `playlistKey`: Unique playlist key | List of reviews in the playlist |
 | `AQ_DEBUG()` | Gets debug data for support | None | Debug data |
 
-<$>[note]
-In Aquarium, [we convert](../web/applications/organisation.md#properties) the duration `1 day` into working hours. The default value is 8 hours per day (1d = 8h). In spreadsheet functions (`AQ_TIMELOGS`, ...), you can specify the number of working hours to override the default value.
-<$>
+> [!note]
+> In Aquarium, [we convert](../web/applications/organisation.md#properties) the duration `1 day` into working hours. The default value is 8 hours per day (1d = 8h). In spreadsheet functions (`AQ_TIMELOGS`, ...), you can specify the number of working hours to override the default value.
 
 ## Options
 

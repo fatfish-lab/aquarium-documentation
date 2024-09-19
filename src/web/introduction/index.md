@@ -5,9 +5,8 @@ nav_order: 2
 lang: en
 ---
 
-<$>[note]
-Don't know where to start ? Follow our [quick start guides](../quickstart/manager.md).
-<$>
+>[!NOTE]
+>Don't know where to start ? Follow our [quick start guides](../quickstart/manager.md).
 
 # How Aquarium works ?
 
@@ -21,7 +20,7 @@ Aquarium works like your computer.
 
 There are some differences. On Aquarium :
 
-- Their is not only one explorer to navigate into your folders. We created several workspaces, to fit specific project management needs. You can[ discover them in our dedicated section](../workspaces/index.md).
+- There is not only one explorer to navigate into your folders. We created several workspaces, to fit specific project management needs. You can[ discover them in our dedicated section](../workspaces/index.md).
 - It's a nodal solution. Meaning that you can create connections, called [edge](../), between your items. This feature bring a lots of flexibility to create the project you want. It's also a way to create relations between your items, like a parent/child relation between a [Shot](../items/shot.md) and a [Task](../items/task.md), to assign a [Task](../items/task.md) to a [User](../items/user.md), etc.
 
 ```mermaid
@@ -47,7 +46,7 @@ That's why Aquarium offer 3 different interfaces :
 | [Focus](./focus), is the easy interface. It's a unique experience, where you can focus on your work. Users also have access to their diary, with all their tasks and timelogs. | [Studio](./studio) is the complete interface. It's working like on your computer, where you can create folders and choose how to display its content by creating workspaces. | [Rooms](./rooms) is the interface dedicated for external reviews. No need to give them access to the full project, only share some playlists and read-only workspaces. |
 
 <$>[info]
-As a user, you can choose the interface you want to use. You can switch between them at any time. And you can set the default one from your [profile preferences](../applications/profile).
+As a user, you can choose the interface you want to use. You can switch between them at any time. And you can set the default one from your [profile preferences](../applications/profile.md).
 
 As an administrator, you can set the default interface for users from the [domain application](../applications/domain.md).
 <$>

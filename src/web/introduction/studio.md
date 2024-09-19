@@ -7,7 +7,9 @@ nav_order: 2
 
 # Studio interface
 
-The studio interface is the most complete interface of Aquarium. This main difference with the [Focus interface](./focus.md) is that you need to navigate in your project, before selecting or creating a workspace.
+The studio interface is the most complete interface of Aquarium. It works like your OS on your computer, where you need to navigate in your projects and folders to access the content.
+
+This is the main difference with the [Focus interface](./focus.md): you need to navigate in your project, before selecting or creating a workspace.
 
 ## Interface layout
 
@@ -18,7 +20,7 @@ The studio interface is the most complete interface of Aquarium. This main diffe
 - **Workspaces**: The workspaces are displayed like tabs. You can click on a workspace to open it. You can also create a new workspace by clicking on the `Add workspace` button. The first workspace is always the default one, that will be active by default when you open the location where you are.
 - **Active workspace**: Once you selected a workspace, it's displayed in the main area. More details about [the workspace interface in the dedicated documentation](../workspaces/index.md#options).
 
-For the power user, or the one that love keyboards, you can launch the command palette by pressing `CTRL+/` or `CMD+/` on Mac. You can also trigger it by clicking on the <span class="aq-icon">search</span> icon on top right of the screen.
+For the power user, or the one that love keyboards, you can launch the [command palette](../applications/command.md) by pressing `CTRL+/` or `CMD+/` on Mac. You can also trigger it by clicking on the <span class="aq-icon">search</span> icon on top right of the screen.
 
 ## What's a workspace ?
 

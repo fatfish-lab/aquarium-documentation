@@ -23,9 +23,8 @@ Just under the thumbnail, you can find the item._key of the user. This is the un
 
 You can change the password from here.
 
-<$>[warning]
-When you change your password, we will ask you to sign-in again. It will also disconnect all your other sessions.
-<$>
+> [!warning]
+> When you change your password, we will ask you to sign-in again. It will also disconnect all your other sessions.
 
 You can also enable and manage the two-factor authentication. You backup code can be manage from here too.
 

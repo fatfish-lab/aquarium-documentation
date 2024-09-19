@@ -13,7 +13,6 @@ A dedicated video is available soon to provide a quick overview on how to create
 
 ![quickstart](/_medias/quickstart_manager.webp)
 
-<$>[error]
-The video will be available soon.
-<$>
+> [!error]
+> The video will be available soon.
 

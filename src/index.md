@@ -64,6 +64,5 @@ Aquarium is developed by [Fatfish Lab](https://fatfi.sh) and we are always here 
 
 If you are stuck with something, you found a bug, you are looking to provide feedback, you have a new idea you want to share, etc. : do not hesitate to [contact us](./contact.md).
 
-<$>[info]
-Don't forget to join our [Discord community](https://fatfi.sh/community). We have private channels per clients, so you can get direct support from our team.
-<$>
+> [!info]
+> Don't forget to join our [Discord community](https://fatfi.sh/community). We have private channels per clients, so you can get direct support from our team.

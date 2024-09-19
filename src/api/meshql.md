@@ -215,7 +215,7 @@ To compare values, you can use the following operators:
 
 #### Array comparison operators
 
-Their is also dedicated operators for arrays:
+There is also dedicated operators for arrays:
 
 | Operator | Description                                      |
 |----------|--------------------------------------------------|
@@ -274,9 +274,8 @@ graph LR
 
 Functions are also available to help you filter and manipulate data. Functions are based on [ArangoDB functions](https://docs.arangodb.com/3.11/aql/functions/).
 
-<$>[note]
-If a function is not allowed or you think it's missing, [contact us](../contact.md).
-<$>
+> [!note]
+> If a function is not allowed or you think it's missing, [contact us](../contact.md).
 
 Here is a list of available functions:
 
@@ -498,7 +497,7 @@ meshQL allows you filter items based on sub-filters. It's like a sub-query in a 
 
 For that you can write a new meshQL expression without the `#` at its beginning.
 
-> Example: Filter shots where their is a Task named Layout:
+> Example: Filter shots where there is a Task named Layout:
 >  `# -($Child, 5)> $Shot AND -($Child)> $Task AND item.data.name == 'Layout'`
 
 The best is to enclose the sub-filter in parentheses to avoid any ambiguity.

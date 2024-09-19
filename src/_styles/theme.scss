@@ -392,3 +392,61 @@ details {
     color: var(--text-00);
   }
 }
+
+.markdown-alert {
+  display: block;
+  border-radius: 8px;
+  color: var(--bg-00);
+  margin-bottom: 8px;
+  --bg: var(--gree-50);
+  background-color: var(--bg);
+
+  a {
+    color: var(--text-00);
+  }
+
+  .alert-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: color-mix(in oklab, var(--bg), var(--bg-00) 25%);
+    border-bottom: solid 1px color-mix(in oklab, var(--bg), var(--bg-00) 30%);
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    padding: 4px;
+  }
+
+  > *:not(.alert-title) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  > :first-child:not(.alert-title) {
+    padding-top: 16px;
+  }
+
+  > :last-child:not(.alert-title) {
+    padding-bottom: 16px;
+  }
+
+  &.info {
+    --bg: var(--blue-50);
+  }
+
+  &.note {
+    --bg: var(--green-50);
+  }
+
+  &.warning {
+    --bg: var(--orange-50);
+  }
+
+  &.error {
+    --bg: var(--red-50);
+  }
+
+  &.draft {
+    --bg: var(--grape-50);
+  }
+}

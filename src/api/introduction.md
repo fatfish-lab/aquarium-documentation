@@ -9,7 +9,7 @@ nav_order: 1
 
 You can interact with Aquarium using our [REST API](../rest). There is no limitation using this API, the web interface is using exactly the same endpoints.
 
-It's is completely abstract, their is no mention of Project, Shots, Tasks, etc. You interact with items and edges.
+It's is completely abstract, there is no mention of Project, Shots, Tasks, etc. You interact with items and edges.
 
 > If you want a more easy start, you should look at the [python module](./modules/python/index.md). We added project related functions, helping you get your shots, assigned tasks, ...
 

@@ -22,9 +22,8 @@ You will find some general information about the template:
 - **Template location**: The location of the template. Please refer the [Template item](../items/template.md#usage) for more information about it's usage. You can clone the template to multiple locations.
 - **Description**: A description of the template
 
-<$>[note]
-A template can be only for a specific item's type.
-<$>
+> [!note]
+> A template can be only for a specific item's type.
 
 ## Form
 
@@ -41,9 +40,8 @@ Here is [an example of a form with multiple fields](../items/template.md):
 
 ![Template form](../../_medias/screenshots/template-form.webp)
 
-<$>[warning]
-At least one field need to be tight to the `item.data.name` property.
-<$>
+> [!warning]
+> At least one field need to be tight to the `item.data.name` property.
 
 ## Edit as...
 
@@ -81,6 +79,5 @@ Today, the nodal view is read-only.
    2. The <span class="aq-icon outline">change_history</span> **modified** items: those are the items where the selected properties doesn't match the template.
    3. The <span class="aq-icon">delete</span> **exceeding** items: those are the items that exist on the linked items but not on the template. If you sync those items, they will be trashed.
 
-<$>[error]
-Use the sync with caution ! It's a powerful tool that can modify a lot of items at once. Preview the changes before applying them, by expanding some items in the list.
-<$>
+> [!error]
+> Use the sync with caution ! It's a powerful tool that can modify a lot of items at once. Preview the changes before applying them, by expanding some items in the list.

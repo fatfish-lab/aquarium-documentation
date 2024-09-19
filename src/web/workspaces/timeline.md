@@ -9,9 +9,8 @@ nav_order: 10
 
 This workspace is dedicated to display tasks and define schedules.
 
-<$>[warning]
-This workspace is still in beta. If you have any feedback or suggestions, please [let us know](/contact).
-<$>
+> [!warning]
+> This workspace is still in beta. If you have any feedback or suggestions, please [let us know](/contact).
 
 ![Timeline](/_medias/screenshots/timeline.webp)
 

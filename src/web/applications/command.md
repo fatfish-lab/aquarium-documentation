@@ -34,9 +34,8 @@ The available commands are:
 | Workspace            | Load another workspace                                                                 |
 | ?                    | Open the help panel                                                                    |
 
-<$>[info]
-You can use the arrow keys to navigate through the list of commands and press `ENTER` to execute the selected command.
-<$>
+> [!info]
+> You can use the arrow keys to navigate through the list of commands and press `ENTER` to execute the selected command.
 
 ## Console (the nodal explorer)
 

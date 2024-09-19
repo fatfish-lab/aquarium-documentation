@@ -27,9 +27,8 @@ In the tab, you can see and edit the following information:
 
 Like [on any other items](../items/index.md#permissions), you can define the permissions of the workspace. You can remove participant to hide the workspace from them. And you can also restrict their permissions to read-only, to avoid them being able to edit the workspace (like creating, moving or deleting columns, changing filters, ...).
 
-<$>[warning]
-Those permissions are only for the workspace itself (filters, column, ...). The content of a table, like the status of a task, is managed on the task itself.
-<$>
+> [!warning]
+> Those permissions are only for the workspace itself (filters, column, ...). The content of a table, like the status of a task, is managed on the task itself.
 
 ## Favorites
 
@@ -55,9 +54,8 @@ From this interface you can define the height of the lines of your table and ena
 
 You can also create a new view or edit an existing one. To edit a view click on the <span class="aq-icon">edit</span> icon. It will open the [view editor](./views.md).
 
-<$>[note]
-You can create multiple view to regroup columns together. Since a view is an item, you can clone views into other workspaces.
-<$>
+> [!note]
+> You can create multiple view to regroup columns together. Since a view is an item, you can clone views into other workspaces.
 
 ## Filters
 

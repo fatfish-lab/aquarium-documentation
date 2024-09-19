@@ -47,9 +47,8 @@ If you try to create an Asset in the project, 2 templates will be available: `Te
 | `description` | `string` | Description of the template |
 | `templateData` | `object` | Data of the template |
 
-<$>[warning]
-All the root data of the template will be copied to the new item, except the `templateData` property.
-<$>
+> [!warning]
+> All the root data of the template will be copied to the new item, except the `templateData` property.
 
 ### Template Data
 

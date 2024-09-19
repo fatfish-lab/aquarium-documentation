@@ -11,9 +11,8 @@ The rooms interface is the interface for external reviews. It's a simple interfa
 
 ![Rooms](../../_medias/screenshots/interface-rooms.webp)
 
-<$>[info]
-An account is required to access to this interface. This allows us to display the name of the person who comments, secure the access to the medias and check user permissions.
-<$>
+> [!info]
+> An account is required to access to this interface. This allows us to display the name of the person who comments, secure the access to the medias and check user permissions.
 
 Playlist and workspaces are regrouped into [room](../items/room.md). You can crate a room for a department or directly for a project. Use them as you want.
 

@@ -34,9 +34,8 @@ Under this section, you have dedicated preset and preset's options.
 
 On a preset is selected, you can edit its options just under. The options depends on the preset selected.
 
-<$>[note]
-Feel free to [contact us](../../contact.md) if you think a preset or an option is missing.
-<$>
+> [!note]
+> Feel free to [contact us](../../contact.md) if you think a preset or an option is missing.
 
 Under the preset's options, you can choose the behavior of the click on the column:
 
@@ -107,6 +106,5 @@ When you create a custom column, you can choose between different types:
 | Badge | `badge` | Used to display a badge |
 | Button | `button` | Used to display a button |
 
-<$>[note]
-If you think a type is missing, feel free to [contact us](../../contact.md).
-<$>
+> [!note]
+> If you think a type is missing, feel free to [contact us](../../contact.md).
