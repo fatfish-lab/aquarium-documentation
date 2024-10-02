@@ -167,7 +167,7 @@ If you want to filter based on another item property you can write :
 
 | Filter                           | Description                          |
 | :------------------------------- | :----------------------------------- |
-| `item._key_ == '1234'`           | Get items with the key `1234`        |
+| `item._key == '1234'`            | Get items with the key `1234`        |
 | `item.data.name == 'references'` | Get items with the name `references` |
 | `item.data.status == 'done'`     | Get items with the status `done`     |
 
@@ -667,6 +667,14 @@ To call an alias in a meshQL expression, you need to use the `$` or `@` symbol f
 > const aliases = {
 >   "filter": "item.data.name == 'references'",
 > }
+
+If you write an alias but do not declare it in the aliases object, meshQL will automatically create an automatic alias like this:
+
+> Example:
+> If you write this meshQL expression: `# -($Child)> $Project`, meshQL will automatically create an alias like this: `{ Project: item.type == 'Project' }`.
+
+> [!note]
+> In other terms, writing `$Project` is a shortcut to filter items where the type is 'Project'.
 
 ### What's the difference between `$` and `@` symbol ?
 
