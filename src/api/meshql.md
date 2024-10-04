@@ -491,6 +491,13 @@ Here is a list of available functions:
 - [TYPENAME()](https://docs.arangodb.com/3.11/aql/functions/type-check-and-cast/#typename)
 ]
 
+[details <span class="aq-icon">note_stack</span> Miscellaneous functions
+
+- IF(`condition`, `if true`, `if false`)
+  - Example: `IF(item.data.status == 'DONE', 'Done', 'Not done')`
+
+]
+
 ### Sub-filters
 
 meshQL allows you filter items based on sub-filters. It's like a sub-query in a query.
