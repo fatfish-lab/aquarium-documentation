@@ -66,3 +66,5 @@ You can edit default Project's properties from this section.
 You can define the statuses that are available for the project. Those status are mainly used for [Tasks](../items/task.md).
 
 Those status are merged with the [Organisation's statuses](./organisation.md#organisation's-statuses).
+
+Find out more about statuses in the [Tasks](../items/task.md) documentation.

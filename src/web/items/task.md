@@ -47,3 +47,16 @@ graph LR
   Task -.->|Dependency| Outbound[Task <br/> <small>Outbound dependency</small>]
   Inbound[Task <br/> <small>Inbound dependency</small>] -.->|Dependency| Task
 ```
+
+## Task's statuses
+
+Statuses are defined by four properties:
+
+- `status`: The name of the status (e.g. `TODO`, `WIP`, `DONE`, ...)
+- `color`: The color of the status. It's a string in hexadecimal format (e.g. `#FF0000`)
+- `completion`: The default completion of the status. It's a number between 0 and 1. In the web interface, the completion will be displayed as a percentage.
+- `valid`: A boolean to know if the status represents a completed task or not.
+  - We advice you to rely on completion to know if a task is completed or not, instead of the parameter.
+
+
+You can customize and choose the statuses you want by editing them in the [project](../applications/projectsettings.md#properties) or [organisation](../applications/organisation.md#properties) settings application.
