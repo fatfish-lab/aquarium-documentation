@@ -603,6 +603,12 @@ Unless you specify a sort expression or disable it, the default sort is by `item
 
 Keep in mind that you should't disable the sort if you use an [offset/limit](#offset-limit) pair. If you do so, the result will be unpredictable.
 
+### Sorting items by their depth
+
+The "depth" information is not a property of items or edges. It's an information gathered during the traversal and stored in the `path` variable.
+
+You can use the number of vertices (items) in the path to sort the result: `SORT LENGTH(path.vertices) ASC`.
+
 ## VIEW
 
 The `VIEW` expression is used to format the result. The `VIEW` is an object or a string.
