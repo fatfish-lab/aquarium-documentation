@@ -289,5 +289,26 @@
       "type": "arrow",
       "vignetting": true
     }]
+  },
+  {
+    "name": "workspacenodaleditor",
+    "url": "apps/workspacenodaleditor?itemKeys=120709906&workspaceKey=120709948&appName=workspacenodaleditor",
+    "click": [".pickable-node-container"],
+    "focus": [{
+      "selector": ".nodal-picker-container > header",
+      "type": "overlay",
+      "color": "orange-50",
+      "content": "Filters"
+    },{
+      "selector": ".nodal-sidepanel",
+      "type": "overlay",
+      "color": "green-50",
+      "content": "Side panel"
+    },{
+      "selector": ".nodes-container",
+      "type": "overlay",
+      "color": "blue-50",
+      "content": "Nodal explorer"
+    }]
   }
 ]

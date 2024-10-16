@@ -47,10 +47,11 @@ Those options are also accessible from the [workspace editor](../applications/wo
 
 ## Filter
 
-You can filter any data you want, using our existing presets or directly from a cell of your table.
+You can filter any data you want, using our existing presets, directly from a cell of your table or using our [Workspace nodal editor](../applications/workspacenodaleditor.md).
 
-When you click on a filter you can change the comparison operator (`is`, `is not`, `is empty`, ...).
-You can also temporarily disable a filter, or completely remove it.
+- When you click on a filter you can change the comparison operator (`is`, `is not`, `is empty`, ...).
+- You can also temporarily disable a filter by right clicking on it, or in the <span class="aq-icon">more_horiz</span> menu.
+- To completely remove a filter, click on it and then on the <span class="aq-icon">more_horiz</span> icon.
 
 ### From presets
 
@@ -63,6 +64,10 @@ If you think a preset is missing, [let us know](/contact), we can add it for you
 To filter based on the content of cells, right-click on a cell and select `Filter [...]`. You can also directly filter based on the item type using the `Filter by type [...]` option.
 
 You can edit the filter to add more option, or filter other cell to narrow down your search.
+
+### From the nodal editor
+
+You can also create a filter from the [Workspace nodal editor](../applications/workspacenodaleditor.md). To do so, click on the <span class="aq-icon">add</span> icon and select `Create your own filter...`.
 
 ### Save filters
 You can also save specific filters to re-use them later by clicking on "<span class="aq-icon">filter_alt</span> 1 filter". Filters can be created from the [Workspaces application](../applications/workspaces.md#filters).
