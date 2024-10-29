@@ -53,6 +53,8 @@ You can filter any data you want, using our existing presets, directly from a ce
 - You can also temporarily disable a filter by right clicking on it, or in the <span class="aq-icon">more_horiz</span> menu.
 - To completely remove a filter, click on it and then on the <span class="aq-icon">more_horiz</span> icon.
 
+Grab a filter and drop it on another filter to create a group of filters. If you drop a filter on the `x Filters` element, it will convert your filter into a [saved filter](#save-filters).
+
 ### From presets
 
 Presets are available under the `Add filter` button.

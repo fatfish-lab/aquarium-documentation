@@ -77,3 +77,13 @@ From here you can access the advanced options of the workspace:
 - **Creatable items**: you can restrict the type of items available in the `Create` button.
 - **Edge type**: by default Aquarium display items using `Child` edge. In very specific cases you might want to display items using another edge type. This option is here for this purpose.
 - **Direction**: Aquarium is a nodal solution using a graph to structure your data. The graph that we use have a direction. By default, when you browse folders, you go from the parent to the children: you are going down. But in some cases you might want to go up. This option is here for this purpose. You can also use the `both` direction to go up and down at the same time.
+
+## Sets
+
+This tab is here to edit the sets of the workspace.
+
+A [SET is used in meshQL](../../api/meshql.md#set) to store a query result and reuse it in other queries. Most of the time it's a feature used by technical users to optimize workspace loading time.
+
+A set can be used in a column, filter, group, ...
+
+You can define multiple sets in a workspace. Each set has a name and a query. The query is a meshQL query that will be executed when the workspace is loaded. The name is important since it's how you can reference the set in other queries.

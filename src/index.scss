@@ -13,6 +13,10 @@
   --aquarium-font-family: "Fredoka One", sans-serif;
 }
 
+:target {
+  scroll-margin-top: 80px;
+}
+
 * {
   box-sizing: border-box;
 }
