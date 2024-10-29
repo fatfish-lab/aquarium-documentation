@@ -310,5 +310,20 @@
       "color": "blue-50",
       "content": "Nodal explorer"
     }]
+  },
+  {
+    "name": "scim",
+    "url": "apps/domain?tabName=scim",
+    "click": [".collapse-header"],
+    "focus": [{
+      "selector": ".scim-endpoint",
+      "type": "mask",
+      "color": "bg-10"
+    },{
+      "selector": ".bots",
+      "type": "overlay",
+      "color": "orange-50",
+      "content": "SCIM configuration"
+    }]
   }
 ]

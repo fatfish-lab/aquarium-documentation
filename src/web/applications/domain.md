@@ -153,6 +153,44 @@ Here is a short video showing how to configure Okta with Aquarium:
 3. Press save and you are done!
 ]
 
+## SCIM
+
+[SCIM](https://scim.cloud) is the abbreviation of System for Cross-domain Identity Management. It's here to allow you to synchronize your users and usergroups from your identity provider to Aquarium.
+
+It's perfect if you want to automate user onboarding and offboarding and increase security by allowing your IT to use a centralised platform to manage users and group assigment.
+
+You can use SCIM with any provider that is compatible with SCIM, like :
+
+- Microsoft Entra ID
+- [Okta](https://okta.com)
+- [Authentik](https://goauthentik.io/)
+- And others...
+
+### Authentication
+
+Our SCIM implementation uses OAuth Bearer Token for authentication. This ensures secure and authenticated communication between your identity provider and Aquarium, allowing for seamless synchronization of users and user groups.
+
+### How to configure SCIM ?
+
+You will need to obtain a Bearer Token from Aquarium to authenticate your identity provider. The best is to use a dedicated Bot with Super-admin or SCIM permissions. All that process is automated from the SCIM tab in the domain application.
+
+![SCIM](../../_medias/screenshots/scim.webp)
+
+1. Create a new Bot or select an existing bot from the dropdown.
+2. Press the `Generate token` button.
+3. Copy the token and paste it in your identity provider.
+4. Copy the SCIM endpoint and paste it in your identity provider.
+
+[details How to configure SCIM with Okta ?
+
+Here is a short video showing how to configure Okta with Aquarium:
+
+[youtube L5BjPSveDQ8]
+
+]
+
+If you need help to configure SCIM with your identity provider, feel free to [contact us](../../contact.md).
+
 ## Storage
 
 This section allows you to manage the storage of your domain. All your upload files and medias will appear here.

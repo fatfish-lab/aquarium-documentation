@@ -132,6 +132,10 @@ for (const [index, screenshot] of screenshots.entries()) {
         innerHTML = `<div><span style="padding: 8px;border-radius:8px;background-color:var(--${
           focus.color || "orange-50"
         })">${focus.content}</span></div>`
+      } else if (focus.type === "mask") {
+        innerHTML = `<div><span style="padding: 8px;background-color:var(--${
+          focus.color || "bg-00"
+        })"></span></div>`
       }
 
       await session.page.evaluate(
@@ -183,6 +187,10 @@ for (const [index, screenshot] of screenshots.entries()) {
             elementToAdd.style.textTransform = "uppercase"
             elementToAdd.style.fontWeight = "bold"
             // elementToAdd.style.textShadow = "1px 1px 0px var(--bg-00)"
+            $width = `${width}px`
+            $height = `${height}px`
+          } else if (focus.type === "mask") {
+            elementToAdd.style.backgroundColor = `var(--${focus.color || "orange-50"})`
             $width = `${width}px`
             $height = `${height}px`
           }
