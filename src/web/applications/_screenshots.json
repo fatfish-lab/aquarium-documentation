@@ -346,5 +346,9 @@
       "color": "orange-50",
       "content": "SCIM configuration"
     }]
+  },
+  {
+    "name": "settings",
+    "url": "settings"
   }
 ]

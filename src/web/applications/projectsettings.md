@@ -38,6 +38,12 @@ Click on a permission to edit it and change its level. Please refer to [items pe
 > [!warning]
 > On big projects, to keep high performances, we recommend to only use Organisation or User group permissions.
 
+## Templates
+
+From this tab you can manage the [templates](../items/template.md) of the project.
+
+You can create new templates and edit them using the [Template editor](./templateeditor.md) application.
+
 ## Shortcuts
 
 When you use the [Aquarium Studio interface](../introduction/studio.md), you can add shortcuts to the [dock](../introduction/studio.md#dock).
@@ -68,3 +74,5 @@ You can define the statuses that are available for the project. Those status are
 Those status are merged with the [Organisation's statuses](./organisation.md#organisation's-statuses).
 
 Find out more about statuses in the [Tasks](../items/task.md) documentation.
+
+You can also manage the dedicated statuses for your [Versions](../items/version.md). Versions are use to regroup multiple media together. When you have multiple versions, using a status help your team to identify the state of each version.

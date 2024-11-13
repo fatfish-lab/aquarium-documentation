@@ -24,13 +24,13 @@ The available commands are:
 | Browse               | Search and browse to items from your current folder                                    |
 | Global search        | Search items into your entire Aquarium                                                 |
 | Diary                | Open my diary to manage my tasks and my timelogs                                       |
-| Profile              | Open my user profile and manage preferences                                            |
+| [Profile](./profile.md)              | Open my user profile and manage preferences                                            |
 | Customer's club      | Open customer's club to manage requests                                                |
-| Notifications        | See your notifications                                                                 |
-| Administrative panel | Open Aquarium's admin panel to manage your domain, users, license and more             |
+| [Notifications](./notify.md)        | See your notifications                                                                 |
+| [Administrative panel](./settings.md) | Open Aquarium's admin panel to manage your domain settings, users, license and more             |
 | Toggle media privacy | Hide or show all video and images from the interface for privacy, or take a screenshot |
 | Focus                | Open your focus page                                                                   |
-| Enable console       | Open Aquarium's console                                                                |
+| [Enable console](#console-the-nodal-explorer)       | Open Aquarium's console                                                                |
 | Workspace            | Load another workspace                                                                 |
 | ?                    | Open the help panel                                                                    |
 
