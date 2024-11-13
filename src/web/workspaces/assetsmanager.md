@@ -3,6 +3,7 @@ id: assetsmanager
 title: Assets manager
 lang: en
 nav_order: 10
+oldUrl: /web/workspaces/libraries/
 ---
 
 # Assets manager
