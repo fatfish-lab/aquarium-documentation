@@ -90,7 +90,11 @@ for (const [index, screenshot] of screenshots.entries()) {
         log.debug(`Click on ${click}`)
         await session.page.waitForSelector(click)
         await session.page.click(click)
-        log.debug(`* Clicked`)
+        log.debug(`* Clicked, waiting for network idle`)
+        await session.page.waitForNetworkIdle().catch(() => {
+          log.warn(`Waiting for network idle failed. Please check screenshot ${screenshot.name}`)
+        })
+
       }
     }
   }
@@ -129,9 +133,9 @@ for (const [index, screenshot] of screenshots.entries()) {
       } else if (focus.type === "circle") {
         innerHTML = `<strong>${focus.content}</strong>`
       } else if (focus.type === "overlay") {
-        innerHTML = `<div><span style="padding: 8px;border-radius:8px;background-color:var(--${
-          focus.color || "orange-50"
-        })">${focus.content}</span></div>`
+        const content = `<span style="padding: 8px;border-radius:8px;background-color:var(--${focus.color || "orange-50"
+          })">${focus.content}</span>`
+        innerHTML = `<div>${focus.content ? content : ''}</div>`
       } else if (focus.type === "mask") {
         innerHTML = `<div><span style="padding: 8px;background-color:var(--${
           focus.color || "bg-00"

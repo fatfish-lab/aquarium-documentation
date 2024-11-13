@@ -14,6 +14,9 @@ A **<span class="aq-icon">work_history</span> Version** is here to regroup multi
 | Key | Type | Description |
 | :--- | :---- | :----------- |
 | `name` | `string` | Name of the version |
+| `status` | `string` | Status of the version |
+| `color` | `string` | Color of the version's status |
+| `completion` | `number` | Completion of the version |
 
 ## Structure
 

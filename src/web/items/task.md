@@ -22,7 +22,7 @@ The main application used to edit a task is [Tasks editor](../applications/tasks
 | `name` | `string` | Name of the task |
 | `description` | `string` | Description of the task |
 | `status` | `string` | Status of the task |
-| `color` | `string` | Color of the task |
+| `color` | `string` | Color of the task's status |
 | `completion` | `number` | Completion of the task |
 | `startdate` | `date` | Start date of the task |
 | `deadline` | `date` | Deadline of the task |
