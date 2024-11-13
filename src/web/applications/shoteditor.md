@@ -16,6 +16,7 @@ The Shot editor is the application dedicated to edit [Shot item](../items/shot.m
      - **Viewer**: Display the selected task's medias. Refer to the [Viewer documentation](viewer.md) for more information on how to annotate and leave comments on the medias.
      - **Comments and retakes**: Display the selected task's comments and retakes without having to select a version/media from the Viewer. When you click on a comment or retake, the associated medias is displayed on the right.
      - **Overview**: Get all selected tasks activity in one quick overview.
+     - **Breakdown**: Visualize all breakdown Asset to this Shot.
      - **Attachments**: Display the shot's attachments. You can attach any item, like a media, a whiteboard, ... for references or to share information.
 3. **Chosen display**: Depending on the display mode, the content of the Shot editor will change.
 4. **Shot information**: The Shot's global information :
