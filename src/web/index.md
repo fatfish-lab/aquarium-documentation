@@ -4,6 +4,7 @@ title: Web
 topic: Web interface
 lang: en
 shortcut: true
+nav_order: 10
 icon: web
 ---
 

@@ -15,4 +15,3 @@ A dedicated video is available soon to provide a quick overview on how to create
 
 > [!error]
 > The video will be available soon.
-
