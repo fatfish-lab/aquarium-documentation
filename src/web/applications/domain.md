@@ -60,9 +60,21 @@ Here is a table explaining the differences between admin and super-admin:
 | Use the [console](#console) | <span style="color: var(--red-50);">No</span> | <span style="color: var(--green-50);">Yes</span> |
 | Can requeue [events](#events) | <span style="color: var(--red-50);">No</span> | <span style="color: var(--green-50);">Yes</span> |
 | Manage [SSO](#SSO) | <span style="color: var(--red-50);">No</span> | <span style="color: var(--green-50);">Yes</span> |
+| Manage [SCIM](#SCIM) | <span style="color: var(--red-50);">No</span> | <span style="color: var(--green-50);">Yes</span> |
 
 > [!error] Use with caution
 > If you don't want an admin or super-admin to access specific project, you can remove the `Domain admins` usergroup from the participant.
+
+### Special permissions for events & SCIM
+
+To avoid giving admin or super-admin permissions to users or bots that require only being able to use [Events](#events) or [SCIM](#SCIM) API, we introduced two specific permissions toggle:
+
+- `Events`: Allow the user to interact with the events API and requeue events.
+- `SCIM`: Allow the user to interact with the SCIM API.
+
+> [!warning]
+> The `SCIM` permission is not used to "setup" SCIM credentials. This permission only allows the user to authorize SCIM API requests.
+
 
 ## Organisations
 
@@ -180,6 +192,10 @@ You will need to obtain a Bearer Token from Aquarium to authenticate your identi
 2. Press the `Generate token` button.
 3. Copy the token and paste it in your identity provider.
 4. Copy the SCIM endpoint and paste it in your identity provider.
+
+> [!info]
+> Aquarium uses the email of a user to uniquely identify them in the SCIM API. So if your identity provider lets you choose the `userName` used in the SCIM API, you should use the `email` or its equivalent.
+> If you don't use the email as SCIM `userName`, you will have errors when trying to sync an existing user.
 
 [details How to configure SCIM with Okta ?
 
