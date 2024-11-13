@@ -14,6 +14,7 @@ import resolveUrls from "lume/plugins/resolve_urls.ts"
 import nav from "lume/plugins/nav.ts"
 import sass from "lume/plugins/sass.ts"
 import pagefind from "lume/plugins/pagefind.ts"
+import redirects from "lume/plugins/redirects.ts";
 
 // Markdown plugins
 import toc from "https://deno.land/x/lume_markdown_plugins@v0.7.0/toc.ts"
@@ -25,7 +26,12 @@ import "npm:prismjs@1.29.0/components/prism-bash.js"
 
 const options = {
   robots: {
-    disallow: "/pagefind",
+    rules: [
+      {
+        userAgent: "*",
+        disallow: "/pagefind",
+      },
+    ],
   },
   markdown: {
     plugins: [mermaid, card, alert, [digitalOceanMd, { prismjs: false, user_mention: false }]],
@@ -73,6 +79,7 @@ const site = lume({
 }, { markdown: options.markdown })
 
 site.use(resolveUrls())
+site.use(redirects())
 site.use(toc(options.toc))
 site.use(nav())
 site.use(sass(options.sass))
