@@ -118,13 +118,34 @@
       "type": "circle",
       "content": "2"
     }, {
-      "selector": ".compare-options > .tool",
+      "selector": ".template-sync-options-container",
       "type": "circle",
       "content": "3"
     }, {
-      "selector": ".footer > .quickview-container",
+      "selector": ".template-sync-options-container > div.actions > button.btn.small.success.icon",
       "type": "circle",
       "content": "4"
+    }]
+  },
+  {
+    "name": "templateeditor-sync-options",
+    "url": "apps/templateeditor?itemKeys=939107246&appName=templateeditor&tabName=sync",
+    "click": [".template-sync-options-container > div.actions > button.btn.small.success.icon"],
+    "focus": [{
+      "selector": ".template-sync-options-container > div.fullscreen > div > div > div > div.options > div:nth-child(1)",
+      "type": "overlay",
+      "color": "green-50",
+      "content": "Missing"
+    },{
+      "selector": ".template-sync-options-container > div.fullscreen > div > div > div > div.options > div:nth-child(2)",
+      "type": "overlay",
+      "color": "orange-50",
+      "content": "Modified"
+    },{
+      "selector": ".template-sync-options-container > div.fullscreen > div > div > div > div.options > div:nth-child(3)",
+      "type": "overlay",
+      "color": "red-50",
+      "content": "Exceeding"
     }]
   },
   {
