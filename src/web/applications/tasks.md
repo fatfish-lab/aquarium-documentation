@@ -62,4 +62,4 @@ You can attach other items to a task, like for reference, context or any other r
 
 ## Activity
 
-On the left you have the activity sidebar that regroup all the comments and timelogs of the task. You can filter that list by clicking on the `Comments` or `Timelogs` buttons.
+On the right you have the activity sidebar that regroup all the comments and timelogs of the task. You can filter that list by clicking on the `Comments` or `Timelogs` buttons.
