@@ -2,15 +2,16 @@
   "imports": {
     "@std/cli": "jsr:@std/cli@^1.0.0",
     "@std/dotenv": "jsr:@std/dotenv@^0.225.0",
-    "lume/": "https://deno.land/x/lume@v2.4.2/"
+    "lume/": "https://deno.land/x/lume@v2.4.2/",
+    "documentation/": "https://deno.land/x/fatfishlab_lume_theme_documentation@1.0.2/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "dev": "deno task lume -s --port 3007",
     "serve": "deno run -A server.ts",
-    "404": "deno task lume && deno task serve --404",
-    "screenshot": "deno run -A screenshot/screenshot.ts",
+    "404": "deno task lume && echo \"import 'documentation/server.ts'\" | deno run -A - --404",
+    "screenshot": "deno eval \"import 'documentation/screenshot/screenshot.ts'\"",
     "check": "deno check **/*.ts"
   },
   "compilerOptions": {
