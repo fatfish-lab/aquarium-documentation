@@ -22,7 +22,7 @@ See how to install the package.
 ]
 
 [column
-```card [<span class="aq-icon">quick_reference</span> Reference API](https://docs.fatfish.app/dev/python/reference/aquarium.html)
+```card [<span class="aq-icon">quick_reference</span> Reference API](https://docs.python.aquarium.app/reference/aquarium.html)
 Check the full documentation of the package.
 ```
 ]
