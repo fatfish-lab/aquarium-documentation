@@ -29,7 +29,7 @@ To create a user, or multiple users at the same time, you can use the `Create` b
 > [!info]
 > The only mandatory information to create a user is the email address.
 
-When you create a user, and you don't set a password, the user will receive an invitation email. The invitation email is only valid for a certain number of days, after which the user will have to request a new link using the `Forgot password` link on the login page. Lean more on this process [in our dedicated guide](../../how-to/reset-password.md).
+When you create a user, and you don't set a password, the user will receive an invitation email. The invitation email is only valid for a certain number of days, after which the user will have to request a new link using the `Forgot password` link on the login page. Lean more on this process [in our dedicated guide](../../examples/reset-password.md).
 
 If you unfold a user, you can edit its information using the [Profile application](./profile.md).
 
@@ -91,7 +91,7 @@ Each organisation have their own settings that you can edit using the [Organisat
 
 This section allows you to manage the licenses of your domain. You can see the number of licenses you have, and the number of licenses you are using. You can also edit you license to request more active users and storage.
 
-Here is a short video [from our guide](../../how-to/manage-licenses.md), explaining how to manage your licenses:
+Here is a short video [from our guide](../../examples/manage-licenses.md), explaining how to manage your licenses:
 
 [youtube DnCszP4uk0U]
 

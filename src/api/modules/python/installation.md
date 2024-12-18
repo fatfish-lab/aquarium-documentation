@@ -7,6 +7,8 @@ nav_order: 10
 
 # Installation
 
+To install the Aquarium Python API, you can use pip to install it from PyPi or install it from the source.
+
 ## From PyPi
 
 Our module is [available on PyPi](https://pypi.org/project/aquarium-python-api/). You can install it using pip:

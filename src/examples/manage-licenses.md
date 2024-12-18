@@ -11,4 +11,4 @@ You can manage you licenses from the [domain application](../web/applications/do
 
 Here is a short video showing how to manage licenses:
 
-[youtube DnCszP4uk0U]
+[youtube DnCszP4uk0U 405 720]

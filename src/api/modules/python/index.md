@@ -28,7 +28,7 @@ Check the full documentation of the package.
 ]
 
 [column
-```card [<span class="aq-icon">book_5</span> Examples](../../../how-to/python/examples.md)
+```card [<span class="aq-icon">book_5</span> Examples](../../../examples/python/examples.md)
 Discover some examples to perform specific actions.
 ```
 ]

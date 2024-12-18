@@ -30,7 +30,7 @@ Once a column is selected, you can edit its properties on the right panel:
 
 Under this section, you have dedicated preset and preset's options.
 
-- **Preset**: Preset configuration for the column. We provide a bunch of presets, based on the data that we handle by default. You can also [create your own columns](../../how-to/create/column.md).
+- **Preset**: Preset configuration for the column. We provide a bunch of presets, based on the data that we handle by default. You can also [create your own columns](../../examples/create/column.md).
 
 On a preset is selected, you can edit its options just under. The options depends on the preset selected.
 

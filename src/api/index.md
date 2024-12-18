@@ -27,7 +27,7 @@ Discover our REST API. All routes and methods are listed here.
 ]
 
 [column
-```card [<span class="aq-icon">book_5</span> How-to guides](../how-to/index.md)
+```card [<span class="aq-icon">book_5</span> How-to guides](../examples/index.md)
 Check our how-to guides to learn how to interact with Aquarium.
 ```
 ]

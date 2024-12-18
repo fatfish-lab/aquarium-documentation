@@ -9,7 +9,7 @@ nav_order: 10
 
 The action editor is the application used to edit [Action item](../items/action.md) in Aquarium.
 
-An action is used to automate process. It's with this system that you can send notifications to users, set automatic status changes, etc. Some examples are available in the [add menu](./addmenu.md#form-creation) as templates. You can also checkout our [how-to guides](../../how-to/index.md).
+An action is used to automate process. It's with this system that you can send notifications to users, set automatic status changes, etc. Some examples are available in the [add menu](./addmenu.md#form-creation) as templates. You can also checkout our [how-to guides](../../examples/index.md).
 
 ![Action editor](../../_medias/screenshots/actioneditor.webp)
 

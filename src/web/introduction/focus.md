@@ -21,7 +21,7 @@ On top of the screen, you can select 3 different pages :
 
 ## Home
 
-The home page is the main page where you can see all your projects. You can also create a new project by clicking on the "Create a new project" button. Check out our how-to [create a project](../../how-to/create/project.md) guide.
+The home page is the main page where you can see all your projects. You can also create a new project by clicking on the "Create a new project" button. Check out our how-to [create a project](../../examples/create/project.md) guide.
 
 When you click on a project, you will have more information about it.
 

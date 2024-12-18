@@ -11,7 +11,7 @@ This workspace is dedicated to display tasks and define schedules.
 
 ![Timeline](/_medias/screenshots/timeline.webp)
 
-1. **Add your columns**: Define the columns you want to see in your workspace. You can choose between our presets or create your own custom column. To create a custom column, follow our [guide](../../../how-to/create/column).
+1. **Add your columns**: Define the columns you want to see in your workspace. You can choose between our presets or create your own custom column. To create a custom column, follow our [guide](../../../examples/create/column).
 2. **Choose your tool**: Enable the tools you want to use in your schedule:
    1. **Move**: Allow you to move across time or if some days are selected move the selected days
    2. **Select**: Allow you to select a range of days. You can also double-click on a task to select all days of the task directly. Double-click after/before task to unselect all. Use `SHIFT` or `CTRL` to select multiple ranges/tasks.
