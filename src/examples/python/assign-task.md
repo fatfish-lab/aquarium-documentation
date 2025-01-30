@@ -1,6 +1,6 @@
 ---
 id: assign-task
-title: Assign-task
+title: Assign task
 lang: en
 nav_order: 100
 ---

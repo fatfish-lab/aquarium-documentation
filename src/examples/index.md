@@ -30,6 +30,9 @@ Don't forget to subscribe to our [YouTube channel](https://www.youtube.com/@fatf
 - [Create playlist](./python/create-playlist.md)
 - [Listen events](./python/listen-events.md)
 - [Upload media](./python/upload-media.md)
+- [Update an item data](./python/update-item-data.md)
+
+> Don't forget to check the [Python API](../api/modules/python/index.md) for more information.
 ]
 
 [column
