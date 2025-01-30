@@ -20,7 +20,7 @@ The Shot editor is the application dedicated to edit [Shot item](../items/shot.m
      - **Attachments**: Display the shot's attachments. You can attach any item, like a media, a whiteboard, ... for references or to share information.
 3. **Chosen display**: Depending on the display mode, the content of the Shot editor will change.
 4. **Shot information**: The Shot's global information :
-     - **Health**: The health of the shot. It is using all the tasks health to determine the shot health.
+     - **Health**: The health of the shot. It is using all the tasks health to determine the shot health. Click on the health icon to get more information task per task.
      - **Tasks statuses**: A progress bar showing the status of the tasks.
      - **Duration**: The total duration of the shot based on the data `frameIn` and `frameOut` of the shot.
      - **Description**: The shot's description.

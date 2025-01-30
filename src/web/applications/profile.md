@@ -26,7 +26,7 @@ You can change the password from here.
 > [!warning]
 > When you change your password, we will ask you to sign-in again. It will also disconnect all your other sessions.
 
-You can also enable and manage the two-factor authentication. You backup code can be manage from here too.
+You can also enable and manage the two-factor authentication (2FA, MFA, ...). You backup code can be manage from here too.
 
 The `Close all session` allow you to disconnect all your sessions and will force the user to sign-in again.
 

@@ -47,4 +47,7 @@ The console is a powerful tool that allows you to explore the content of your Aq
   1. You can also enter the _key of the item by clicking on the button.
 
 2. **View item/edge data**: By clicking on an item, you can see its data and metadata using the right panel. You can also do the same by selecting an edge.
-- **Custom query**: At the bottom you can change and write your own meshQL query to filter the items.
+3. **Enable edition**: By default the console is in read-only mode. You can enable the edition by toggling the switch on the top right corner.
+   - When edition is enabled you can create new connection between items by dragging from "New edge" entry onto the target item. Once the dropping is done, a dialog wheel appear so you can select the edge type you want. Use the `Other...` to create a custom edge type.
+   - In the right panel, a new button appears to trash an item or delete an edge.
+

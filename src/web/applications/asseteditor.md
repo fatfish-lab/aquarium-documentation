@@ -20,7 +20,7 @@ The Asset editor is the application dedicated to edit [Asset item](../items/asse
      - **Attachments**: Display the asset's attachments. You can attach any item, like a media, a whiteboard, ... for references or to share information.
 3. **Chosen display**: Depending on the display mode, the content of the Asset editor will change.
 4. **Asset information**: The Asset's global information :
-     - **Health**: The health of the asset. It is using all the tasks health to determine the asset health.
+     - **Health**: The health of the asset. It is using all the tasks health to determine the asset health. Click on the health icon to get more information task per task.
      - **Tasks statuses**: A progress bar showing the status of the tasks.
      - **Description**: The asset's description.
 

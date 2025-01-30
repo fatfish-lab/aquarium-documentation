@@ -194,6 +194,10 @@
       "type": "circle",
       "content": "2"
     }, {
+      "selector": ".console-container .toolbar .toggle-wrapper",
+      "type": "circle",
+      "content": "3"
+    }, {
       "selector": ".console-container.console",
       "type": "overlay",
       "content": "The nodal console",
@@ -313,7 +317,7 @@
   },
   {
     "name": "workspacenodaleditor",
-    "url": "apps/workspacenodaleditor?itemKeys=120709906&workspaceKey=120709948&appName=workspacenodaleditor",
+    "url": "apps/workspacenodaleditor?itemKeys=939107193&workspaceKey=1615483403&appName=workspacenodaleditor",
     "click": [".pickable-node-container"],
     "focus": [{
       "selector": ".nodal-picker-container > header",

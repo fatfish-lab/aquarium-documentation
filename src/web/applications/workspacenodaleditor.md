@@ -32,3 +32,6 @@ The interface is divided in 3 parts:
 > 2. Select the animation Task.
 > 3. Select the status property.
 > 4. Click on the `Add this filter` button.
+
+> [!info]
+> If you are not able to see any items check the `depth` filter parameter and other filters to see if they are not hiding the items you are looking for.
