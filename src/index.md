@@ -56,6 +56,26 @@ Integrate your Aquarium with Python.
 ```
 ]
 
+# How to, guides and examples
+
+[column
+In this section, we try to provide you with some how-to guides and examples to help you on specific topics.
+
+Don't forget to subscribe to our [YouTube channel](https://www.youtube.com/@fatfishlab/videos) to get notified when we release new videos.
+]
+
+[column
+```card [<span class="aq-icon">lightbulb</span> Examples](./examples/index.md)
+Find examples to help you on specific topics.
+```
+]
+
+[column
+```card [<span class="aq-icon">youtube_activity</span> Youtube](https://www.youtube.com/@fatfishlab/videos)
+Subscribe to our YouTube channel.
+```
+]
+
 ---
 
 ## Looking for some help ?
