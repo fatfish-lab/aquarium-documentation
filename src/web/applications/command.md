@@ -10,9 +10,12 @@ nav_order: 10
 The Command application is a productivity tool that allows you to quickly access
 to the most common actions on Aquarium.
 
-You can press `SHIFT + :` (the `/` key) to open the Command application. From
-the [studio interface](../introduction/studio.md), you can also click on the
-<span class="aq-icon">search</span> icon.
+To open the Command application, you can use those shortcuts:
+  - `SHIFT + :` (the `/` key)
+  - `CTRL + K` (or `CMD + K` on Mac)
+  - `SHIFT + K`
+
+From the [studio interface](../introduction/studio.md), you can also click on the <span class="aq-icon">search</span> icon.
 
 ![Command](../../_medias/screenshots/command.webp)
 
