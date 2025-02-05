@@ -3,7 +3,7 @@
     "@std/cli": "jsr:@std/cli@^1.0.0",
     "@std/dotenv": "jsr:@std/dotenv@^0.225.0",
     "lume/": "https://deno.land/x/lume@v2.4.2/",
-    "documentation/": "https://deno.land/x/fatfishlab_lume_theme_documentation@1.0.4/"
+    "documentation/": "https://deno.land/x/fatfishlab_lume_theme_documentation@1.0.5/"
   },
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",

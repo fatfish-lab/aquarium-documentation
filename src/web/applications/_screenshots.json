@@ -205,6 +205,26 @@
     }]
   },
   {
+    "name": "performanceobserver",
+    "url": "939107156?workspace=939174968&app=Home",
+    "click": [".commands-container", ".command-container .rocket_launch"],
+    "waitForNetworkIdle": false,
+    "focus": [{
+      "selector": ".performance-container.console .requests-average",
+      "type": "circle",
+      "content": "1"
+    }, {
+      "selector": ".performance-container.console > div.toolbar > div:nth-child(4)",
+      "type": "circle",
+      "content": "2"
+    }, {
+      "selector": ".performance-container.console",
+      "type": "overlay",
+      "content": "The performance observer",
+      "color": "blue-50"
+    }]
+  },
+  {
     "name": "shoteditor",
     "url": "apps/shoteditor?itemKeys=1346076954&tabName=viewer&taskName=layout&versionIndex=1",
     "focus": [{
