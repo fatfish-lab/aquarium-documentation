@@ -181,6 +181,7 @@ In the <span class="aq-icon">more_vert</span> menu, more options are available:
 - **Select by...**: Select items based on criteria. You can also paste names from a spreadsheet that you copied.
 - **Configure workspace**: Launch the [workspaces application](../applications/workspaces.md) to edit it.
 - **Auto save is enabled**: Enable or disable the auto-save feature. When enabled, all changes are saved automatically. The save button have a timer to show you when the next save will occur. Just over it to cancel the auto-save.
+- **Export table to CSV**: Export the current workspace in a CSV file. The export will include all the items displayed in the workspace with their column data.
 - **Import in Spreadsheet**: Copy in the clipboard a special function that you can paste in a Google Spreadsheet to import the data. Please refer to the [Google Spreadsheet integration](../../integrations/spreadsheet.md) for more information.
 - **Copy sharable link**: Copy in the clipboard a link to the current workspace.
 - **Browse trash...**: Open the [trash application](../applications/trash.md) to restore items.
