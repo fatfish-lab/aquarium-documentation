@@ -71,6 +71,12 @@ Find examples to help you on specific topics.
 ]
 
 [column
+```card [<span class="aq-icon">school</span> Tutorials](./examples/tutorials.md)
+Discover our tutorials.
+```
+]
+
+[column
 ```card [<span class="aq-icon">youtube_activity</span> Youtube](https://www.youtube.com/@fatfishlab/videos)
 Subscribe to our YouTube channel.
 ```

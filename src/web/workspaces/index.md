@@ -30,6 +30,10 @@ We created several workspaces, to fit specific project management needs : [shots
 - [Medias](./medias.md)
 - [Review](./review.md)
 
+We created a short video that show you all those workspaces:
+
+[youtube hUJxjg8yh08 405 720]
+
 # Options
 
 All workspaces works quite the same way and have same options available:
@@ -42,6 +46,10 @@ All workspaces works quite the same way and have same options available:
 > You can also enable auto-save in the [<span class="aq-icon">more_vert</span> menu](#more-options).
 >
 > If you don't have enough permissions to save the workspace, an error message will be displayed if you try to save it. Even if you can't save it, you can still temporary edit it and see the changes.
+
+Discover what's a workspace and how to use it :
+
+[youtube KlmlsAMNUys 405 720]
 
 Those options are also accessible from the [workspace editor](../applications/workspaces.md).
 
