@@ -2,7 +2,7 @@
 id: manage-subscription
 title: Manage subscription
 lang: en
-nav_order: 10
+nav_order: 2
 ---
 
 # Manage your subscription

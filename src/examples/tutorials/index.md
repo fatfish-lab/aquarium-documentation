@@ -2,7 +2,7 @@
 id: tutorials
 title: Tutorials
 lang: en
-nav_order: 00
+nav_order: 0
 icon: school
 ---
 
@@ -46,3 +46,9 @@ Aquarium offers a variety of workspaces. Explore in this video the purpose of ea
 - **Wiki**: Collaborate with your team using textual information, meeting notes, and project overviews.
 
 Stay tuned, new workspaces are coming soon! 🤩
+
+## Deep dive in your project
+
+### What's a template and how to master it ?
+
+[youtube CsKs6q-UYNE 405 720]

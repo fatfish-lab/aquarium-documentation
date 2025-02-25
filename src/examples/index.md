@@ -37,13 +37,19 @@ Don't forget to subscribe to our [YouTube channel](https://www.youtube.com/@fatf
 
 [column
 ## User
-- [Reset password](./reset-password.md)
+- [Reset password](./tutorials/reset-password.md)
 ]
 
 [column
 ## Subscription
-- [Manage licenses](./manage-licenses.md)
-- [Manage subscription](./manage-subscription.md)
+- [Manage licenses](./tutorials/manage-licenses.md)
+- [Manage subscription](./tutorials/manage-subscription.md)
+]
+
+[column
+## Production
+- [Setup notifications](./tutorials/notifications.md)
+- [Create a custom column](./tutorials/create-column.md)
 ]
 
 
