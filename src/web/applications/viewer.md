@@ -36,7 +36,7 @@ On the left you can see all the tools to annotate or change the view of the medi
   - You can record your screen with your microphone and add it as attachment to your comment. This allow you to go back in your software to explain something to your team.
   - You can also flag the comment as a [retake](../items/comment.md#retakes)
   - The comment is written in markdown, allowing you to insert images, checkboxes, ...
-  - Using the `@` symbol, you can mention a user. The user will receive a notification if the associated [Action](../items/action.md) is enabled. Check our more in our [how-to create notifications](../../examples/setup/notifications.md).
+  - Using the `@` symbol, you can mention a user. The user will receive a notification if the associated [Action](../items/action.md) is enabled. Check our more in our [how-to create notifications](../../examples/tutorials/notifications.md).
 
 If the viewer is opened with multiple media, there will be displayed in a carousel at the bottom of the viewer.
 

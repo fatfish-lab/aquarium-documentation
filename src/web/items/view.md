@@ -9,7 +9,7 @@ nav_order: 10
 
 A **<span class="aq-icon outline">view_carousel</span> View** is used in [workspaces](./workspace.md) to regroup columns together.
 
-We provide presets to help you create a view. You can also [create your own columns](../../examples/create/column.md).
+We provide presets to help you create a view. You can also [create your own columns](../../examples/tutorials/create-column.md).
 
 A view can be edited from the [workspace editor](../applications/workspaces.md) or with the [view editor](../applications/views.md).
 

@@ -19,4 +19,4 @@ You can add tags on your notifications to regroup them together and categorize t
 
 > [!info]
 > Notifications are sent using the [action](../items/action.md) system.
-> Check our [how-to guide to setup your own notifications](../../examples/setup/notifications.md).
+> Check our [how-to guide to setup your own notifications](../../examples/tutorials/notifications.md).

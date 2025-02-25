@@ -206,4 +206,4 @@ You can click on the name of the views to edit it using the [views application](
 
 ### Columns
 
-You can add or remove columns from the view, based on our presets or by creating a new custom columns by right-clicking on a cell and selecting `Add column from property`. Learn more in our how-to [create a custom column](../../examples/create/column.md) guide.
+You can add or remove columns from the view, based on our presets or by creating a new custom columns by right-clicking on a cell and selecting `Add column from property`. Learn more in our how-to [create a custom column](../../examples/tutorials/create-column.md) guide.

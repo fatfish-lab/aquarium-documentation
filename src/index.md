@@ -71,7 +71,7 @@ Find examples to help you on specific topics.
 ]
 
 [column
-```card [<span class="aq-icon">school</span> Tutorials](./examples/tutorials.md)
+```card [<span class="aq-icon">school</span> Tutorials](./examples/tutorials/index.md)
 Discover our tutorials.
 ```
 ]

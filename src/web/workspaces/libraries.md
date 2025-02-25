@@ -16,7 +16,7 @@ You can regroup assets into [Library](../items/library.md) to regroup them by ty
 ![Assets manager](/_medias/screenshots/assetsmanager.webp)
 
 1. **Create**: Click on this button to create a new [Library](../items/library.md) or a new [Asset](../items/asset.md). You can also access [import a CSV file](../../examples/setup/assets.md) to create [episodes](../items/episode.md), [libraries](../items/library.md), [assets](../items/asset.md) and [tasks](../items/task.md) in bulk.
-2. **Add column**: Choose the columns you want to enable in your workspace. Those columns are based on our presets. But if you want to create a custom column, follow our [guide](../../../examples/create/column.md).
+2. **Add column**: Choose the columns you want to enable in your workspace. Those columns are based on our presets. But if you want to create a custom column, follow our [guide](../../../examples/tutorials/create-column.md).
 3. **Add a asset into an existing library** : Click on this button to add a asset into an existing library.
 4. **Add a new task** : Click on this button to add a new task to a asset. Two options are available:
    1. "Add a task in Asset's template": This will a new task in the Asset's template, so all your assets can use the task.

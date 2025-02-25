@@ -13,8 +13,8 @@ You can also manage sequences from here.
 
 ![Shots manager](/_medias/screenshots/shotsmanager.webp)
 
-1. **Create**: Click on this button to create a new [Sequence](../../items/sequence) or a new [Shot](../../items/shot). You can also access [import a CSV file](../../../examples/setup/shots) to create [episodes](../../items/episode), [sequences](../../items/sequence), [shots](../../items/shot) and [tasks](../../items/task) in bulk.
-2. **Add column**: Choose the columns you want to enable in your workspace. Those columns are based on our presets. But if you want to create a custom column, follow our [guide](../../../examples/create/column).
+1. **Create**: Click on this button to create a new [Sequence](../../items/sequence) or a new [Shot](../../items/shot). You can also access import a CSV file to create [episodes](../../items/episode), [sequences](../../items/sequence), [shots](../../items/shot) and [tasks](../../items/task) in bulk.
+2. **Add column**: Choose the columns you want to enable in your workspace. Those columns are based on our presets. But if you want to create a custom column, follow our [guide](../../examples/tutorials/create-column.md).
 3. **Add a shot into an existing sequence** : Click on this button to add a shot into an existing sequence.
 4. **Add a new task** : Click on this button to add a new task to a shot. Two options are available:
    1. "Add a task in Shot's template": This will a new task in the Shot's template, so all your shots can use the task.
