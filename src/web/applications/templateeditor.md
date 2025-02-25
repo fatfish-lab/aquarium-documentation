@@ -9,6 +9,8 @@ nav_order: 10
 
 The template editor is the application dedicated to edit [templates](../items/template.md).
 
+[youtube CsKs6q-UYNE 405 720]
+
 ![Template editor](../../_medias/screenshots/templateeditor.webp)
 
 This application have 3 tabs on the left to manage its data, content and linked items.:
