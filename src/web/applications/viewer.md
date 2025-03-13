@@ -24,10 +24,10 @@ On the left you can see all the tools to annotate or change the view of the medi
 - **Flip**: Flip the view horizontally
 - **Hide previous annotation**: Hide all the previous annotations, to have a clear view of the media.
 - **Grid**: Display a grid on the media. You can change the type of the grid.
-- **Compare**: Compare the media with another media. You can change the type of the comparison:
-  - Side by side
-  - Overlay (on top of each other)
-  - Swipe
+- **Compare**: Compare the media with another media.
+  - You can change the type of the comparison (**Side by side**, **Swipe**, **Overlay** (on top of each other))
+  - Sync compared video: this option will sync the timecode of the main video with the compared one.
+  - Compare with medias: select the media you want to compare with. If you are in the [Shot editor](./shoteditor.md) or the [Asset editor](./asseteditor.md), you can load a media from another [task](../items/task.md) and/or [version](../items/version.md).
 - **Fullscreen**: Go fullscreen
 - **Download**: Download the media
 - **Set as thumbnail**: You can set the current media as the thumbnail of the item.
