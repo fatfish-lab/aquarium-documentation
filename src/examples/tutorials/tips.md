@@ -16,3 +16,7 @@ Learn how to use Aquarium with our quick video tips. We cover a wide range of to
 ## How to assigned users from a workspace ?
 
 [youtube qD5AbMBacrg 405 720]
+
+## How to edit multiple cells at once ?
+
+[youtube 8uanv1pFOxY 405 720]
