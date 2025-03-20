@@ -35,8 +35,16 @@ This workspace is dedicated to display tasks and define schedules.
 
 If you want to display more days in the calendar, you can expand the size of the column called "Timeline", by dragging the handle located at the end of the column.
 
-## Expand and reduce your tasks
+## Grow and shrink your tasks
 
-By hovering a task, you can expand or reduce its duration. Grab the handle located at the beginning or the end of the task and drag it to the desired date.
+By hovering a task, you can grow or shrink its duration. Grab the handle located at the beginning or the end of the task and drag it to the desired date.
 
 Checkout [general information about workspace](/web/workspaces) to know how to filter, sort, and group your data.
+
+## Setup recurring tasks
+
+By selecting tasks, you can setup there recurrence. Select `Set recurrence` from the [bufferzone](./index.md#bufferzone).
+
+From this interface, you can define if the task need to repeat every day of the week, starting from a specific date, and for how long. You can also define it's daily duration.
+
+If you enable `Replace existing timeline`, the task's timeline will be replaced by the new recurrence. If you disable it, the recurrence will be added to the existing timeline.
