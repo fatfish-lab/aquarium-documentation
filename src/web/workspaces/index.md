@@ -207,3 +207,11 @@ You can click on the name of the views to edit it using the [views application](
 ### Columns
 
 You can add or remove columns from the view, based on our presets or by creating a new custom columns by right-clicking on a cell and selecting `Add column from property`. Learn more in our how-to [create a custom column](../../examples/tutorials/create-column.md) guide.
+
+## Bufferzone
+
+The bufferzone is a special feature inside all workspaces, it's appear at the right bottom of the screen once you selected some items.
+
+It's store your selection and allow you to perform actions on it. The actions depends on the workspace you are in. Here is some examples : `open`, `copy`, `move`, `clone`, `trash`, ...
+
+Use the <span class="aq-icon">lock</span> to lock your selection and keep it in the bufferzone event if you navigate to another workspace, project, folder, ...
