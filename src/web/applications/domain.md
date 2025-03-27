@@ -218,11 +218,17 @@ A file can be used on multiple items, to save space and money. That's why the lo
 
 ## Monitor
 
+![Monitor](../../_medias/screenshots/monitor.webp)
+
 This section provide 3 graphics to monitor your Aquarium instance:
 
 - Queries per second
 - Number of [Jobs](./jobs.md)
 - Number of [events](#events) being processed
+
+You can also visualize the `/metrics` endpoint. This endpoint is using [OpenMetrics](https://openmetrics.io/) format, so you can use any OpenMetrics compatible tool to visualize it, like Prometheus or Grafana.
+
+If you are using Grafana Cloud, you can use the `Metrics endpoint` integration. [Follow this guide](https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-metrics-endpoint/) to see how to configure it.
 
 ## Events
 

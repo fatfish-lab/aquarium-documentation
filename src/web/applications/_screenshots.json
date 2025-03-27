@@ -374,5 +374,9 @@
   {
     "name": "settings",
     "url": "settings"
+  },{
+    "name": "monitor",
+    "url": "settings/domain/monitor",
+    "click": [".collapse-header"]
   }
 ]
