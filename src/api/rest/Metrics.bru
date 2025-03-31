@@ -1,0 +1,15 @@
+meta {
+  name: Metrics
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/metrics
+  body: none
+  auth: inherit
+}
+
+docs {
+  Obtain the current metrics of the instance in OpenMetrics format (`Prometheus`, `Grafana`, etc.). All exported metrics have an `aquarium_` prefix.
+}
