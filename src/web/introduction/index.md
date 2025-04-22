@@ -60,6 +60,8 @@ There are 3 main concepts in Aquarium :
 
 # How can I find help from Aquarium ?
 
-Like the old school software, press `F1` to open the help panel. You can also click on the <span class="aq-icon outline">help</span> icon to open it.
+Just like the old-school software, press `F1` to open the help panel. You can also click on the <span class="aq-icon outline">help</span> icon to open it.
 
 In the help panel, you will find this documentation, and quests to guide you through the interface and learn how to use Aquarium.
+
+If you are looking for the list of keyboard shortcut, you can press `F2` to open the shortcuts panel. Shortcuts are also available in the Aquarium menu.
