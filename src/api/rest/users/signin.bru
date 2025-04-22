@@ -28,12 +28,6 @@ script:post-response {
     bru.setEnvVar('meKey', body.user._key)
 }
 
-tests {
-  var jsonData = JSON.parse(responseBody);
-  // postman.setEnvironmentVariable("token", jsonData.token);
-  bru.setEnvVar("meKey", jsonData.user._key);
-}
-
 docs {
   Sign in a user and get a token.
   
