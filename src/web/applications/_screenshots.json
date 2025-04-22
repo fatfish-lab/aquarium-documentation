@@ -378,5 +378,9 @@
     "name": "monitor",
     "url": "settings/domain/monitor",
     "click": [".collapse-header"]
+  },{
+    "name": "nodal",
+    "url": "apps/nodal?itemKeys=286722781&appName=nodal&mode=editor",
+    "click": ["footer > div.float.relative.zoom > span.icon-container.material-icons.remove.clickable", 5]
   }
 ]
