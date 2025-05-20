@@ -691,13 +691,13 @@ If you write an alias but do not declare it in the aliases object, meshQL will a
 
 ### What's the difference between `$` and `@` symbol ?
 
-When you use an alias, you can use it to store a meshQL string or to store brut data, like a string, an array, ...
+When you use an alias, you can use it to store a meshQL string or to store raw data, like a string, an array, ...
 
 When you call an alias with a `$` symbol, it means that you are calling a meshQL expression and will be interpreted as so.
 
-When you call an alias with a `@` symbol, it means that you are calling a brut data and will be used as is.
+When you call an alias with a `@` symbol, it means that you are calling a raw data and will be used as is.
 
-Here is some example to understand the difference:
+Here is some examples to understand the difference:
 
 ```javascript
 const query = '# -($Child)> $filter'
