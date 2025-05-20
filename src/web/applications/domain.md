@@ -132,8 +132,10 @@ To configure SSO, you need to fill the following fields:
 
 | Field | Description | Required |
 | :--- | :--- | :--- |
-| Authorization endpoint | The URL to redirect the user to authenticate | <span style="color: var(--green-50);">Yes</span> |
-| Token endpoint | The URL to get the token | <span style="color: var(--green-50);">Yes</span> |
+| Issuer endpoint | The URL to the identity provider | <span style="color: var(--green-50);">Yes</span> |
+| Authorization endpoint | The URL to redirect the user to authenticate | <span style="color: var(--green-50);">No</span> |
+| Token endpoint | The URL to get the token | <span style="color: var(--green-50);">No</span> |
+| JWTs endpoint | The URL to get the JWT Set | <span style="color: var(--green-50);">No</span> |
 | Client ID | The ID of your application | <span style="color: var(--green-50);">Yes</span> |
 | Client secret | The secret of your application | <span style="color: var(--green-50);">Yes</span> |
 | Allow sign-up with SSO | Automatically create an Aquarium account if its doesn't exist yet | <span style="color: var(--red-50);">No</span> |
@@ -144,8 +146,7 @@ To configure SSO, you need to fill the following fields:
 
 1. Here is a [Google documentation explaining how to enable OIDC](https://developers.google.com/identity/openid-connect/openid-connect#appsetup) for your domain.
 2. Once you followed their explanation for `Setting up OAuth 2.0`, you can filled the following fields in Aquarium:
-   - Authorization endpoint: `https://accounts.google.com/o/oauth2/v2/auth`
-   - Token endpoint: Leave it blank, we will detect it automatically
+   - Issuer endpoint: `https://accounts.google.com`
    - Client ID: The client ID you got from Google
    - Client secret: The client secret you got from Google
 3. Press save and you are done!
@@ -159,8 +160,7 @@ Here is a short video showing how to configure Okta with Aquarium:
 
 1. Here is a [Okta documentation explaining how to setup OIDC app integrations](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_oidc.htm) for your domain.
 2. Once you followed their explanation, you can filled the following fields in Aquarium:
-   - Authorization endpoint: `https://your-domain.okta.com/`
-   - Token endpoint: Leave it blank, we will detect it automatically
+   - Issuer endpoint: `https://your-domain.okta.com/`
    - Client ID: The client ID you got from Okta
    - Client secret: The client secret you got from Okta
 3. Press save and you are done!
