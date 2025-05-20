@@ -32,6 +32,8 @@ This workspace is dedicated to display tasks and define schedules.
 > - `L` to link tasks and create dependencies
 > - `T` to center the view on Today
 > - `D` to show/hide dependencies
+> - `J` to show/hide the timelogs
+> - `W` to show/hide the workload
 
 If you want to display more days in the calendar, you can expand the size of the column called "Timeline", by dragging the handle located at the end of the column.
 
@@ -48,3 +50,13 @@ By selecting tasks, you can setup there recurrence. Select `Set recurrence` from
 From this interface, you can define if the task need to repeat every day of the week, starting from a specific date, and for how long. You can also define it's daily duration.
 
 If you enable `Replace existing timeline`, the task's timeline will be replaced by the new recurrence. If you disable it, the recurrence will be added to the existing timeline.
+
+## Show workload
+
+By pressing `W` or clicking on `Show workload` in the bufferzone, you can display the number of days or hours already assigned to assigned users for each days of the timeline. This is useful to see if a user is overloaded or not.
+
+If the workload is too high, the cell will be colored in red. When you hover the cell, you will see the total number of hours assigned to the user for that day.
+
+## Show timelogs
+
+By pressing `J` or clicking on `Show timelogs` in the bufferzone, you can display the number of hours already timeloged by the team. It's displayed as a progression bar on top of the cell. The information is also displayed when you hover the cell.
