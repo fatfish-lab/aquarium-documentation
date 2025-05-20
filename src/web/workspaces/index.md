@@ -17,6 +17,8 @@ Workspaces works the same way in the focus or studio interface. The only differe
 | ![Focus workspaces](/_medias/screenshots/focus-workspaces.webp) | ![Studio workspaces](/_medias/screenshots/studio-workspaces.webp) |
 | Workspaces are regrouped by need (assets manager, shots manager, ...) | Workspaces are regrouped by location. You need to go the the correct folder to be able to active the workspace you want. |
 
+In both interfaces, you give you a quick access to your favorite workspaces. In the focus interface they are displayed in the left sidebar, and in the studio interface they are displayed above the active workspace.
+
 # Workspace types
 
 We created several workspaces, to fit specific project management needs : [shots manager](./shotsmanager.md), [assets manager](./assetsmanager.md), [timeline](./timeline.md), ... You can explore the rest of this section to learn more about each of them.
@@ -25,10 +27,14 @@ We created several workspaces, to fit specific project management needs : [shots
 - [Shots manager](./shotsmanager.md)
 - [Assets manager](./assetsmanager.md)
 - [Episodes manager](./episodes.md)
+- [Libraries manager](./libraries.md)
 - [Timeline](./timeline.md)
 - [Wiki](./wiki.md)
 - [Medias](./medias.md)
 - [Review](./review.md)
+- [Activity](./activity.md)
+- [Todolist](./todolist.md)
+- [Whiteboards](./whiteboards.md)
 
 We created a short video that show you all those workspaces:
 
@@ -207,6 +213,10 @@ You can click on the name of the views to edit it using the [views application](
 ### Columns
 
 You can add or remove columns from the view, based on our presets or by creating a new custom columns by right-clicking on a cell and selecting `Add column from property`. Learn more in our how-to [create a custom column](../../examples/tutorials/create-column.md) guide.
+
+If the display is a table, you can see at the bottom of the table the statistics of the column. Like how many items are displayed, what's the sum of the column or even the repartition of the statuses, priorities, etc.
+
+It's a great way to quickly see the status of your project.
 
 ## Bufferzone
 

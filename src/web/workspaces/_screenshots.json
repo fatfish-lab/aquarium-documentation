@@ -1,11 +1,10 @@
 [
   {
     "name": "focus-workspaces",
-    "url": "focus/{{project._key}}/",
-    "scrollTo": ".focus-project-view .collapse-container",
-    "click": [".focus-project-view .collapse-container"],
+    "url": "focus/1057833351/",
+    "click": [".focus-app div.breadcrumb-item-container.dim"],
     "focus": [{
-      "selector": ".focus-project-view .collapse-container .modules-list",
+      "selector": ".modules-container",
       "type": "arrow"
     }]
   },
@@ -122,8 +121,11 @@
   },
   {
     "name": "workspaces-options",
-    "url": "focus/120709686/list/433659302?itemKey=120709686",
-    "click": [".section-option >:nth-child(8)"],
+    "url": "focus/120709686/433659302?itemKey=120709686&appName=Home",
+    "localStorage": {
+      "focus.project.sidebar": false
+    },
+    "click": [".section-option >:nth-child(9)"],
     "focus": [
       {
         "selector": ".filters-container",
@@ -146,7 +148,7 @@
         "content": "4"
       },
       {
-        "selector": ".section-option >:nth-child(8)",
+        "selector": ".section-option >:nth-child(9)",
         "type": "circle",
         "content": "5"
       },
@@ -219,5 +221,24 @@
   },{
     "name": "whiteboards",
     "url": "focus/286722750/whiteboards/1691329772?itemKey=286722750"
+  }, {
+    "name": "new",
+    "url": "1548052502?app=New&workspace=1712758897",
+    "focus": [{
+      "selector": "div.workspaces",
+      "type": "circle",
+      "content": "1"
+    }, {
+      "selector": "div.workspaces span.icon-container.material-icons.link",
+      "type": "circle",
+      "content": "2"
+    }, {
+      "selector": "div.workspaces span.icon-container.material-icons.upload",
+      "type": "circle",
+      "content": "3"
+    }]
+  }, {
+    "name": "activity",
+    "url": "focus/1057833351/1724163138?itemKey=1057833351&appName=Activity"
   }
 ]
