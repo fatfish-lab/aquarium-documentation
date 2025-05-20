@@ -33,3 +33,15 @@ The difference is that in Aquarium, you can create as many workspace as you want
 The other difference is that you can choose the depth of the display. Meaning that you can display items that are stored in subitems.
 
 We also created different types of workspace, to respond to specific project needs : shots manager, wiki, media manager, ... You can check the full list of [available workspaces in the dedicated documentation](../workspaces/index.md#workspace-types).
+
+### Workspaces tabs
+
+The workspaces are displayed like tabs. You can click on a workspace to open it.
+
+![Workspaces tabs](../../_medias/screenshots/studio-workspaces-tabs.webp)
+
+If at least one workspace is marked as a Favorite one for you, then only your favorites workspaces will be displayed. You can click on the `Add workspace` button to see the other workspaces available at the current location. From this menu, you can also :
+
+- Add or remove a workspace as favorite
+- Create a new workspace
+- Open another workspace

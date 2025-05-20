@@ -1,13 +1,12 @@
 [{
   "name": "focus-project",
   "url": "/focus/1057833351/",
-  "click": [".collapse-header"],
   "focus": [{
-    "selector": ".workspaces-list",
+    "selector": ".sidebar-container .workspaces",
     "type": "circle",
     "content": "1"
   }, {
-    "selector": "#project-module-quest",
+    "selector": ".sidebar-container .quickview-container",
     "type": "circle",
     "content": "2"
   }, {
@@ -17,27 +16,22 @@
   }]
 }, {
   "name": "focus-project-workspaces",
-  "url": "/focus/1057833351/shotsmanager",
+  "url": "/focus/1057833351",
+  "click": [
+    ".focus-app div.breadcrumb-item-container.dim"
+  ],
   "focus": [
     {
-      "selector": ".focus-workspaces-container",
+      "selector": ".modules-container",
       "type": "circle",
       "content": "1"
     },
     {
-      "selector": ".favorite",
+      "selector": "#project-add-module-quest",
       "type": "circle",
       "content": "2"
-    },
-    {
-      "selector": "#module-create-workspace-quest",
-      "type": "circle",
-      "content": "3"
     }
   ]
-}, {
-  "name": "focus-project-workspace",
-  "url": "/focus/1057833351/shotsmanager/1057833656?itemKey=1057833459"
 }, {
   "name": "focus-diary",
   "url": "/focus/diary",
@@ -53,6 +47,22 @@
     "type": "circle",
     "content": "2"
   }]
+}, {
+  "name": "focus-manager",
+  "url": "/focus/manager/timelogs",
+  "localStorage": {
+    "manager.presented": true,
+    "manager.seleted.users": [
+      "120704449",
+      "120711642",
+      "71015175",
+      "120709667",
+      "74890586",
+      "70906208",
+      "120711640",
+      "494930931"
+    ]
+  }
 }, {
   "name": "focus-inbox",
   "url": "/focus/inbox",
@@ -84,6 +94,14 @@
     "type": "overlay",
     "content": "Workspaces",
     "color": "grape-50"
+  }]
+}, {
+  "name": "studio-workspaces-tabs",
+  "url": "1057833459?app=Sequencer&workspace=1057833656",
+  "click": [".tabs .add-workspace"],
+  "focus": [{
+    "selector": ".tabs .add-workspace",
+    "type": "arrow"
   }]
 }, {
   "name": "rooms-selected",
