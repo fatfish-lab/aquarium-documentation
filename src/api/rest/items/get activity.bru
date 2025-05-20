@@ -1,0 +1,36 @@
+meta {
+  name: Get an item activity
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/items/:_key/activity
+  body: json
+  auth: inherit
+}
+
+params:path {
+  _key: {{meKey}}
+}
+
+body:json {
+  {
+      "populate": false,
+      "depth": 1,
+      "offset": 0,
+      "limit": 50,
+      "search": "",
+      "topics": ["item.created", "item.updated"],
+      "items": ["Media", "Shot", "Asset"],
+      "itemsComparator": "IN",
+      "createdBy": ["{{meKey}}"]
+  }
+}
+
+docs {
+  Query the items connected to a specific item.
+  
+  > Authenticated.
+  > Permissions: `r` on each item being traversed.
+}

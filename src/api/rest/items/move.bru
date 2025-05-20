@@ -1,7 +1,7 @@
 meta {
   name: Move an item
   type: http
-  seq: 11
+  seq: 12
 }
 
 put {
@@ -21,7 +21,7 @@ body:form-urlencoded {
 
 docs {
   Move an item to change its parent. Affects inbount edge of type "Child"
-
+  
   > Authenticated.
   > Permissions: `w` on the item being moved, `a` on the target item `newParentKey`.
 }
