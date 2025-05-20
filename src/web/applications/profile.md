@@ -21,14 +21,40 @@ Just under the thumbnail, you can find the item._key of the user. This is the un
 
 ## Security
 
-You can change the password from here.
+You can change your password, enable multi-factor authentication and close all sessions.
+
+The `Close all session` allow you to disconnect all your sessions and will force the user to sign-in again.
+> As an administrator, you can disconnect other users.
 
 > [!warning]
 > When you change your password, we will ask you to sign-in again. It will also disconnect all your other sessions.
 
 You can also enable and manage the two-factor authentication (2FA, MFA, ...). You backup code can be manage from here too.
 
-The `Close all session` allow you to disconnect all your sessions and will force the user to sign-in again.
+### Multi-factor authentication
+
+Aquarium supports 2 types of multi factor authentication:
+
+- **Authenticator app**: you can use any authenticator app (Google Authenticator, Authy, ...) to generate the code. You can scan the QR code or copy the secret key. It's compatible with any authenticator app like:
+  - [Google Authenticator](https://support.google.com/accounts/answer/1066447?hl=en)
+  - [2fas](https://2fas.com/)
+  - [Authy](https://authy.com/download)
+  - [Duo Mobile](https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app#download)
+  - [Microsoft Authenticator](https://www.microsoft.com/security/mobile-authenticator-app)
+- **Passkeys & security keys**: with passkeys, you can securely sign in to your account using just your fingerprint, face, screen lock, or security key (like [Yubikeys](https://yubico.com)).
+  - You can also use your phone as a security key. In order to do so:
+    1. Login to your account from your phone
+    2. Go to your `Profile` > `Security` tab > click on `Add authentication device`.
+
+> Your phone ecosystem (Android or iOS) will take care of sending a notification to your phone when you need to authenticate from a computer.
+
+> [!note]
+> You can use both methods at the same time, but only one Authenticator app can be used at a time.
+
+> [!error] Backup codes
+> If you lose your authenticator app or if you don't have access to your phone, you will not be able to sign-in again. So please make sure to save the backup code in a safe place.
+
+If you are an administrator and you want your users to enable 2FA, you can share with them this URL: `https://studio.example.com/profile/mfa/new`.
 
 ## Personal access tokens
 
