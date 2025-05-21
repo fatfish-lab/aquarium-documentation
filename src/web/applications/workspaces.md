@@ -32,7 +32,7 @@ Like [on any other items](../items/index.md#permissions), you can define the per
 
 ## Favorites
 
-You can add a workspace as a favorite to access it quickly from the [Focus interface](../introduction/focus.md).
+You can add a workspace as a favorite to access it quickly from the [Focus interface](../introduction/focus.md) and the [Studio interface](../introduction/studio.md).
 
 You can also add as favorite for other users, so they don't have to do it themselves.
 
@@ -87,3 +87,13 @@ A [SET is used in meshQL](../../api/meshql.md#set) to store a query result and r
 A set can be used in a column, filter, group, ...
 
 You can define multiple sets in a workspace. Each set has a name and a query. The query is a meshQL query that will be executed when the workspace is loaded. The name is important since it's how you can reference the set in other queries.
+
+## Performance
+
+This tab give you insights about the performance of the workspace. A workspace have a score calculated based on it's filter and columns. A high score means that the workspace is fast and optimized. A low score means that the workspace is slow and my require some optimisations.
+
+You can expand the last section `Detailled active views analysis`, to see more details about each views and there columns. For each view you can see it's performance impact on the global performance score. Meaning that you might to focus on the most impacting views to improve the performance of the workspace.
+
+The depth can also have an impact on the performances, but it depends on the hierarchy and the structure of your data.
+
+You can always reach our [support](../../contact.md) team if you need help to improve the performance of your workspace. We are here to help you and we can provide you with some tips and tricks to improve the performance of your workspace.
