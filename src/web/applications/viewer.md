@@ -7,7 +7,7 @@ nav_order: 10
 
 # Viewer
 
-The viewer application is dedicated to open [Media item](../items/media.md).
+The viewer application is dedicated to open [Media item](../items/media.md). Check our Media page to see the [supported formats](../items/media.md#format).
 
 ![Viewer](../../_medias/screenshots/viewer.webp)
 
@@ -44,7 +44,10 @@ On the right you can open the activity panel to see all the previous comments on
 
 If the comment is associated to a video, by clicking on it you can move the video to the timecode of the comment. You can also define the duration of your comments using the handle under the video timeline.
 
+
 ## Shortcuts
+
+Don't forget that you can press `F2` to see all the shortcuts available in the application.
 
 - `D` : Draw
   - `ESC`: Disable draw tool
