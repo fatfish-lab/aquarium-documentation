@@ -165,7 +165,10 @@
   },
   {
     "name": "wiki",
-    "url": "focus/1057833351/wiki/1169618311?itemKey=1057833459"
+    "url": "focus/1057833351/1169618311?itemKey=1057833459&appName=Wiki",
+    "localStorage": {
+      "focus.project.sidebar": false
+    }
   },
   {
     "name": "review",

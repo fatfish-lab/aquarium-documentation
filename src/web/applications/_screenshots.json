@@ -166,7 +166,13 @@
   },
   {
     "name": "actioneditor",
-    "url": "apps/actioneditor?itemKeys=286728210&appName=actioneditor&mode=editor"
+    "url": "apps/actioneditor?itemKeys=286728210&appName=actioneditor&mode=editor",
+    "click": [".bottombar-container"],
+    "focus": [{
+      "selector": "section.debug",
+      "type": "overlay",
+      "color": "orange-50"
+    }]
   },
   {
     "name": "views",
