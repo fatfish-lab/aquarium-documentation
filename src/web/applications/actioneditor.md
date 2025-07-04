@@ -57,3 +57,28 @@ To allow users to trigger the action, they need to, at least, have the `Read` pe
 If a user doesn't have the `Read` permission, the action will not be triggered by the user's events.
 
 You can edit the action [permission](../items/index.md#permissions) by click on the violet mention `Click to edit participants` at the bottom of the interface. It will open the [Quickeditor](./quickeditor.md#participants).
+
+## Debugging
+
+When working on an action that doesn't work as expected, you can enable Debug mode in the top right corner of the interface. The debug mode is enabled until the action is executed successfully or until an error occurs.
+
+To visualize a log from a previous execution, you can press the `d` key on your keyboard to open the latest debug log, or select the one you want from the `Execution history` section under the nodal interface.
+
+When a log is selected, you can see a new `Debug lens` node appearing in the interface. You can also press the `d` key to move the debug lens in the center of the interface and easily see it on your screen.
+
+The `Debug lens` is displaying the information about the last execution (executation date, who triggered it and how long it took to execute). It's also showing you node's outputs of the selected node. A node where you can see a log is outlined in orange.
+
+Instead of selecting nodes, you can also drag and drop the `Debug lens` onto any node to see its outputs.
+
+In case of an error occured, the node that caused the error will be outlined in red. So you can easily identify where in the action the error occurred and wich node caused it. The error message will be displayed in the `Debug lens` as well.
+
+If you want to see all the outputs of all nodes, you can double click on the `Debug lens`.
+
+From the execution history, you can also requeue an event with debug enabled. So you can replay the event and see how it will be executed with the current action configuration. This is useful to test your action without having to trigger it manually.
+
+> [!error]
+> When requeuing an event, all the actions that are listening to the same event will be executed. So be careful when requeuing an event, especially if you have multiple actions listening to the same event.
+
+When you are done with a log, you can close it by clicking on the `x` in the execution history header or by selecting another execution history entry associated with no other logs.
+
+You can also clear a log from the execution history by clicking on the <span class="aq-icon">more_vert</span> icon menu and `Clear debug log`.
