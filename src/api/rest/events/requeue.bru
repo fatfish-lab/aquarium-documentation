@@ -6,17 +6,25 @@ meta {
 
 post {
   url: {{protocol}}://{{url}}/{{version}}/events/:_key/requeue
-  body: none
+  body: json
   auth: inherit
 }
 
 params:path {
-  _key:
+  _key: 
+}
+
+body:json {
+  { 
+    "debug": false
+  }
 }
 
 docs {
   Requeue an event to be processed again.
-
+  
+  Use the `debug` body parameter to indicated if you want to enable debug for this event.
+  
   > Authenticated.
   Permissions: User is admin or super-admin.
 }
