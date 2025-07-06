@@ -5,11 +5,17 @@ meta {
 }
 
 get {
-  url: {{protocol}}://{{url}}/{{version}}/metrics
+  url: {{protocol}}://{{url}}/{{version}}/metrics?format=text
   body: none
   auth: inherit
 }
 
+params:query {
+  format: text
+}
+
 docs {
   Obtain the current metrics of the instance in OpenMetrics format (`Prometheus`, `Grafana`, etc.). All exported metrics have an `aquarium_` prefix.
+  
+  Available formats are: `text`, `json` or `protobuf` (not compatible)
 }

@@ -1,0 +1,21 @@
+meta {
+  name: Network metrics
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{protocol}}://{{url}}/{{version}}/metrics/network?format=text
+  body: none
+  auth: inherit
+}
+
+params:query {
+  format: text
+}
+
+docs {
+  Obtain the metrics of the all the instances in the cluster in OpenMetrics format (`Prometheus`, `Grafana`, etc.). All exported metrics have an `aquarium_` prefix.
+  
+  Available formats are: `text`, `json` or `protobuf` (not compatible)
+}
