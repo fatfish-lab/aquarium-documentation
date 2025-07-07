@@ -52,6 +52,10 @@ You can format your text using the following Markdown syntax:
 | :------- |  :----- |
 | `[Link](https://fatfi.sh)` | [Link](https://fatfi.sh) |
 | `![Image](https://storage.googleapis.com/fatfishlab-public/aquarium-studio-website/logo.png)` | ![Image](https://storage.googleapis.com/fatfishlab-public/aquarium-studio-website/logo.png) |
+| `![Image width=250px](https://storage.googleapis.com/fatfishlab-public/aquarium-studio-website/logo.png)` | ![Image width=250px](https://storage.googleapis.com/fatfishlab-public/aquarium-studio-website/logo.png) |
+
+> [!note] Image size
+> You can specify the size of the image by adding `width=VALUE` or `height=VALUE`. The `VALUE` can be in pixels (e.g., `width=250px`) or percentage (e.g., `width=50%`). If you specify both width and height, the image will be resized accordingly.
 
 ### Highlights & Callouts
 
