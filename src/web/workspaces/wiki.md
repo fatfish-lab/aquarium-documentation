@@ -45,6 +45,13 @@ You can format your text using the following Markdown syntax:
 | \`Inline code` | `Inline code` |
 | \```Code block``` | ```Code block``` |
 
+You can can also create an horizontal rule using three dashes:
+
+```
+---
+```
+---
+
 ### Links and Images
 
 
@@ -90,6 +97,21 @@ For example the following code `[youtube yagxU7c7lQA 405 720]` will embed the vi
 
 [youtube yagxU7c7lQA 405 720]
 
+### Table
+
+You can create tables using the following syntax:
+
+```
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Row 1.1  | Row 2.1  |
+| Row 1.2  | Row 2.2  |
+```
+
+| Header 1 | Header 2 |
+| -------- | -------- |
+| Row 1.1  | Row 2.1  |
+| Row 1.2  | Row 2.2  |
 
 ### Schema and graphs using Mermaid
 
