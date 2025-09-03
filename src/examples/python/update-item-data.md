@@ -2,7 +2,7 @@
 id: update-item-data
 title: Update an item data
 lang: en
-nav_order: 10
+nav_order: 12
 ---
 
 # Update an item data

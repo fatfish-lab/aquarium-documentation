@@ -2,7 +2,7 @@
 id: get-users
 title: Get users
 lang: en
-nav_order: 10
+nav_order: 11
 ---
 
 # Get users

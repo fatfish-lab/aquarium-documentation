@@ -17,6 +17,7 @@ Don't forget to subscribe to our [YouTube channel](https://www.youtube.com/@fatf
 [column
 ## Python
 
+- [Sign-in user](./python/signin-user.md)
 - [Create project](./python/create-project.md)
 - [Get projects](./python/get-projects.md)
 - [Get folders](./python/get-folders.md)
