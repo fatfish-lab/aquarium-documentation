@@ -120,6 +120,15 @@
     ]
   },
   {
+    "name": "timeline-settings",
+    "url": "focus/1057833351/1058208346?itemKey=1057834198&appName=Timeline",
+    "localStorage": {
+      "timelineHideBeta": true,
+      "focus.project.sidebar": false
+    },
+    "click": ["div.bufferzone-container > div > div.quickview-container.dropdown-container", "div.bufferzone-container > div > div.quickview-container.dropdown-container > div.content.content-menu > div > div > li:nth-child(8)"]
+  },
+  {
     "name": "workspaces-options",
     "url": "focus/120709686/433659302?itemKey=120709686&appName=Home",
     "localStorage": {
