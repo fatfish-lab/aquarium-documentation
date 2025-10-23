@@ -723,7 +723,7 @@ Here we used the `@tags` alias to call the array of tags.
 
 Aliases are very useful to define your [SET](#set) and [VIEW](#view) expressions.
 
-## Group results with COLLECT ... INTO ...
+## COLLECT
 
 MeshQL allows you to group data by one or multiple grouping criteria with the `COLLECT` keyword.
 
@@ -736,17 +736,16 @@ In the following example, we will group tasks by their status and color and coun
 ```javascript
 const query = "# -(99)> $Task COLLECT criterias = $groups INTO collection = $view VIEW $return"
 const aliases = {
-	"groups": {
-		"status": "item.data.status",
-		"backgroundColor": "item.data.color"
-	},
-	"view": "item",
-	"return": {
-		"count": "LENGTH(collection)",
+  "groups": {
+    "status": "item.data.status",
+    "backgroundColor": "item.data.color"
+  },
+  "view": "item",
+  "return": {
     "tasks": "collection",
-		"status": "criterias.status",
-		"backgroundColor": "criterias.backgroundColor",
-	}
+    "status": "criterias.status",
+    "count": "LENGTH(collection)"
+  }
 }
 ```
 
