@@ -56,14 +56,14 @@ Aquarium supports 2 types of multi factor authentication:
 
 If you are an administrator and you want your users to enable 2FA, you can share with them this URL: `https://[studio.example.com]/profile/mfa/new`.
 
-### Troublshooting 2FA errors
+### Troubleshooting 2FA errors
 
 If you encounter errors when enabling 2FA, you can try the following:
 
-- Make sure your device has its clock set correctly. The clock must be set to your correct timezone and time must be accurate. The best is to make sure your device is synchronised with your network time.
+- Make sure your device has its clock set correctly. The clock must be set to your correct timezone and time must be accurate. It is best to ensure your device is synchronized with your network time.
 - Make sure the code you entered is still valid. Authenticator apps generate a new code every 30 seconds.
 
-If you still encounter errors, you can contact our [support team](../../contact.md) to help you.
+If you still encounter errors, you can contact our [support team](../../contact.md) for assistance.
 
 ## Personal access tokens
 
