@@ -54,7 +54,16 @@ Aquarium supports 2 types of multi factor authentication:
 > [!error] Backup codes
 > If you lose your authenticator app or if you don't have access to your phone, you will not be able to sign-in again. So please make sure to save the backup code in a safe place.
 
-If you are an administrator and you want your users to enable 2FA, you can share with them this URL: `https://studio.example.com/profile/mfa/new`.
+If you are an administrator and you want your users to enable 2FA, you can share with them this URL: `https://[studio.example.com]/profile/mfa/new`.
+
+### Troublshooting 2FA errors
+
+If you encounter errors when enabling 2FA, you can try the following:
+
+- Make sure your device has its clock set correctly. The clock must be set to your correct timezone and time must be accurate. The best is to make sure your device is synchronised with your network time.
+- Make sure the code you entered is still valid. Authenticator apps generate a new code every 30 seconds.
+
+If you still encounter errors, you can contact our [support team](../../contact.md) to help you.
 
 ## Personal access tokens
 
