@@ -310,7 +310,7 @@ Here is a list of available functions:
 - [SORTED_UNIQUE()](https://docs.arangodb.com/3.11/aql/functions/array/#sorted_unique)
 - [UNION()](https://docs.arangodb.com/3.11/aql/functions/array/#union)
 - [UNION_DISTINCT()](https://docs.arangodb.com/3.11/aql/functions/array/#union_distinct)
-- [UNIQUE()](https://docs.arangodb.com/3.11/aql/functions/array/#unique)
+<!-- - [UNIQUE()](https://docs.arangodb.com/3.11/aql/functions/array/#unique) -->
 - [UNSHIFT()](https://docs.arangodb.com/3.11/aql/functions/array/#unshift)
 
 ]
