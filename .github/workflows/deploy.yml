@@ -23,6 +23,10 @@ jobs:
           deno-version: v2.4.0
 
       - name: Build site
+        env:
+          POSTHOG_API_KEY: ${{ vars.POSTHOG_API_KEY }}
+          POSTHOG_API_HOST: ${{ vars.POSTHOG_API_HOST }}
+          POSTHOG_UI_HOST: ${{ vars.POSTHOG_UI_HOST }}
         run: deno task build --location=https://docs.aquarium.app
 
       - name: Setup Pages

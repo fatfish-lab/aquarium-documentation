@@ -1195,6 +1195,8 @@
     "https://deno.land/x/deno_dom@v0.1.48/src/dom/utils-types.ts": "96db30e3e4a75b194201bb9fa30988215da7f91b380fca6a5143e51ece2a8436",
     "https://deno.land/x/deno_dom@v0.1.48/src/dom/utils.ts": "4c6206516fb8f61f37a209c829e812c4f5a183e46d082934dd14c91bde939263",
     "https://deno.land/x/deno_dom@v0.1.48/src/parser.ts": "e06b2300d693e6ae7564e53dfa5c9a9e97fdb8c044c39c52c8b93b5d60860be3",
+    "https://deno.land/x/fatfishlab_lume_plugin_posthog@0.1.0/index.ts": "1070bdef0c30b68bfe35d7ab0d0ff21d9c0f007f552c4a5f8bea74dab285cf11",
+    "https://deno.land/x/fatfishlab_lume_plugin_posthog@0.1.0/mod.ts": "624db5abcd62f11f2535b775cffbfa3979f9371b127f55f40e9fbb4d40e28783",
     "https://deno.land/x/fatfishlab_lume_theme_documentation@1.0.7/mod.ts": "06cf68edff7a888bc6bdca011b5d9ad5c9f060b99dd5100549d7fc4cece96f03",
     "https://deno.land/x/fatfishlab_lume_theme_documentation@1.0.7/plugins.ts": "eaf5c3a825f4e894a911dd28a01aec24dda2816d899dc0992bca051ed3a6a0d3",
     "https://deno.land/x/fatfishlab_lume_theme_documentation@1.0.7/screenshot/page.ts": "631e198aca74c9920656333daa0f23b9111f0af180bf5f8a7718288fe2861fc2",
