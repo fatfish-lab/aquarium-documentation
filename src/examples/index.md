@@ -51,6 +51,7 @@ Don't forget to subscribe to our [YouTube channel](https://www.youtube.com/@fatf
 ## Production
 - [Setup notifications](./tutorials/notifications.md)
 - [Create a custom column](./tutorials/create-column.md)
+- [Import a CSV file](./tutorials/import-csv.md)
 ]
 
 

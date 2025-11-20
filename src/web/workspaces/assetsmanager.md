@@ -22,6 +22,12 @@ You can regroup assets into [Library](../items/library.md) to regroup them by ty
    1. "Add a task in Asset's template": This will a new task in the Asset's template, so all your assets can use the task.
    2. "Task in asset" : Use this option to create a "solo" task, a task that only make sense for this asset.
 
+# How can I import a CSV file to create libraries and assets ?
+
+This video shows how you can import a CSV file to create episodes, sequences and shots. But it's the same process for libraries and assets.
+
+[youtube 1WpBnH9pejM 405 720]
+
 # How can I move a asset into a library ?
 
 1. Select the assets you want to move

@@ -52,3 +52,9 @@ Stay tuned, new workspaces are coming soon! 🤩
 ### What's a template and how to master it ?
 
 [youtube CsKs6q-UYNE 405 720]
+
+### How to import a CSV file to configure your assets, shots, episodes, sequences and more ?
+
+Learn how to import your existing Excel, Google Sheets, or CSV file into a project to populate it easily.
+
+[youtube 1WpBnH9pejM 405 720]
