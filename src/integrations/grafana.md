@@ -2,7 +2,7 @@
 id: grafana
 title: Grafana
 lang: en
-nav_order: 10
+nav_order: 2
 ---
 
 # Grafana
@@ -55,4 +55,4 @@ Grafana provide a [dedicated guide](https://grafana.com/docs/grafana-cloud/monit
 
 You can either create your own dashboards to monitor your Aquarium's instances, or use the dedicated dashboard we created for Aquarium.
 
-Click here to [download the dashboard](../_medias/grafana-dashboard-overview.json).
+Click here to [download the Fatfish Lab's dashboard](../_medias/grafana-dashboard-overview.json).
