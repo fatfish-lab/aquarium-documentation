@@ -1,0 +1,18 @@
+{
+  "Lume page": {
+    "prefix": "doc-page-lume",
+    "body": [
+      "---",
+      "id: ${1:${TM_FILENAME_BASE}}",
+      "title: ${1/(.*)/${1:/capitalize}/}",
+      "lang: ${2:en}",
+      "nav_order: 10",
+      "---",
+      "",
+      "# ${1/(.*)/${1:/capitalize}/}",
+      "",
+      "${3:<!-- TODO: Add content -->}"
+    ],
+    "description": "Lume page"
+  }
+}

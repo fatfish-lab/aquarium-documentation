@@ -12,6 +12,7 @@ icon: extension
 Aquarium can be integrated with many tools and services. Today, Aquarium is compatible with the following tools:
 
 - [Spreadsheet](./spreadsheet.md)
+- [Grafana](./grafana.md)
 - [Syncsketch](./syncsketch.md)
 - [Prism pipeline](./prism.md)
 - [Ayon](./ayon.md)
