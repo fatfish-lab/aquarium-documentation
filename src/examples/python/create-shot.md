@@ -10,6 +10,6 @@ nav_order: 50
 You can get the sequences using the same method as in the [Get folders](./get-folders.md) example.
 
 ```python
-sequences = project.get_children(type='Sequence')
+sequences = project.get_children(types='Sequence')
 shot = sequences[0].append(type="Shot", data={'name': 's010_p100', frameIn: '101', frameOut: '256'})
 ```
