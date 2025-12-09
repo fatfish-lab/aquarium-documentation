@@ -38,6 +38,8 @@ If you try to create an Asset at the root of the organisation, only `Template A`
 
 If you try to create an Asset in the project, 2 templates will be available: `Template A` and `Template B`. In this case `Template B` will be selected by default because it is closer to the project. If two templates are at the same level, they will be ordered alphabetically.
 
+Each item in a template have a special root property called `createdFrom`. All items created from a template will the same `createdFrom` property in order to track the origin of the item and be able to [synchronize](../applications/templateeditor.md#synchronize) it back to the template.
+
 
 ## Data
 
