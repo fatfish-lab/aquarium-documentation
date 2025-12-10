@@ -1,0 +1,47 @@
+meta {
+  name: Retarget template
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{protocol}}://{{url}}/{{version}}/templates/:templateKey/compare/:itemKey
+  body: json
+  auth: none
+}
+
+params:path {
+  templateKey: 277056
+  itemKey: 278053
+}
+
+body:json {
+  {
+    "createdFrom": {
+      "[sourceItem.createdFrom]": "[targetItem.createdFrom]"
+    }
+  }
+}
+
+docs {
+  Retarget item's createdFrom with a template
+  
+  > Authenticated.
+  > Permissions: `r` on the itemKey and `d` on the source template.
+  
+  The `createdFrom` body parameter is an object, where the key is the `createdFrom` of an item present within a template and its value is the `createdFrom` of an item present within the target structure.
+  
+  Find out more in [Aquarium's documentation](https://docs.aquarium.app/web/applications/templateeditor/#retarget-a-template).
+  
+  Examples :
+  
+  To only include Task when syncing a template :
+  
+  ``` json
+  {
+      "createdFrom": {
+        "12345": "67890"
+      }
+  }
+  ```
+}
