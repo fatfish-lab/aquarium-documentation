@@ -67,6 +67,48 @@ For each property with the `Allow edit` option enabled, you can indicate :
 - **Default value**: The default value of the field
 - **Description**: A description of the field. It's a good place to explain what the field is for.
 
+### Retarget a template
+
+A template and its content use a special root property called `createdFrom` to synchronize items with the template. Depending on how you created the template, you might need to retarget templates so that the `createdFrom` property matches.
+
+To introduce the `Retarget a template` feature, let's use the following example:
+
+> You have a template for your main characters, and you want to create a template variation for secondary characters.
+
+> You have already created your assets and they contain some data. But you want to re-link your `Secondary Asset` to the `Secondary Template`, in order to use the [synchronize](#synchronize) feature without losing any data.
+
+Here is the structure of the example. We can see that the `Secondary Asset` is linked to the `Main Template` instead of the `Secondary Template`.
+
+```mermaid
+graph LR
+  Asset1([Asset <br/> Main character]) -->|Template| Template1
+  Asset2([Asset <br/> Secondary character]) -->|Template| Template1
+  Template1([Template <br/> Main character]) --> Task1.1([Task <br/> <strong>design</strong>])
+  Template1 --> Task1.2([Task <br/> <strong>modeling</strong>])
+  Template1 --> Task1.3([Task <br/> <strong>shapes</strong>])
+  Template2([Template <br/> Secondary character]) --> Task2.1([Task <br/> <strong>design</strong>])
+  Template2 --> Task2.2([Task <br/> <strong>modeling</strong>])
+```
+
+If you created the `Secondary template` by duplicating the `Main template`, you are good to go. Aquarium will by default allows you to re-link the `Secondary Asset` and [synchronize](#synchronize) it without losing any data.
+
+However, if you created a brand new template, naming your tasks exactly the same is not enough to re-link and synchronize it. You need to retarget the template using the `Main template`.
+
+![Retarget template](../../_medias/screenshots/retarget-template.webp)
+
+> [!warning] Warning notice
+> Use this feature with caution. It's a powerful action that can modify many items at once and break your template structure if you don't know what you are doing. Feel free to [contact us](../../contact.md) if you need help.
+
+The retarget interface will guide you through the process and help you to retarget your template.
+
+1. Select the source template, in our case the `Main template`.
+2. Drag and drop the tasks from the `Secondary template` to the corresponding tasks in the `Main template`.
+3. Click `Next` and review the changes.
+4. Click `Finish` to apply the changes and retarget the template's content and the linked items.
+5. You can now go to the [synchronize](#synchronize) tab and click on the `Link an item` button to link the `Secondary Asset` to the `Secondary Template`.
+
+You can now use the synchronize feature safely without losing any data.
+
 ## Preview
 
 Use this tab to preview and edit the template's content. You have 3 preview available:
