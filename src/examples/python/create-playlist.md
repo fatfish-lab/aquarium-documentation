@@ -1,6 +1,6 @@
 ---
 id: create-playlist
-title: Create-playlist
+title: Create playlist
 lang: en
 nav_order: 80
 ---

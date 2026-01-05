@@ -25,6 +25,7 @@ Don't forget to subscribe to our [YouTube channel](https://www.youtube.com/@fatf
 - [Get users](./python/get-users.md)
 - [Get tasks](./python/get-tasks.md)
 - [Get statuses](./python/get-statuses.md)
+- [Update a task status](./python/update-status.md)
 - [Assign task](./python/assign-task.md)
 - [Create folder](./python/create-folder.md)
 - [Create shot](./python/create-shot.md)
